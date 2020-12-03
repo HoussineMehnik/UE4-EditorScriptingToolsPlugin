@@ -23,9 +23,9 @@ Editor Scripting Tools is an ue4 editor plugin providing a set of tools and util
 
 ## Utilities Blueprints & Assets
 
-![Assets Category](https://raw.githubusercontent.com/mhousse1247/UE4-EditorScriptingTools/main/Doc/EST_Assets.png)
+![Assets Category](Doc/EST_Assets.png)
 
 ## Utilities Common :
 
-![Utilities Common](https://raw.githubusercontent.com/mhousse1247/UE4-EditorScriptingTools/main/Doc/EST_Common.png)
+![Utilities Common](Doc/EST_Common.png)
        
