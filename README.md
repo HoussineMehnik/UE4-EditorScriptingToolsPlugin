@@ -6,7 +6,7 @@ Twitter : https://twitter.com/HoussineMehnik
 
 ## What is Editor Scripting Tools Plugin ?
 
-Editor Scripting Tools is an ue4 editor plugin providing a set of tools and utilities allowing to extend and customize some part the unreal editor using Blueprints.
+Editor Scripting Tools is an ue4 editor plugin providing a set of tools and utilities allowing to extend and customize some parts the unreal editor using Blueprints.
 
 ## What are the current available Utilities and Features ?
 
