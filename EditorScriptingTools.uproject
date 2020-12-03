@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.26",
+	"Category": "",
+	"Description": "",
+	"Plugins": [
+		{
+			"Name": "EditorScriptingTools",
+			"Enabled": true,
+			"MarketplaceURL": "http://ue4resources.com"
+		}
+	]
+}

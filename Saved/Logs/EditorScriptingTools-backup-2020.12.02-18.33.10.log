@@ -1,0 +1,1636 @@
+﻿Log file open, 12/02/20 18:51:11
+LogInit: Display: Running engine for game: EditorScriptingTools
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.219691
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin EditorScriptingTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-13942748
+LogInit: Engine Version: 4.25.3-13942748+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 1909) (), CPU: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz, GPU: Intel(R) UHD Graphics 630
+LogInit: Compiled (64-bit): Jul 25 2020 02:07:48
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Engine.ini]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Engine.ini]
+[2020.12.02-17.51.12:308][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Engine.ini]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Engine.ini]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.12.02-17.51.12:308][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Engine.ini]
+[2020.12.02-17.51.12:308][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Engine.ini]
+[2020.12.02-17.51.12:313][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:313][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.12.02-17.51.12:313][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.12.02-17.51.12:313][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:313][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.12.02-17.51.12:313][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:313][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.12.02-17.51.12:313][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.12.02-17.51.12:313][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.12.02-17.51.12:313][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.12.02-17.51.12:313][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.12.02-17.51.12:313][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.12.02-17.51.12:313][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.12.02-17.51.12:314][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.12.02-17.51.12:315][  0]LogInit: Selected Device Profile: [Windows]
+[2020.12.02-17.51.12:315][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.12.02-17.51.12:315][  0]LogHAL: Display: Platform has ~ 32 GB [34208645120 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.12.02-17.51.12:315][  0]LogInit: Going up to parent DeviceProfile []
+[2020.12.02-17.51.12:315][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.12.02-17.51.12:315][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.12.02-17.51.12:316][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Scalability.ini]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.12.02-17.51.12:317][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.12.02-17.51.12:325][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.12.02-17.51.12:325][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.12.02-17.51.12:325][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2020.12.02-17.51.12:325][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Config/Windows/Engine.ini]
+[2020.12.02-17.51.12:325][  0]LogInit: Computer: DESKTOP-97P9V1R
+[2020.12.02-17.51.12:325][  0]LogInit: User: UbiWork
+[2020.12.02-17.51.12:325][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.12.02-17.51.12:325][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.12.02-17.51.12:325][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2020.12.02-17.51.12:325][  0]LogMemory: Platform Memory Stats for Windows
+[2020.12.02-17.51.12:325][  0]LogMemory: Process Physical Memory: 113.76 MB used, 113.76 MB peak
+[2020.12.02-17.51.12:325][  0]LogMemory: Process Virtual Memory: 96.39 MB used, 96.39 MB peak
+[2020.12.02-17.51.12:325][  0]LogMemory: Physical Memory: 8899.24 MB used,  23724.67 MB free, 32623.91 MB total
+[2020.12.02-17.51.12:325][  0]LogMemory: Virtual Memory: 5143.35 MB used,  134212584.00 MB free, 134217728.00 MB total
+[2020.12.02-17.51.12:332][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.12.02-17.51.12:534][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2020.12.02-17.51.12:535][  0]LogInit: Using OS detected language (fr-FR).
+[2020.12.02-17.51.12:535][  0]LogInit: Using OS detected locale (fr-FR).
+[2020.12.02-17.51.12:542][  0]LogTextLocalizationManager: No specific localization for 'fr-FR' exists, so the 'fr' localization will be used.
+[2020.12.02-17.51.12:542][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Editor/fr/Editor.locres' could not be opened for reading!
+[2020.12.02-17.51.12:542][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/EditorTutorials/fr/EditorTutorials.locres' could not be opened for reading!
+[2020.12.02-17.51.12:542][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Keywords/fr/Keywords.locres' could not be opened for reading!
+[2020.12.02-17.51.12:542][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Category/fr/Category.locres' could not be opened for reading!
+[2020.12.02-17.51.12:542][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/ToolTips/fr/ToolTips.locres' could not be opened for reading!
+[2020.12.02-17.51.12:543][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/PropertyNames/fr/PropertyNames.locres' could not be opened for reading!
+[2020.12.02-17.51.12:543][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Engine/fr/Engine.locres' could not be opened for reading!
+[2020.12.02-17.51.12:585][  0]LogInit: Setting process to per monitor DPI aware
+[2020.12.02-17.51.12:666][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.12.02-17.51.12:666][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.12.02-17.51.15:503][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.12.02-17.51.15:503][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.12.02-17.51.15:503][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.12.02-17.51.15:503][  0]LogD3D11RHI: D3D11 adapters:
+[2020.12.02-17.51.16:429][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
+[2020.12.02-17.51.16:429][  0]LogD3D11RHI:       4021/0/16311 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2020.12.02-17.51.16:448][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics 630' (Feature Level 11_0)
+[2020.12.02-17.51.16:448][  0]LogD3D11RHI:       128/0/16311 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2020.12.02-17.51.16:450][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.12.02-17.51.16:450][  0]LogD3D11RHI:       0/0/16311 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.12.02-17.51.16:452][  0]LogD3D11RHI:    3. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.12.02-17.51.16:452][  0]LogD3D11RHI:       0/0/16311 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.12.02-17.51.16:452][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.12.02-17.51.16:457][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.12.02-17.51.16:457][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8c (for the marketing name, search the web for "GPU Device Id")
+[2020.12.02-17.51.16:457][  0]LogWindows: EnumDisplayDevices:
+[2020.12.02-17.51.16:457][  0]LogWindows:    0. 'Intel(R) UHD Graphics 630' (P:1 D:1)
+[2020.12.02-17.51.16:458][  0]LogWindows:    1. 'Intel(R) UHD Graphics 630' (P:0 D:1)
+[2020.12.02-17.51.16:458][  0]LogWindows:    2. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2020.12.02-17.51.16:458][  0]LogWindows:    3. 'Citrix Indirect Display Adapter' (P:0 D:0)
+[2020.12.02-17.51.16:458][  0]LogWindows:    4. 'Citrix Indirect Display Adapter' (P:0 D:0)
+[2020.12.02-17.51.16:459][  0]LogWindows:    5. 'Citrix Indirect Display Adapter' (P:0 D:0)
+[2020.12.02-17.51.16:459][  0]LogWindows:    6. 'Citrix Indirect Display Adapter' (P:0 D:0)
+[2020.12.02-17.51.16:459][  0]LogWindows:    7. 'Citrix Indirect Display Adapter' (P:0 D:0)
+[2020.12.02-17.51.16:459][  0]LogWindows:    8. 'Citrix Indirect Display Adapter' (P:0 D:0)
+[2020.12.02-17.51.16:459][  0]LogWindows:    9. 'Citrix Indirect Display Adapter' (P:0 D:0)
+[2020.12.02-17.51.16:460][  0]LogWindows:    10. 'Citrix Indirect Display Adapter' (P:0 D:0)
+[2020.12.02-17.51.16:460][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2020.12.02-17.51.16:460][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
+[2020.12.02-17.51.16:460][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2020.12.02-17.51.16:460][  0]LogD3D11RHI:      Driver Date: Unknown
+[2020.12.02-17.51.16:460][  0]LogRHI: Texture pool is 2814 MB (70% of 4021 MB)
+[2020.12.02-17.51.16:498][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.12.02-17.51.16:500][  0]LogD3D11RHI: [Aftermath] Enabled and primed
+[2020.12.02-17.51.16:500][  0]LogD3D11RHI: Async texture creation enabled
+[2020.12.02-17.51.16:500][  0]LogD3D11RHI: Array index from any shader is supported
+[2020.12.02-17.51.16:517][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.12.02-17.51.17:077][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.12.02-17.51.17:097][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.12.02-17.51.17:097][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.12.02-17.51.17:097][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.12.02-17.51.17:097][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.12.02-17.51.17:097][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.12.02-17.51.17:097][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.12.02-17.51.17:097][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.12.02-17.51.17:097][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.12.02-17.51.17:097][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.12.02-17.51.17:097][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.12.02-17.51.17:126][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.12.02-17.51.17:126][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.12.02-17.51.17:142][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2020.12.02-17.51.17:151][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.12.02-17.51.17:160][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.12.02-17.51.17:168][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.12.02-17.51.17:177][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.12.02-17.51.17:185][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.12.02-17.51.17:193][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.12.02-17.51.17:221][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.12.02-17.51.17:221][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.12.02-17.51.17:235][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.12.02-17.51.17:235][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.12.02-17.51.17:243][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.12.02-17.51.17:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.12.02-17.51.17:260][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.12.02-17.51.17:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.12.02-17.51.17:268][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.12.02-17.51.17:309][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.12.02-17.51.17:399][  0]LogShaderCompilers: Guid format shader working directory is -27 characters bigger than the processId version (../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Intermediate/Shaders/WorkingDirectory/30548/).
+[2020.12.02-17.51.17:399][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/UbiWork/AppData/Local/Temp/UnrealShaderWorkingDir/2848263A4B9032A89ACD988D719EC38A/'.
+[2020.12.02-17.51.17:400][  0]LogXGEController: Cleaning working directory: C:/Users/UbiWork/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.12.02-17.51.17:400][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.12.02-17.51.17:400][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.12.02-17.51.17:400][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.12.02-17.51.20:340][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.12.02-17.51.20:389][  0]LogDerivedDataCache: Loaded boot cache 0.05s 76MB C:/Users/UbiWork/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.12.02-17.51.20:389][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/UbiWork/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2020.12.02-17.51.20:389][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.12.02-17.51.20:389][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.12.02-17.51.20:389][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.12.02-17.51.20:389][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.12.02-17.51.20:405][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.12.02-17.51.20:405][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.12.02-17.51.20:405][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.12.02-17.51.20:406][  0]LogDerivedDataCache: Using Local data cache path C:/Users/UbiWork/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.12.02-17.51.20:407][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.12.02-17.51.20:407][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.12.02-17.51.20:458][  0]LogSlate: Using FreeType 2.10.0
+[2020.12.02-17.51.20:470][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.12.02-17.51.20:504][  0]LogAssetRegistry: FAssetRegistry took 0.0026 seconds to start up
+[2020.12.02-17.51.20:763][  0]LogInit: Selected Device Profile: [Windows]
+[2020.12.02-17.51.20:943][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.12.02-17.51.20:943][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.12.02-17.51.20:943][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.12.02-17.51.20:943][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.12.02-17.51.20:943][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.12.02-17.51.20:986][  0]LogNetVersion: EditorScriptingTools 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1896578611)
+[2020.12.02-17.51.22:070][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000002750B091380), frame # 0
+[2020.12.02-17.51.22:070][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002750AFEC680), frame # 0
+[2020.12.02-17.51.22:071][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002750B005C00), frame # 0
+[2020.12.02-17.51.22:159][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.070459 seconds
+[2020.12.02-17.51.22:164][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2020.12.02-17.51.22:164][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2020.12.02-17.51.22:164][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.12.02-17.51.22:761][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.12.02-17.51.22:767][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.12.02-17.51.22:897][  0]SourceControl: Source control is disabled
+[2020.12.02-17.51.22:897][  0]SourceControl: Source control is disabled
+[2020.12.02-17.51.22:900][  0]SourceControl: Source control is disabled
+[2020.12.02-17.51.22:903][  0]SourceControl: Source control is disabled
+[2020.12.02-17.51.22:910][  0]SourceControl: Source control is disabled
+[2020.12.02-17.51.23:203][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.12.02-17.51.23:230][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.12.02-17.51.23:230][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.12.02-17.51.23:329][  0]LogOcInput: OculusInput pre-init called
+[2020.12.02-17.51.23:344][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.12.02-17.51.23:344][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.12.02-17.51.23:810][  0]LogStreaming: Warning: Failed to read file '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Plugins/EditorScriptingTools/Resources/Icons/AssetThumbnailWidget_16x.png' error.
+[2020.12.02-17.51.23:810][  0]LogSlate: Could not find file for Slate resource: ../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Plugins/EditorScriptingTools/Resources/Icons/AssetThumbnailWidget_16x.png
+[2020.12.02-17.51.23:810][  0]LogEngine: Initializing Engine...
+[2020.12.02-17.51.23:811][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.12.02-17.51.23:812][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2020.12.02-17.51.23:996][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.12.02-17.51.24:301][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.12.02-17.51.24:310][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.12.02-17.51.24:310][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000275176AFC00), frame # 0
+[2020.12.02-17.51.24:310][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000027517735A80), frame # 0
+[2020.12.02-17.51.24:315][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.02-17.51.24:315][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.02-17.51.24:316][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.02-17.51.24:316][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.02-17.51.24:316][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.02-17.51.24:316][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.02-17.51.24:316][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.02-17.51.24:316][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.02-17.51.24:316][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.02-17.51.24:316][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.02-17.51.24:333][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.02-17.51.24:333][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.12.02-17.51.24:378][  0]LogAudioMixer: Display: Using Audio Device Casque (Halo Wireless Stereo)
+[2020.12.02-17.51.24:379][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.02-17.51.24:401][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.02-17.51.24:401][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.02-17.51.24:401][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.02-17.51.24:402][  0]LogInit: FAudioDevice initialized.
+[2020.12.02-17.51.24:402][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.12.02-17.51.24:475][  0]LogDerivedDataCache: Saved boot cache 0.07s 76MB C:/Users/UbiWork/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.12.02-17.51.24:479][  0]LogInit: Texture streaming: Enabled
+[2020.12.02-17.51.24:496][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.12.02-17.51.24:496][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.12.02-17.51.24:497][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.12.02-17.51.24:712][  0]LogInit: Transaction tracking system initialized
+[2020.12.02-17.51.24:736][  0]BlueprintLog: New page: Editor Load
+[2020.12.02-17.51.24:816][  0]LocalizationService: Localization service is disabled
+[2020.12.02-17.51.25:354][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.12.02-17.51.25:354][  0]LogCook: Display: Mobile HDR setting 1
+[2020.12.02-17.51.25:547][  0]LogFileCache: Scanning file cache for directory 'C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/' took 0.00s
+[2020.12.02-17.51.25:854][  0]LogStreaming: Warning: Failed to read file '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Plugins/EditorScriptingTools/Resources/Icons/AssetThumbnailWidget_16x.png' error.
+[2020.12.02-17.51.25:854][  0]LogSlate: Could not find file for Slate resource: ../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Plugins/EditorScriptingTools/Resources/Icons/AssetThumbnailWidget_16x.png
+[2020.12.02-17.51.25:854][  0]SourceControl: Source control is disabled
+[2020.12.02-17.51.25:854][  0]LogUnrealEdMisc: Loading editor; pre map load, took 16.713
+[2020.12.02-17.51.25:854][  0]Cmd: MAP LOAD FILE="../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/DetailCustomization/DebugDetails/Example_Map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.12.02-17.51.25:860][  0]LightingResults: New page: Lighting Build
+[2020.12.02-17.51.25:861][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-17.51.25:861][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.02-17.51.25:861][  0]MapCheck: New page: Map Check
+[2020.12.02-17.51.25:861][  0]LightingResults: New page: Lighting Build
+[2020.12.02-17.51.25:873][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000275176AFC00), frame # 0
+[2020.12.02-17.51.25:873][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000027517735A80), frame # 0
+[2020.12.02-17.51.25:874][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.05ms
+[2020.12.02-17.51.25:995][  0]LogAIModule: Creating AISystem for world Example_Map
+[2020.12.02-17.51.25:995][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000275172A0400), frame # 0
+[2020.12.02-17.51.25:995][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000275173C9F80), frame # 0
+[2020.12.02-17.51.26:008][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.12.02-17.51.26:027][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.39ms
+[2020.12.02-17.51.26:027][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.12.02-17.51.26:027][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,282ms to complete.
+[2020.12.02-17.51.26:027][  0]LogFileHelpers: Loading map 'Example_Map' took 0.173
+[2020.12.02-17.51.26:031][  0]LogUnrealEdMisc: Total Editor Startup Time, took 16.890
+[2020.12.02-17.51.26:134][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:577][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:577][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:577][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:577][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:577][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:577][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:577][  0]LogSlate: The tab "EditorScriptingToolsSubsystem" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:579][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:579][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:579][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.26:633][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.02-17.51.26:640][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.02-17.51.26:649][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.02-17.51.26:658][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.02-17.51.26:673][  0]LogCollectionManager: Loaded 0 collections in 0.003093 seconds
+[2020.12.02-17.51.26:687][  0]LogFileCache: Scanning file cache for directory 'C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Collections/' took 0.00s
+[2020.12.02-17.51.26:687][  0]LogFileCache: Scanning file cache for directory 'C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/Developers/UbiWork/Collections/' took 0.00s
+[2020.12.02-17.51.26:687][  0]LogFileCache: Scanning file cache for directory 'C:/Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/Collections/' took 0.00s
+[2020.12.02-17.51.26:687][  0]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 3465 classes and 839 folders.
+[2020.12.02-17.51.26:690][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.12.02-17.51.27:007][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.12.02-17.51.27:013][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 2 classes and 0 folders.
+[2020.12.02-17.51.27:077][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:077][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:077][  0]LogSlate: The tab "EditorScriptingToolsSubsystem" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:077][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:077][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:078][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:078][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:078][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:078][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:078][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:078][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:078][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:078][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:079][  0]LogSlate: The tab "EditorScriptingToolsSettings" attempted to spawn but failed for some reason. It will not be displayed but it will still be saved in the layout settings file.
+[2020.12.02-17.51.27:132][  0]LogSlate: Took 0.007004 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.12.02-17.51.27:147][  0]LogSlate: Took 0.008598 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.12.02-17.51.27:162][  0]LogSlate: Took 0.008255 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.12.02-17.51.27:314][  0]LogRenderer: Reallocating scene render targets to support 984x428 Format 10 NumSamples 1 (Frame:1).
+[2020.12.02-17.51.27:418][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.12.02-17.51.27:418][  0]LogLoad: (Engine Initialization) Total time: 18.28 seconds
+[2020.12.02-17.51.27:418][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.12.02-17.51.27:676][  0]LogAssetRegistry: Asset discovery search completed in 7.1724 seconds
+[2020.12.02-17.51.27:679][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2020.12.02-17.51.27:680][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.12.02-17.51.27:754][  0]LogRenderer: Reallocating scene render targets to support 984x448 Format 10 NumSamples 1 (Frame:2).
+[2020.12.02-17.51.27:754][  0]LogSlate: Took 0.006067 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.12.02-17.52.31:120][945]LogSlate: Took 0.000114 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.12.02-17.52.31:155][945]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool6E60FB2D42BAA2E13706719FECCC3498.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-17.52.31:170][945]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-17.52.31:170][945]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-17.52.52:250][196]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2020.12.02-17.52.52:269][196]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_MapCE73A08643258EDB4261AABE802B5905.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/DetailCustomization/DebugDetails/Example_Map.umap'
+[2020.12.02-17.52.52:312][196]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map_BuiltDataCCFF916042A3B5A3A1142082CF1E0CD6.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/DetailCustomization/DebugDetails/Example_Map_BuiltData.uasset'
+[2020.12.02-17.52.52:325][196]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.02-17.52.52:325][196]LogContentValidation: Display: Validating World /Game/DetailCustomization/DebugDetails/Example_Map.Example_Map
+[2020.12.02-17.52.52:325][196]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/DetailCustomization/DebugDetails/Example_Map_BuiltData.Example_Map_BuiltData
+[2020.12.02-17.53.08:863][100]LogSlate: Window 'New Level' being destroyed
+[2020.12.02-17.53.08:869][100]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/VR-Basic.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.12.02-17.53.08:904][100]LightingResults: New page: Lighting Build
+[2020.12.02-17.53.08:904][100]LoadErrors: New page: Loading map: VR-Basic.umap
+[2020.12.02-17.53.08:904][100]LogWorld: UWorld::CleanupWorld for Example_Map, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-17.53.08:904][100]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.02-17.53.08:904][100]MapCheck: New page: Map Check
+[2020.12.02-17.53.08:904][100]LightingResults: New page: Lighting Build
+[2020.12.02-17.53.08:913][100]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000275173C9F80), frame # 4100
+[2020.12.02-17.53.08:913][100]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000275172A0400), frame # 4100
+[2020.12.02-17.53.08:914][100]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2020.12.02-17.53.09:085][100]LogAIModule: Creating AISystem for world Untitled_1
+[2020.12.02-17.53.09:085][100]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002750EB90600), frame # 4100
+[2020.12.02-17.53.09:085][100]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000275173816C0), frame # 4100
+[2020.12.02-17.53.09:137][100]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.12.02-17.53.09:151][100]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2020.12.02-17.53.09:159][100]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.12.02-17.53.09:159][100]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,301ms to complete.
+[2020.12.02-17.53.09:159][100]LogFileHelpers: Loading map 'VR-Basic' took 0.290
+[2020.12.02-17.53.21:766][365]LogSlate: Window 'Save Level As' being destroyed
+[2020.12.02-17.53.21:815][365]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2020.12.02-17.53.21:835][365]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map5602DF5C475DD68F1CFCA08F6CBADFF2.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map.umap'
+[2020.12.02-17.53.21:866][365]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map_BuiltData69D451644BDDFBDF17AFDAB7E0A0DFFB.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.uasset'
+[2020.12.02-17.53.21:873][365]LogFileHelpers: Saving map 'Example_Map' took 0.100
+[2020.12.02-17.53.21:877][365]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.02-17.53.21:877][365]LogContentValidation: Display: Validating World /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map
+[2020.12.02-17.53.21:877][365]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.Example_Map_BuiltData
+[2020.12.02-17.53.23:594][466]LogUObjectHash: Compacting FUObjectHashTables data took   0.34ms
+[2020.12.02-17.53.23:613][466]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map2047A0974A54BF0ECBB0C4A715F07273.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map.umap'
+[2020.12.02-17.53.23:644][466]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map_BuiltDataF49DBAAF412B7966A19C6D9E0B995A4B.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.uasset'
+[2020.12.02-17.53.23:654][466]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.02-17.53.23:654][466]LogContentValidation: Display: Validating World /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map
+[2020.12.02-17.53.23:654][466]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.Example_Map_BuiltData
+[2020.12.02-17.53.27:300][684]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Pyramid)
+[2020.12.02-17.53.29:281][791]LogSlate: Took 0.005792 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2020.12.02-17.54.00:653][659]LogStaticMesh: Building static mesh SM_Pyramid_01...
+[2020.12.02-17.54.00:698][659]LogStaticMesh: Built static mesh [0.05s] /Game/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Pyramid_01.SM_Pyramid_01
+[2020.12.02-17.54.00:727][659]LogStaticMesh: Building static mesh SM_Cube_03...
+[2020.12.02-17.54.00:767][659]LogStaticMesh: Built static mesh [0.04s] /Game/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Cube_03.SM_Cube_03
+[2020.12.02-17.54.00:798][659]LogStaticMesh: Building static mesh SM_Cube_02...
+[2020.12.02-17.54.00:842][659]LogStaticMesh: Built static mesh [0.04s] /Game/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Cube_02.SM_Cube_02
+[2020.12.02-17.54.00:873][659]LogStaticMesh: Building static mesh SM_Cube_01...
+[2020.12.02-17.54.00:918][659]LogStaticMesh: Built static mesh [0.05s] /Game/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Cube_01.SM_Cube_01
+[2020.12.02-17.54.09:739][163]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/SM_Cube_01051C53C045D64CFC0720388DE1BC50ED.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Cube_01.uasset'
+[2020.12.02-17.54.09:766][163]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/SM_Cube_021E0C47A5483D5632DCE081A604BDACD8.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Cube_02.uasset'
+[2020.12.02-17.54.09:794][163]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/SM_Cube_037C0B731645FE85E2F0E93D94102BBC8F.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Cube_03.uasset'
+[2020.12.02-17.54.09:821][163]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/SM_Pyramid_01A1A7AD2842B9EA978D779BBB1C469BB7.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Pyramid_01.uasset'
+[2020.12.02-17.54.09:840][163]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.02-17.54.09:840][163]LogContentValidation: Display: Validating StaticMesh /Game/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Cube_01.SM_Cube_01
+[2020.12.02-17.54.09:840][163]LogContentValidation: Display: Validating StaticMesh /Game/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Cube_02.SM_Cube_02
+[2020.12.02-17.54.09:840][163]LogContentValidation: Display: Validating StaticMesh /Game/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Cube_03.SM_Cube_03
+[2020.12.02-17.54.09:840][163]LogContentValidation: Display: Validating StaticMesh /Game/EditorModeTool/MeshSwapperTool/StaticMeshes/SM_Pyramid_01.SM_Pyramid_01
+[2020.12.02-17.54.12:837][335]LogAssetEditorSubsystem: Opening Asset editor for EditorUserWidgetBlueprint /Game/EditorModeTool/BasicEditorModeTool/BasicToolKit_WG.BasicToolKit_WG
+[2020.12.02-17.54.13:337][335]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 125 classes and 0 folders.
+[2020.12.02-17.54.14:622][335]LogSlate: Took 0.005141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.12.02-17.54.16:567][443]LogSlate: Window 'BasicToolKit_WG' being destroyed
+[2020.12.02-17.54.16:574][443]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-17.54.16:574][443]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.02-17.54.16:594][443]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-17.54.16:594][443]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.02-17.54.23:309][831]LogAssetEditorSubsystem: Opening Asset editor for EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-17.54.26:603][987]LogSlate: Window 'MeshSwapperTool' being destroyed
+[2020.12.02-17.55.39:918][304]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-17.55.39:991][304]LogUObjectHash: Compacting FUObjectHashTables data took   4.09ms
+[2020.12.02-17.55.40:872][353]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool790CE3CB48D5D2E5C375AEBFB83D3E05.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-17.55.40:883][353]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-17.55.40:883][353]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-17.56.03:413][663]LogSlate: Took 0.006062 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.12.02-17.56.32:757][406]LogEditorTransaction: Undo Add Node
+[2020.12.02-17.57.12:410][732]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-17.57.12:451][732]LogUObjectHash: Compacting FUObjectHashTables data took   2.65ms
+[2020.12.02-17.57.13:009][762]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolAADE7C194D08C0DD4C2BFAA490118C2B.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-17.57.13:023][762]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-17.57.13:023][762]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-17.57.13:241][773]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool0E880D4E4193EA402BBF04B9F9295AD5.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-17.57.13:251][773]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-17.57.13:251][773]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-17.58.17:269][553]LogSlate: Took 0.005054 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2020.12.02-17.58.25:745][ 56]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-17.58.25:768][ 56]LogUObjectHash: Compacting FUObjectHashTables data took   2.38ms
+[2020.12.02-17.58.26:399][ 90]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolF451526240DF1BAE0FC7E4A35A30ABBA.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-17.58.26:411][ 90]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-17.58.26:411][ 90]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-17.58.26:582][ 99]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool40A350A14D03ACB5C8FACFB949289BF6.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-17.58.26:592][ 99]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-17.58.26:592][ 99]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-17.58.26:766][108]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool596A1489434183D23DB7528501760CD5.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-17.58.26:776][108]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-17.58.26:776][108]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.00.50:927][714]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.00.50:960][714]LogUObjectHash: Compacting FUObjectHashTables data took   3.95ms
+[2020.12.02-18.00.51:685][753]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolE41B1F194DCFF798B7C1BBA4F7B577D4.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.00.51:699][753]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.00.51:699][753]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.00.51:879][762]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolA519B99A411E8CBC69FACFA8D2691BC1.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.00.51:888][762]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.00.51:888][762]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.00.52:097][772]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool9C80CF8442A9627175FE0D9471103E8C.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.00.52:108][772]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.00.52:108][772]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.01.01:186][316]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.01.01:214][316]LogUObjectHash: Compacting FUObjectHashTables data took   2.85ms
+[2020.12.02-18.01.01:675][340]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolD0F531334D3F980A5A2651BFEA9AB4E0.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.01.01:690][340]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.01.01:690][340]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.01.01:844][347]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool72D083F1494100270FAFA09E5E03BF4A.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.01.01:855][347]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.01.01:855][347]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.01.27:100][822]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolF62AFF8C467E08090E1BB492CDAA6C62.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.01.27:112][822]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.01.27:112][822]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.01.54:941][478]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.01.54:970][478]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2020.12.02-18.01.55:530][508]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool1F65E6B44F8FC816C01AEB8D9827F4B2.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.01.55:546][508]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.01.55:546][508]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.01.55:732][516]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool9D21F8BF4C4632D201D66EB8548C5D7A.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.01.55:743][516]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.01.55:743][516]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.01.55:932][525]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool7DECE98D4DEE3B9C2631FCA85921D32E.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.01.55:945][525]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.01.55:945][525]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.01.58:736][685]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2020.12.02-18.01.58:760][685]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_MapE6D9DEEE4AC674A8DBEC2D86135C2DA5.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map.umap'
+[2020.12.02-18.01.58:786][685]LogFileHelpers: Saving map 'Example_Map' took 0.073
+[2020.12.02-18.01.58:804][685]AssetCheck: New page: Asset Save: Example_Map
+[2020.12.02-18.01.58:804][685]LogContentValidation: Display: Validating World /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map
+[2020.12.02-18.02.04:211][994]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (frozen_Room)
+[2020.12.02-18.02.42:980][294]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolD562031F4B72716607D956BCBB59BB5A.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.02.42:994][294]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.02.42:994][294]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.02.43:164][302]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolA3D49656451387D65AACBC8DA6DBE749.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.02.43:177][302]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.02.43:177][302]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.03.04:049][546]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.03.04:087][546]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2020.12.02-18.03.04:237][554]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.03.04:276][554]LogUObjectHash: Compacting FUObjectHashTables data took   2.63ms
+[2020.12.02-18.03.05:130][602]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool7128A856438BA8EF1883E6A43A190416.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.03.05:142][602]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.03.05:142][602]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.03.05:331][611]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool01E4F72E4F1C65DE6594EA897E815458.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.03.05:340][611]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.03.05:341][611]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.04.03:405][ 62]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.04.03:439][ 62]LogUObjectHash: Compacting FUObjectHashTables data took   2.32ms
+[2020.12.02-18.04.04:274][107]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool8B1C9835452FA3E8E0B58B8EA791B4A9.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.04.04:286][107]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.04.04:286][107]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.04.26:939][455]LogEditorTransaction: Undo Create Reroute Node
+[2020.12.02-18.05.08:218][886]LogEditorTransaction: Undo Add Node
+[2020.12.02-18.05.52:927][506]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.05.52:964][506]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2020.12.02-18.05.53:505][535]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool22B89ECA46FCBF4739ED149DE55AB128.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.05.53:518][535]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.05.53:518][535]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.05.53:701][543]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolCD12DA54473728448CBB08AFBCAB3BFC.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.05.53:711][543]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.05.53:711][543]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.06.03:321][100]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.06.03:358][100]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
+[2020.12.02-18.06.03:895][128]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolFBA664FA4379E3781FB4C088395A0F8E.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.06.03:908][128]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.06.03:909][128]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.06.04:080][136]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool341B81C64EA805C516DDCAAD0435030C.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.06.04:091][136]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.06.04:091][136]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.06.04:280][145]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool50AB24A348EC44F825A4D182362871AB.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.06.04:289][145]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.06.04:289][145]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.06.07:149][317]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.07:582][343]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.07:866][360]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.08:049][371]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.08:899][422]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.08:982][427]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.09:216][441]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.09:283][445]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.09:349][449]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.09:432][454]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.10:083][493]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.10:199][500]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.10:300][506]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.10:682][529]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.10:916][543]LogBlueprintUserMessages: [MeshSwapperTool_C_5] Hello
+[2020.12.02-18.06.21:391][158]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.06.21:432][158]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
+[2020.12.02-18.06.21:831][178]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool82BB2141442F568EFB419982BBDB37A3.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.06.21:844][178]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.06.21:844][178]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.06.21:980][184]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool0A5E3ECF4628397BD97DF496F4AB00E5.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.06.21:989][184]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.06.21:989][184]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.06.23:243][260]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.23:326][265]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.23:442][272]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.23:543][278]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.23:626][283]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.23:676][286]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.24:060][309]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.24:110][312]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.24:142][314]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.24:160][315]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.24:359][327]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:393][329]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:443][332]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:476][334]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:509][336]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:543][338]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:576][340]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:643][344]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:926][361]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:943][362]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:960][363]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.24:977][364]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:043][368]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:093][371]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:376][388]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:393][389]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:427][391]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:443][392]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:476][394]LogBlueprintUserMessages: [MeshSwapperTool_C_6] false
+[2020.12.02-18.06.25:510][396]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:761][411]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:778][412]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:828][415]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:844][416]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.25:877][418]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:078][430]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:111][432]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:128][433]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:178][436]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:677][466]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:711][468]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:727][469]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:761][471]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:794][473]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:811][474]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.26:844][476]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.27:077][490]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.27:144][494]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.27:211][498]LogBlueprintUserMessages: [MeshSwapperTool_C_6] true
+[2020.12.02-18.06.52:202][967]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.06.52:239][967]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
+[2020.12.02-18.06.52:436][977]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.06.52:479][977]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2020.12.02-18.06.52:946][  1]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool719248CD4BC83F3FB7920EBF8514AF0F.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.06.52:958][  1]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.06.52:958][  1]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.06.53:145][ 10]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolD53B6B0B4F36BEBAC6E46EA5CB7B5CD9.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.06.53:154][ 10]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.06.53:154][ 10]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.08.58:496][281]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.08.58:543][281]LogUObjectHash: Compacting FUObjectHashTables data took   2.93ms
+[2020.12.02-18.08.59:305][323]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool76F1E0224E20138AC1A22EAFA62A8D3B.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.08.59:320][323]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.08.59:320][323]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.08.59:488][330]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool6067B7A84D4E0C2C823B9A941950C5ED.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.08.59:497][330]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.08.59:497][330]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.08.59:724][343]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
+[2020.12.02-18.08.59:771][343]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2020.12.02-18.08.59:794][343]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map67E9F7FB403EE8648A3034AEAB8FE1F0.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map.umap'
+[2020.12.02-18.08.59:820][343]LogFileHelpers: Saving map 'Example_Map' took 0.071
+[2020.12.02-18.08.59:832][343]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map_BuiltData858381A54E5AE8FA35C420B8DC38BD66.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.uasset'
+[2020.12.02-18.08.59:854][343]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.02-18.08.59:854][343]LogContentValidation: Display: Validating World /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map
+[2020.12.02-18.08.59:854][343]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.Example_Map_BuiltData
+[2020.12.02-18.10.33:696][915]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.10.33:740][915]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2020.12.02-18.10.34:062][932]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.10.34:101][932]LogUObjectHash: Compacting FUObjectHashTables data took   2.47ms
+[2020.12.02-18.10.34:586][957]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolC33CFE9049C2E94242CBB397C2D7FD20.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.10.34:598][957]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.10.34:598][957]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.10.34:734][963]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool598F3007447A8CF74BC21D83FE00EC8F.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.10.34:745][963]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.10.34:745][963]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.10.34:919][971]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool234A3DDA47E3D24B51CAF5BD9338CCC7.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.10.34:929][971]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.10.34:929][971]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.10.35:189][986]LogUObjectHash: Compacting FUObjectHashTables data took   2.61ms
+[2020.12.02-18.10.42:088][394]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2020.12.02-18.10.43:232][394]LogSlate: Window 'Save Content' being destroyed
+[2020.12.02-18.10.43:292][394]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2020.12.02-18.10.43:310][394]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map8927A7B34EBC258F65099D9321003430.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map.umap'
+[2020.12.02-18.10.43:337][394]LogFileHelpers: Saving map 'Example_Map' took 0.065
+[2020.12.02-18.10.43:343][394]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map_BuiltData5D4DDEE2475C9582AA6EF0B3F0BABD20.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.uasset'
+[2020.12.02-18.10.43:359][394]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.02-18.10.43:359][394]LogContentValidation: Display: Validating World /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map
+[2020.12.02-18.10.43:359][394]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.Example_Map_BuiltData
+[2020.12.02-18.10.53:196][972]LogAssetEditorSubsystem: Opening Asset editor for World /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map
+[2020.12.02-18.10.53:216][972]LogUObjectHash: Compacting FUObjectHashTables data took   0.46ms
+[2020.12.02-18.10.53:218][972]Cmd: MAP LOAD FILE="../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.12.02-18.10.53:219][972]LightingResults: New page: Lighting Build
+[2020.12.02-18.10.53:219][972]LoadErrors: New page: Loading map: Example_Map.umap
+[2020.12.02-18.10.53:259][972]LogWorld: UWorld::CleanupWorld for Example_Map, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-18.10.53:259][972]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.02-18.10.53:259][972]MapCheck: New page: Map Check
+[2020.12.02-18.10.53:259][972]LightingResults: New page: Lighting Build
+[2020.12.02-18.10.53:278][972]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000275173816C0), frame # 64972
+[2020.12.02-18.10.53:279][972]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002750EB90600), frame # 64972
+[2020.12.02-18.10.53:281][972]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2020.12.02-18.10.53:290][972]LogAIModule: Creating AISystem for world Example_Map
+[2020.12.02-18.10.53:290][972]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000275172A0600), frame # 64972
+[2020.12.02-18.10.53:290][972]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000275C1F33D80), frame # 64972
+[2020.12.02-18.10.53:368][972]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.12.02-18.10.53:392][972]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
+[2020.12.02-18.10.53:418][972]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.12.02-18.10.53:419][972]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 1,228ms to complete.
+[2020.12.02-18.10.53:419][972]LogFileHelpers: Loading map 'Example_Map' took 0.202
+[2020.12.02-18.11.13:830][170]LogScript: Warning: Script Msg: Attempted to access index -1 from array 'CallFunc_ByClass_ReturnValue' of length 4 in '/Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool_C:ExecuteUbergraph_MeshSwapperTool'!
+[2020.12.02-18.11.37:058][547]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.11.37:096][547]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2020.12.02-18.11.37:486][565]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolC8F02E72432779D95EB4DBBE391C5221.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.11.37:498][565]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.11.37:499][565]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.11.37:681][573]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool1887D8464EF01DC62D2795A22C849DAB.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.11.37:692][573]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.11.37:692][573]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.11.41:259][787]LogScript: Warning: Script Msg: Attempted to access index -1 from array 'CallFunc_ByClass_ReturnValue' of length 4 in '/Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool_C:ExecuteUbergraph_MeshSwapperTool'!
+[2020.12.02-18.11.43:399][915]LogScript: Warning: Script Msg: Attempted to access index -1 from array 'CallFunc_ByClass_ReturnValue' of length 4 in '/Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool_C:ExecuteUbergraph_MeshSwapperTool'!
+[2020.12.02-18.11.44:519][982]LogScript: Warning: Script Msg: Attempted to access index -1 from array 'CallFunc_ByClass_ReturnValue' of length 4 in '/Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool_C:ExecuteUbergraph_MeshSwapperTool'!
+[2020.12.02-18.12.28:511][610]LogAssetEditorSubsystem: Opening Asset editor for World /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map
+[2020.12.02-18.12.28:531][610]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2020.12.02-18.12.29:805][610]LogSlate: Window 'Save Content' being destroyed
+[2020.12.02-18.12.29:810][610]Cmd: MAP LOAD FILE="../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.12.02-18.12.29:812][610]LightingResults: New page: Lighting Build
+[2020.12.02-18.12.29:813][610]LoadErrors: New page: Loading map: Example_Map.umap
+[2020.12.02-18.12.29:814][610]LogWorld: UWorld::CleanupWorld for Example_Map, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-18.12.29:814][610]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.02-18.12.29:814][610]MapCheck: New page: Map Check
+[2020.12.02-18.12.29:814][610]LightingResults: New page: Lighting Build
+[2020.12.02-18.12.29:838][610]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000275C1F33D80), frame # 70610
+[2020.12.02-18.12.29:838][610]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000275172A0600), frame # 70610
+[2020.12.02-18.12.29:840][610]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2020.12.02-18.12.29:848][610]LogAIModule: Creating AISystem for world Example_Map
+[2020.12.02-18.12.29:848][610]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002750EB90600), frame # 70610
+[2020.12.02-18.12.29:848][610]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000275967EFB00), frame # 70610
+[2020.12.02-18.12.29:936][610]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.12.02-18.12.29:960][610]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2020.12.02-18.12.29:987][610]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.12.02-18.12.29:987][610]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,132ms to complete.
+[2020.12.02-18.12.29:987][610]LogFileHelpers: Loading map 'Example_Map' took 0.179
+[2020.12.02-18.18.06:927][687]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.18.06:958][687]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2020.12.02-18.18.07:362][705]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool3B99117747678156B6D55599A800F6CA.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.18.07:378][705]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.18.07:378][705]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.18.07:557][713]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool1A2F24C342BED7617D8F43B113EC555C.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.18.07:568][713]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.18.07:568][713]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.19.15:888][785]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2020.12.02-18.19.15:916][785]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map2B76912846434161F05D648A6B726130.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map.umap'
+[2020.12.02-18.19.15:944][785]LogFileHelpers: Saving map 'Example_Map' took 0.079
+[2020.12.02-18.19.15:953][785]AssetCheck: New page: Asset Save: Example_Map
+[2020.12.02-18.19.15:953][785]LogContentValidation: Display: Validating World /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map
+[2020.12.02-18.19.33:940][852]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WGEFE82BFE4793EB8917F1E382589CBEB8.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.19.33:956][852]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.19.33:956][852]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.19.35:234][925]LogAssetEditorSubsystem: Opening Asset editor for EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.19.35:606][925]LogSlate: Took 0.008119 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.12.02-18.20.36:944][477]LogSlate: Window 'Color Picker' being destroyed
+[2020.12.02-18.20.39:173][597]LogSlate: Window 'Color Picker' being destroyed
+[2020.12.02-18.20.43:024][817]LogSlate: Window 'Color Picker' being destroyed
+[2020.12.02-18.20.50:658][262]BlueprintLog: New page: Compile MeshSwapperToolKit_WG
+[2020.12.02-18.20.50:692][262]LogUObjectHash: Compacting FUObjectHashTables data took   2.03ms
+[2020.12.02-18.20.51:493][303]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WG80DF4A3A4334BEEB7DCD9BAA14E1863A.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.20.51:506][303]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.20.51:506][303]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.20.51:689][312]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WGFBADD940497331D093C730B8C275EC71.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.20.51:699][312]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.20.51:699][312]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.21.00:049][761]BlueprintLog: New page: Compile MeshSwapperToolKit_WG
+[2020.12.02-18.21.00:073][761]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2020.12.02-18.21.00:864][806]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WG64DD2CF942B9E4BBB626F0B2932A12D6.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.21.00:876][806]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.21.00:876][806]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.21.01:101][817]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WG780A4DE8492A97C2E31C708D5798FE66.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.21.01:112][817]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.21.01:112][817]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.21.08:110][214]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.21.08:141][214]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2020.12.02-18.21.08:804][248]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolDD7257E34BAF50FA83204FB6CBDF2AD9.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.21.08:814][248]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.21.08:814][248]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.21.29:127][437]BlueprintLog: New page: Compile MeshSwapperToolKit_WG
+[2020.12.02-18.21.29:170][437]LogUObjectHash: Compacting FUObjectHashTables data took   2.41ms
+[2020.12.02-18.21.29:628][458]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WG3F149BBE46F01E33F2750C950AA22979.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.21.29:640][458]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.21.29:640][458]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.21.29:793][466]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WG3E7ABAB04E407D50E82963B6EEA646C7.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.21.29:803][466]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.21.29:803][466]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.21.29:976][475]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WG97A51CC041C51FEDC6758C8265DA5DF2.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.21.29:986][475]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.21.29:986][475]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.21.33:910][708]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2020.12.02-18.21.33:929][708]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_MapEE0B2AC449118C074E1EDDBDB259C0DC.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map.umap'
+[2020.12.02-18.21.33:965][708]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map_BuiltData8E1440684E233BC15DBB2C95DFB7B875.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.uasset'
+[2020.12.02-18.21.33:980][708]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.02-18.21.33:980][708]LogContentValidation: Display: Validating World /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map
+[2020.12.02-18.21.33:980][708]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.Example_Map_BuiltData
+[2020.12.02-18.22.05:134][539]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.12.02-18.22.21:447][489]LogEditorTransaction: Undo Add Node
+[2020.12.02-18.25.04:511][367]LogEditorTransaction: Undo Create Pin Link
+[2020.12.02-18.25.30:423][873]BlueprintLog: New page: Compile MeshSwapperToolKit_WG
+[2020.12.02-18.25.30:472][873]LogUObjectHash: Compacting FUObjectHashTables data took   2.20ms
+[2020.12.02-18.25.31:039][903]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WG7B8DA74D44DDBE59BA7D788D6720101E.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.25.31:051][903]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.25.31:051][903]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.25.31:221][911]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WG169D0158471BD42000E835B5758DCDA9.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.25.31:230][911]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.25.31:230][911]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.26.04:630][897]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2020.12.02-18.26.04:652][897]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map7D9115AF4F4306028C84F78B0058B6AD.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map.umap'
+[2020.12.02-18.26.04:689][897]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map_BuiltDataC875636545C64B42AFDCDB8CCBDECBD6.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.uasset'
+[2020.12.02-18.26.04:705][897]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.02-18.26.04:705][897]LogContentValidation: Display: Validating World /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map
+[2020.12.02-18.26.04:705][897]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/EditorModeTool/MeshSwapperTool/Example_Map_BuiltData.Example_Map_BuiltData
+[2020.12.02-18.26.18:089][677]LogUObjectGlobals: Warning: Guid referenced by ArrowComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Light.ArrowComponent0 is already used by ArrowComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Light.ArrowComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:089][677]LogUObjectGlobals: Warning: Guid referenced by ArrowComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.PlayerStart_1.Arrow is already used by ArrowComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.PlayerStart_1.Arrow, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:089][677]LogUObjectGlobals: Warning: Guid referenced by BillboardComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.PlayerStart_1.Sprite is already used by BillboardComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.PlayerStart_1.Sprite, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:089][677]LogUObjectGlobals: Warning: Guid referenced by BillboardComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.PlayerStart_1.Sprite2 is already used by BillboardComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.PlayerStart_1.Sprite2, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:089][677]LogUObjectGlobals: Warning: Guid referenced by BillboardComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.SkyLight_1.Sprite is already used by BillboardComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.SkyLight_1.Sprite, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:089][677]LogUObjectGlobals: Warning: Guid referenced by BrushComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.LightmassImportanceVolume_1.BrushComponent0 is already used by BrushComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.LightmassImportanceVolume_1.BrushComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:089][677]LogUObjectGlobals: Warning: Guid referenced by BrushComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.PostProcess.BrushComponent0 is already used by BrushComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.PostProcess.BrushComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:089][677]LogUObjectGlobals: Warning: Guid referenced by CapsuleComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.PlayerStart_1.CollisionCapsule is already used by CapsuleComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.PlayerStart_1.CollisionCapsule, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:089][677]LogUObjectGlobals: Warning: Guid referenced by DirectionalLightComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Light.LightComponent0 is already used by DirectionalLightComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Light.LightComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by SkyLightComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.SkyLight_1.SkyLightComponent0 is already used by SkyLightComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.SkyLight_1.SkyLightComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Ball.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Ball.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_0.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_0.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_1.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_1.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_10.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_10.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_11.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_11.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_2.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_2.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_3.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_3.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_4.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_4.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:090][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_5.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_5.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:091][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_6.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_6.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:091][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_7.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_7.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:091][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_8.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_8.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:091][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Cube_9.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Cube_9.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:091][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.frozen_Room_0.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.frozen_Room_0.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:091][677]LogUObjectGlobals: Warning: Guid referenced by StaticMeshComponent /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map:PersistentLevel.Pyramid.StaticMeshComponent0 is already used by StaticMeshComponent /Game/EditorModeTool/MeshSwapperTool/Example_Map.Example_Map:PersistentLevel.Pyramid.StaticMeshComponent0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2020.12.02-18.26.18:253][685]LogAssetEditorSubsystem: Opening Asset editor for World /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map
+[2020.12.02-18.26.18:275][685]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2020.12.02-18.26.18:277][685]Cmd: MAP LOAD FILE="../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/BasicEditorModeTool/Example_Map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.12.02-18.26.18:277][685]LightingResults: New page: Lighting Build
+[2020.12.02-18.26.18:278][685]LoadErrors: New page: Loading map: Example_Map.umap
+[2020.12.02-18.26.18:278][685]LogWorld: UWorld::CleanupWorld for Example_Map, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-18.26.18:278][685]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.02-18.26.18:278][685]MapCheck: New page: Map Check
+[2020.12.02-18.26.18:278][685]LightingResults: New page: Lighting Build
+[2020.12.02-18.26.18:298][685]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000275967EFB00), frame # 101685
+[2020.12.02-18.26.18:298][685]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002750EB90600), frame # 101685
+[2020.12.02-18.26.18:300][685]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2020.12.02-18.26.18:402][685]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.12.02-18.26.18:402][685]LogAIModule: Creating AISystem for world Example_Map
+[2020.12.02-18.26.18:402][685]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002760B3EC800), frame # 101685
+[2020.12.02-18.26.18:402][685]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000275FC2E2C00), frame # 101685
+[2020.12.02-18.26.18:428][685]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2020.12.02-18.26.18:455][685]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.12.02-18.26.18:456][685]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 1,288ms to complete.
+[2020.12.02-18.26.18:456][685]LogFileHelpers: Loading map 'Example_Map' took 0.181
+[2020.12.02-18.28.29:663][472]BlueprintLog: New page: Compile MeshSwapperTool
+[2020.12.02-18.28.29:705][472]LogUObjectHash: Compacting FUObjectHashTables data took   2.70ms
+[2020.12.02-18.28.30:298][501]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool4B5CC6A04BE4D3DF579C83BF95ACC7DE.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.28.30:311][501]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.28.30:311][501]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.28.30:476][508]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool7D6342424293BFF91C1C61BF734DF808.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.28.30:485][508]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.28.30:485][508]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.28.30:661][516]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperTool8924A86F4242BADD1AC87CAB45D1F8F8.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperTool.uasset'
+[2020.12.02-18.28.30:677][516]AssetCheck: New page: Asset Save: MeshSwapperTool
+[2020.12.02-18.28.30:677][516]LogContentValidation: Display: Validating EditorModeToolUtilityBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperTool.MeshSwapperTool
+[2020.12.02-18.32.27:228][411]LogUObjectHash: Compacting FUObjectHashTables data took   2.60ms
+[2020.12.02-18.32.27:279][411]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2020.12.02-18.32.27:302][411]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_MapB129F427441C6AF33894ECBC72C6B7E6.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/BasicEditorModeTool/Example_Map.umap'
+[2020.12.02-18.32.27:330][411]LogFileHelpers: Saving map 'Example_Map' took 0.075
+[2020.12.02-18.32.27:340][411]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/Example_Map_BuiltDataBCF0F5D64C027D61644F0FA8322BDF8B.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/BasicEditorModeTool/Example_Map_BuiltData.uasset'
+[2020.12.02-18.32.27:359][411]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.02-18.32.27:360][411]LogContentValidation: Display: Validating World /Game/EditorModeTool/BasicEditorModeTool/Example_Map.Example_Map
+[2020.12.02-18.32.27:360][411]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/EditorModeTool/BasicEditorModeTool/Example_Map_BuiltData.Example_Map_BuiltData
+[2020.12.02-18.32.51:450][806]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
+[2020.12.02-18.32.53:166][806]LogSlate: Window 'Save Content' being destroyed
+[2020.12.02-18.33.06:809][613]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2020.12.02-18.33.07:836][613]LogSlate: Window 'Save Content' being destroyed
+[2020.12.02-18.33.07:911][613]LogSavePackage: Moving '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Saved/MeshSwapperToolKit_WGDBB8C2904EDBECE017A8049F50BAF68F.tmp' to '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Content/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.uasset'
+[2020.12.02-18.33.07:946][613]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-18.33.07:946][613]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.02-18.33.07:980][613]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-18.33.07:980][613]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.02-18.33.07:982][613]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-18.33.07:982][613]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.02-18.33.08:082][613]LogSlate: Window 'EditorScriptingTools - Unreal Editor' being destroyed
+[2020.12.02-18.33.08:184][613]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
+[2020.12.02-18.33.08:185][613]LogDirectoryWatcher: A directory notification for '../../../../../../Users/UbiWork/Downloads/EditorScriptingToolsProject_v0.1/Plugins/' was aborted.
+[2020.12.02-18.33.08:275][613]AssetCheck: New page: Asset Save: MeshSwapperToolKit_WG
+[2020.12.02-18.33.08:276][613]LogContentValidation: Display: Validating EditorUserWidgetBlueprint /Game/EditorModeTool/MeshSwapperTool/MeshSwapperToolKit_WG.MeshSwapperToolKit_WG
+[2020.12.02-18.33.08:281][614]Cmd: QUIT_EDITOR
+[2020.12.02-18.33.08:281][614]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2020.12.02-18.33.08:290][614]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2020.12.02-18.33.08:309][614]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2020.12.02-18.33.08:325][614]LogExit: Preparing to exit.
+[2020.12.02-18.33.09:143][614]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-18.33.09:144][614]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-18.33.09:168][614]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2020.12.02-18.33.09:174][614]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2020.12.02-18.33.09:174][614]LogExit: Editor shut down
+[2020.12.02-18.33.09:175][614]LogExit: Transaction tracking system shut down
+[2020.12.02-18.33.09:351][614]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (000002750B091380), frame # 115614
+[2020.12.02-18.33.09:351][614]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002750AFEC680), frame # 115614
+[2020.12.02-18.33.09:351][614]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002750B005C00), frame # 115614
+[2020.12.02-18.33.09:376][614]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000275FC2E2C00), frame # 115614
+[2020.12.02-18.33.09:376][614]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002760B3EC800), frame # 115614
+[2020.12.02-18.33.09:438][614]LogExit: Object subsystem successfully closed.
+[2020.12.02-18.33.09:463][614]LogShaderCompilers: Display: Shaders left to compile 0
+[2020.12.02-18.33.09:498][614]LogModuleManager: Shutting down and abandoning module SequencerWidgets (802)
+[2020.12.02-18.33.09:498][614]LogModuleManager: Shutting down and abandoning module BlueprintGraph (800)
+[2020.12.02-18.33.09:498][614]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (798)
+[2020.12.02-18.33.09:498][614]LogModuleManager: Shutting down and abandoning module NewLevelDialog (796)
+[2020.12.02-18.33.09:498][614]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (794)
+[2020.12.02-18.33.09:498][614]LogModuleManager: Shutting down and abandoning module SceneOutliner (792)
+[2020.12.02-18.33.09:498][614]LogModuleManager: Shutting down and abandoning module AddContentDialog (790)
+[2020.12.02-18.33.09:498][614]LogModuleManager: Shutting down and abandoning module WidgetCarousel (789)
+[2020.12.02-18.33.09:498][614]LogModuleManager: Shutting down and abandoning module EditorWidgets (786)
+[2020.12.02-18.33.09:498][614]LogModuleManager: Shutting down and abandoning module CollectionManager (784)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (782)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module StatsViewer (780)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (778)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module FoliageEdit (776)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module LandscapeEditor (774)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module MeshPaintMode (772)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (770)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module ActorPickerMode (768)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (766)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (764)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module AutomationWorker (762)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module SteamVREditor (760)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module OculusMR (758)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module GooglePADEditor (756)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (754)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (752)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (750)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (748)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (746)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (744)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (742)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (740)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (738)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module WebMMedia (736)
+[2020.12.02-18.33.09:499][614]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (734)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (732)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module SequenceRecorder (731)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (728)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (726)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (724)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (722)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (720)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (718)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (716)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (714)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (712)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (710)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module PlanarCut (708)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module CharacterAI (706)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module TextureAlignMode (704)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module BspMode (702)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module PlacementMode (701)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module GeometryMode (698)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (696)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module SmartSnapping (694)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module SessionServices (692)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module MeshPaint (690)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module ViewportSnapping (688)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module ViewportInteraction (686)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module ClothPainter (684)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (683)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module LogVisualizer (680)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module IntroTutorials (678)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (677)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (674)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (672)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (670)
+[2020.12.02-18.33.09:500][614]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (669)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (666)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (664)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (662)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (660)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module TraceInsights (658)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module TraceServices (657)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (654)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (652)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module InputBindingEditor (650)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module MergeActors (648)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (646)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module LocalizationService (645)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module HardwareTargeting (642)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (640)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module UndoHistory (638)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module XmlParser (636)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module Blutility (634)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (632)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (631)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (628)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module SettingsEditor (626)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module ProjectLauncher (624)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module SessionFrontend (622)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module ProfilerClient (620)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module DeviceManager (618)
+[2020.12.02-18.33.10:269][614]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (617)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module AutomationController (614)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module AutomationWindow (612)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module Layers (610)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (608)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module DetailCustomizations (606)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module PackagesDialog (604)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (602)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module Persona (600)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (599)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module AnimGraph (597)
+[2020.12.02-18.33.10:302][614]LogModuleManager: Shutting down and abandoning module Kismet (594)
+[2020.12.02-18.33.10:311][614]LogModuleManager: Shutting down and abandoning module KismetWidgets (593)
+[2020.12.02-18.33.10:311][614]LogModuleManager: Shutting down and abandoning module GraphEditor (590)
+[2020.12.02-18.33.10:311][614]LogModuleManager: Shutting down and abandoning module StructViewer (588)
+[2020.12.02-18.33.10:311][614]LogModuleManager: Shutting down and abandoning module ClassViewer (586)
+[2020.12.02-18.33.10:313][614]LogModuleManager: Shutting down and abandoning module Toolbox (584)
+[2020.12.02-18.33.10:313][614]LogModuleManager: Shutting down and abandoning module ModuleUI (582)
+[2020.12.02-18.33.10:313][614]LogModuleManager: Shutting down and abandoning module OutputLog (580)
+[2020.12.02-18.33.10:313][614]LogModuleManager: Shutting down and abandoning module GammaUI (578)
+[2020.12.02-18.33.10:313][614]LogModuleManager: Shutting down and abandoning module Documentation (576)
+[2020.12.02-18.33.10:313][614]LogModuleManager: Shutting down and abandoning module LiveCoding (574)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module LevelSequence (572)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (570)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module MovieScene (568)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (566)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module LauncherPlatform (564)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module AnalyticsET (562)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module PortalServices (560)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module PortalRpc (558)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module MessagingRpc (556)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (554)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module AudioMixerCore (553)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module AIModule (550)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module GameplayDebugger (549)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module AITestSuite (547)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module NavigationSystem (545)
+[2020.12.02-18.33.10:314][614]LogModuleManager: Shutting down and abandoning module ProfilerService (542)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module TaskGraph (540)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module EditorScriptingTools (538)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module ScreenshotTools (536)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module SynthesisEditor (534)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module Synthesis (532)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (530)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (528)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module OculusEditor (526)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module OculusInput (524)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (522)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module GooglePAD (520)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module EditableMesh (518)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (516)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module CableComponent (514)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module AudioCapture (512)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (511)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module AssetTags (508)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (506)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (504)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module AppleImageUtils (502)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module AndroidPermission (500)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (498)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (496)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module TemplateSequence (494)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineEditor (492)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineRenderPasses (490)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineSettings (488)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineCore (486)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (485)
+[2020.12.02-18.33.10:530][614]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (482)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (480)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MediaCompositing (478)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module ImgMedia (476)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (474)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (472)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (470)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (468)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (466)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (464)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (462)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MeshConversion (460)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module DynamicMesh (458)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (456)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module GeometricObjects (454)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (452)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (451)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (448)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (446)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (444)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (442)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module ChaosNiagara (440)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module FractureEditor (438)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (436)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module ChaosCloth (434)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module BackChannel (432)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (430)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module AutomationUtils (428)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module AlembicImporter (426)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module AlembicLibrary (425)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module GeometryCache (424)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (423)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (418)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (416)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (414)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module PluginBrowser (412)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (410)
+[2020.12.02-18.33.10:531][614]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (408)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (406)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module CurveEditorTools (404)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (402)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module CryptoKeys (400)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (398)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (396)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module UObjectPlugin (394)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (392)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (390)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (388)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (386)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module GitSourceControl (384)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module SourceControl (383)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (380)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (378)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (376)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (374)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (372)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (370)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (368)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module Paper2DEditor (366)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module SoundFields (364)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module SignificanceManager (362)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (360)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (358)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (354)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module ActorSequence (352)
+[2020.12.02-18.33.10:532][614]LogModuleManager: Shutting down and abandoning module UdpMessaging (350)
+[2020.12.02-18.33.10:633][614]LogModuleManager: Shutting down and abandoning module TcpMessaging (348)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (346)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (344)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (342)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (340)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (338)
+[2020.12.02-18.33.10:734][614]LogMagicLeapPlanes: Planes tracker already destroyed.
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (336)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (334)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (332)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (330)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapController (328)
+[2020.12.02-18.33.10:734][614]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (326)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module MagicLeapAR (324)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module AugmentedReality (323)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (320)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module Niagara (318)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module SignalProcessing (317)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module NiagaraEditor (315)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module NiagaraCore (312)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (310)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (308)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module FacialAnimation (306)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module DataValidation (304)
+[2020.12.02-18.33.10:734][614]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (302)
+[2020.12.02-18.33.10:735][614]LogModuleManager: Shutting down and abandoning module LevelEditor (301)
+[2020.12.02-18.33.10:735][614]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (300)
+[2020.12.02-18.33.10:735][614]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (298)
+[2020.12.02-18.33.10:735][614]LogModuleManager: Shutting down and abandoning module MainFrame (296)
+[2020.12.02-18.33.10:735][614]LogModuleManager: Shutting down and abandoning module HotReload (295)
+[2020.12.02-18.33.10:736][614]LogModuleManager: Shutting down and abandoning module ToolMenus (291)
+[2020.12.02-18.33.10:736][614]LogModuleManager: Shutting down and abandoning module TreeMap (289)
+[2020.12.02-18.33.10:736][614]LogModuleManager: Shutting down and abandoning module AnimationSharing (286)
+[2020.12.02-18.33.10:736][614]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (284)
+[2020.12.02-18.33.10:736][614]LogModuleManager: Shutting down and abandoning module Paper2D (282)
+[2020.12.02-18.33.10:736][614]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (280)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (278)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (276)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module PacketHandler (274)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (272)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (270)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module MediaAssets (268)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module Overlay (266)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module OverlayEditor (265)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module VREditor (262)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module StringTableEditor (260)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (258)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (256)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module FunctionalTesting (254)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (252)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module UMG (250)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module UMGEditor (249)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module MessageLog (247)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module MaterialEditor (245)
+[2020.12.02-18.33.10:737][614]LogModuleManager: Shutting down and abandoning module ContentBrowser (244)
+[2020.12.02-18.33.10:738][614]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (243)
+[2020.12.02-18.33.10:738][614]LogModuleManager: Shutting down and abandoning module SlateReflector (236)
+[2020.12.02-18.33.10:738][614]LogModuleManager: Shutting down and abandoning module Slate (234)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module SlateCore (232)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (230)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module UnrealEd (228)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module MRMesh (226)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (224)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (222)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module XAudio2 (220)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module Networking (218)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module Core (216)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module MovieSceneTools (214)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module CurveEditor (213)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module Sequencer (211)
+[2020.12.02-18.33.10:739][614]LogModuleManager: Shutting down and abandoning module EditorStyle (210)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module KismetCompiler (206)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module MeshBuilder (204)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module MeshUtilities (202)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (201)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (200)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (199)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (197)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (195)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (193)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module MaterialBaking (189)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (184)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module DerivedDataCache (182)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module XGEController (180)
+[2020.12.02-18.33.10:741][614]LogXGEController: Cleaning working directory: C:/Users/UbiWork/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module TargetPlatform (178)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (177)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (175)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (173)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (171)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (169)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (167)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (165)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (163)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (161)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (159)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module ImageWrapper (158)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (155)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (153)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (151)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (149)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (147)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (145)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (143)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (141)
+[2020.12.02-18.33.10:741][614]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (139)
+[2020.12.02-18.33.10:742][614]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (137)
+[2020.12.02-18.33.10:743][614]LogModuleManager: Shutting down and abandoning module LinuxAArch64ServerTargetPlatform (135)
+[2020.12.02-18.33.10:743][614]LogModuleManager: Shutting down and abandoning module LinuxAArch64ClientTargetPlatform (133)
+[2020.12.02-18.33.10:743][614]LogModuleManager: Shutting down and abandoning module LinuxAArch64NoEditorTargetPlatform (131)
+[2020.12.02-18.33.10:743][614]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (129)
+[2020.12.02-18.33.10:743][614]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (127)
+[2020.12.02-18.33.10:743][614]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (125)
+[2020.12.02-18.33.10:743][614]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
+[2020.12.02-18.33.10:743][614]LogModuleManager: Shutting down and abandoning module Messaging (121)
+[2020.12.02-18.33.10:743][614]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (119)
+[2020.12.02-18.33.10:744][614]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (117)
+[2020.12.02-18.33.10:749][614]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (115)
+[2020.12.02-18.33.10:749][614]LogModuleManager: Shutting down and abandoning module InputCore (112)
+[2020.12.02-18.33.10:749][614]LogModuleManager: Shutting down and abandoning module Settings (110)
+[2020.12.02-18.33.10:749][614]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (108)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module PhysXCooking (106)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module ChaosSolvers (104)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (103)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module Chaos (100)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (98)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (97)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module AVEncoder (96)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (92)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module SteamVRInput (90)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module SteamVR (88)
+[2020.12.02-18.33.10:750][614]LogHMD: Freeing OpenVRDLLHandle.
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module OculusHMD (86)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (84)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (82)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2020.12.02-18.33.10:750][614]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (76)
+[2020.12.02-18.33.10:752][614]LogModuleManager: Shutting down and abandoning module XMPP (71)
+[2020.12.02-18.33.10:752][614]LogModuleManager: Shutting down and abandoning module WebSockets (70)
+[2020.12.02-18.33.10:786][614]LogModuleManager: Shutting down and abandoning module HTTP (67)
+[2020.12.02-18.33.10:786][614]LogHttp: Display: Http module shutting down, but needs to wait on 2 outstanding Http requests:
+[2020.12.02-18.33.10:786][614]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD6EEF5C9-4872-4BC7-53D9-44A237F033D0%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=eaae1e3f42dafeb3607841a00abde8c1%7Ca7e6f56e128c4ee7813b73bc37aa04f6%7Cb81feee1-e6c8-4960-ace2-179d680db0e3&AppEnvironment=datacollector-source&UploadType=eteventstream] refs=[1] status=Processing
+[2020.12.02-18.33.10:786][614]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD6EEF5C9-4872-4BC7-53D9-44A237F033D0%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=eaae1e3f42dafeb3607841a00abde8c1%7Ca7e6f56e128c4ee7813b73bc37aa04f6%7Cb81feee1-e6c8-4960-ace2-179d680db0e3&AppEnvironment=datacollector-source&UploadType=eteventstream] refs=[1] status=Processing
+[2020.12.02-18.33.10:808][614]LogModuleManager: Shutting down and abandoning module SSL (66)
+[2020.12.02-18.33.10:809][614]LogModuleManager: Shutting down and abandoning module WmfMedia (62)
+[2020.12.02-18.33.10:810][614]LogModuleManager: Shutting down and abandoning module Media (61)
+[2020.12.02-18.33.10:811][614]LogModuleManager: Shutting down and abandoning module MagicLeap (58)
+[2020.12.02-18.33.10:811][614]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (56)
+[2020.12.02-18.33.10:811][614]LogModuleManager: Shutting down and abandoning module NiagaraShader (54)
+[2020.12.02-18.33.10:811][614]LogModuleManager: Shutting down and abandoning module VariantManagerContent (52)
+[2020.12.02-18.33.10:811][614]LogModuleManager: Shutting down and abandoning module DatasmithContent (50)
+[2020.12.02-18.33.10:811][614]LogModuleManager: Shutting down and abandoning module AISupportModule (48)
+[2020.12.02-18.33.10:811][614]LogModuleManager: Shutting down and abandoning module DesktopPlatform (46)
+[2020.12.02-18.33.10:811][614]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (44)
+[2020.12.02-18.33.10:812][614]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (42)
+[2020.12.02-18.33.10:812][614]LogModuleManager: Shutting down and abandoning module PlatformCrypto (40)
+[2020.12.02-18.33.10:812][614]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2020.12.02-18.33.10:812][614]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2020.12.02-18.33.10:812][614]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2020.12.02-18.33.10:812][614]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2020.12.02-18.33.10:812][614]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2020.12.02-18.33.10:812][614]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2020.12.02-18.33.10:812][614]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2020.12.02-18.33.10:813][614]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2020.12.02-18.33.10:813][614]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2020.12.02-18.33.10:815][614]LogD3D11RHI: Shutdown
+[2020.12.02-18.33.10:815][614]LogD3D11RHI: CleanupD3DDevice
+[2020.12.02-18.33.10:830][614]LogExit: Exiting.
+[2020.12.02-18.33.10:852][614]Log file closed, 12/02/20 19:33:10

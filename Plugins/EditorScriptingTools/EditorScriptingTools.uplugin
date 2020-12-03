@@ -1,0 +1,35 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Editor Scripting Tools",
+	"Description": "",
+	"Category": "Scripting",
+	"CreatedBy": "Elhoussine Mehnik",
+	"CreatedByURL": "http://ue4resources.com",
+	"DocsURL": "http://ue4resources.com",
+	"MarketplaceURL": "http://ue4resources.com",
+	"SupportURL": "mailto:ue4resources@gmail.com",
+	"EngineVersion": "4.26.0",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "EditorScriptingTools",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "ProceduralMeshComponent",
+			"Enabled": true
+		}
+	]
+}
