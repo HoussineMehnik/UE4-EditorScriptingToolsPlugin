@@ -8,8 +8,6 @@
 #include "HitProxiesTypes.h"
 #include "HitProxiesBlueprintLibrary.generated.h"
 
-class UActorComponent;
-class AActor;
 
 UCLASS()
 class UHitProxiesBlueprintLibrary : public UBlueprintFunctionLibrary

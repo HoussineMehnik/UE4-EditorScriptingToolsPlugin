@@ -10,13 +10,6 @@
 #include "LevelEditingViewportBlueprintLibrary.generated.h"
 
 
-class UEditorModeToolInstance;
-class UEditorUserDefinedSettings;
-class AActor;
-class UPrimitiveComponent;
-class UFont;
-
-
 /**
  *
  */
@@ -125,7 +118,7 @@ public:
 
 	/* Check if we are hovering over a specified component*/
 	UFUNCTION(BlueprintPure, Category = "Editor Scripting | Editing Viewport"/*, meta = (DisplayName = "", Keywords = "")*/)
-		static bool IsPrimitiveComponentUnderCursor(UPrimitiveComponent* InPrimComponent);
+		static bool IsPrimitiveComponentUnderCursor(class UPrimitiveComponent* InPrimComponent);
 
 
 	/**

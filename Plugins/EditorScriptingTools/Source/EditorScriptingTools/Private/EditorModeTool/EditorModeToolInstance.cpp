@@ -5,7 +5,6 @@
 #include "EditorModeToolInstance.h"
 #include "BluEdMode.h"
 #include "Editor.h"
-#include "Engine/Engine.h"
 #include "Editor/EditorEngine.h"
 #include "HitProxiesTypes.h"
 #include "CanvasTypes.h"

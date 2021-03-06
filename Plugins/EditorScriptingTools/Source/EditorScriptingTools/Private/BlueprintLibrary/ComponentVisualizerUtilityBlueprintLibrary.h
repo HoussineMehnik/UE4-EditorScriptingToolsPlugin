@@ -6,9 +6,9 @@
 
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "EditorTypesWrapperTypes.h"
+#include "Components/ActorComponent.h"
 #include "ComponentVisualizerUtilityBlueprintLibrary.generated.h"
 
-class UActorComponent;
 
 UCLASS()
 class UComponentVisualizerUtilityBlueprintLibrary : public UBlueprintFunctionLibrary

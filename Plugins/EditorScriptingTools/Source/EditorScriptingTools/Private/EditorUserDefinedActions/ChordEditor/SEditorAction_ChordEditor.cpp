@@ -7,7 +7,6 @@
 #include "Styling/CoreStyle.h"
 #include "Framework/Commands/InputBindingManager.h"
 #include "Widgets/Text/SlateEditableTextLayout.h"
-#include "EditorUserDefinedActions.h"
 
 #define LOCTEXT_NAMESPACE "SEditorAction_ChordEditor"
 

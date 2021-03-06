@@ -11,10 +11,6 @@
 #include "EditorMeshBlueprintLibrary.generated.h"
 
 
-class UProceduralMeshComponent;
-class UStaticMeshComponent;
-class UStaticMesh;
-
 UCLASS(MinimalAPI, meta = (ScriptName = "EditorProceduralMeshLibrary"))
 class UEditorMeshBlueprintLibrary : public UBlueprintFunctionLibrary
 {
@@ -23,11 +19,5 @@ class UEditorMeshBlueprintLibrary : public UBlueprintFunctionLibrary
 public:
 
 	UFUNCTION(BlueprintCallable, Category = "Editor Scripting | Procedural Mesh")
-		static bool ConvertProceduralMeshToStaticMesh(UProceduralMeshComponent* ProceduralMeshComponent, UStaticMesh*& OutStaticMesh);
-
-	UFUNCTION(BlueprintCallable, Category = "Editor Scripting | Procedural Mesh")
-		static void OverrideWireframeColor(UStaticMeshComponent* StaticMeshComp, FColor NewColor);
-
-	UFUNCTION(BlueprintCallable, Category = "Editor Scripting | Procedural Mesh")
-		static void ResetWireframeColor(UStaticMeshComponent* StaticMeshComp);
+		static bool ConvertProceduralMeshToStaticMesh(class UProceduralMeshComponent* ProceduralMeshComponent, class UStaticMesh*& OutStaticMesh);
 };

@@ -31,6 +31,7 @@
 #include "Widgets/Layout/SScrollBox.h"
 #include "Widgets/SNullWidget.h"
 #include "Widgets/Layout/SScaleBox.h"
+#include "Widgets/Images/SImage.h"
 #include "Kismet2/SClassPickerDialog.h"
 #include "EditorFontGlyphs.h"
 #include "Widgets/Text/STextBlock.h"
@@ -327,7 +328,7 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 								.Padding(1.0f)
 								[
 									SNew(SVerticalBox)
-									.Visibility(this, &SBluEdModeWidget::GetSectionWidgetVisibility,EBluEdModeWidgetSectionsVisibility::DetailsView)
+									.Visibility(this, &SBluEdModeWidget::GetSectionWidgetVisibility, EBluEdModeWidgetSectionsVisibility::DetailsView)
 									+ SVerticalBox::Slot()
 									.Padding(2.0f)
 									.AutoHeight()
@@ -345,6 +346,7 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 										.Visibility(this, &SBluEdModeWidget::GetApplyChangesButtonVisibility)
 										.ButtonColorAndOpacity(FLinearColor(0,0,0,.25f))
 										.OnClicked(this,&SBluEdModeWidget::OnApplyChangesToToolBlueprint)
+										.ToolTipText(LOCTEXT("ApplyChanges_ToolTip", "Apply changes to blueprint."))
 										[
 											SNew(SImage)
 											.Image(FEditorScriptingToolsStyle::Get()->GetBrush("BluEdMode.ApplyInstanceChanges"))
@@ -589,6 +591,11 @@ bool SBluEdModeWidget::IsSectionSwitcherVisible() const
 
 bool SBluEdModeWidget::IsSectionVisible(EBluEdModeWidgetSectionsVisibility InSection) const
 {
+	if (InSection == EBluEdModeWidgetSectionsVisibility::DetailsView)
+	{
+		return IsDetailsWidgetDisplayingAnyProperty();
+	}
+
 	return (SectionsVisibilityFlags & (1 << InSection)) != 0;
 }
 

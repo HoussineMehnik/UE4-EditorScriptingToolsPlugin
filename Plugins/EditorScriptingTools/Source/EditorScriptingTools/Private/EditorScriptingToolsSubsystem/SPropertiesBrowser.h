@@ -7,6 +7,7 @@
 #include "Widgets/SCompoundWidget.h"
 #include "Widgets/DeclarativeSyntaxSupport.h"
 #include "Templates/SubclassOf.h"
+#include "Input/Reply.h"
 
 
 class SPropertiesBrowser : public SCompoundWidget

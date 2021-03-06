@@ -4,7 +4,6 @@
 
 
 #include "LevelViewportCanvasDrawingUtils.h"
-#include "Engine.h"
 #include "Engine/Font.h"
 #include "Engine/Texture2D.h"
 #include "BluEdMode.h"
@@ -12,6 +11,7 @@
 #include "CanvasTypes.h"
 #include "Engine/Canvas.h"
 #include "EditorScriptingToolsTypes.h"
+#include "Components/BillboardComponent.h"
 
 namespace LevelViewportCanvasDrawingUtils
 {

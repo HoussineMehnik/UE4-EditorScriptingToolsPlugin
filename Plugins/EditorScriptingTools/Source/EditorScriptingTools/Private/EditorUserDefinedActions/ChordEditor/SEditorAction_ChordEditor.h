@@ -11,8 +11,8 @@
 #include "Framework/Commands/InputChord.h"
 #include "SEditorAction_ChordEditBox.h"
 #include "Widgets/Input/SEditableText.h"
+#include "EditorUserDefinedActions.h"
 
-class UEditorUserDefinedActions;
 
 /**
  * A specialized text edit box that visualizes a new chord being entered           .

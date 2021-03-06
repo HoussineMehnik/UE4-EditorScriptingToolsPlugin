@@ -4,9 +4,11 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "Widgets/SCompoundWidget.h"
 #include "Widgets/DeclarativeSyntaxSupport.h"
-
+#include "Input/Reply.h"
+#include "Layout/Visibility.h"
 
 class IDetailsView;
 class FBluEdMode;
@@ -15,6 +17,8 @@ class SBorder;
 class SVerticalBox;
 class SBox;
 class SButton;
+
+enum class EBluEdModeChangeMode : uint8;
 
 
 class SBluEdModeWidget : public SCompoundWidget

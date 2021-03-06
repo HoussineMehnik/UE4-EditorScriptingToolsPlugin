@@ -6,10 +6,11 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "Templates/SubclassOf.h"
+#include "EditorUserWidget.h"
 #include "EditorContextMenuLibrary.generated.h"
 
 class IMenu;
-class UEditorUserWidget;
 
 /**
  * 

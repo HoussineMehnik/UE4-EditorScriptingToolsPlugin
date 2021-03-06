@@ -11,6 +11,10 @@
 #include "EditorScriptingToolsTypes.generated.h"
 
 class UEditorUserDefinedSettingsUtilityBlueprint;
+class FPrimitiveDrawInterface;
+class FViewport;
+class FSceneView;
+class FCanvas;
 
 
 struct  FEditorScriptingToolsDelegates
@@ -85,38 +89,13 @@ public:
 
 struct FDrawPrimitivesContext
 {
-
-	FDrawPrimitivesContext() : PDI(nullptr)
-		, View(nullptr)
-	{
-
-	}
-
-	void Set(const FSceneView* InView, FPrimitiveDrawInterface* InPDI)
-	{
-		PDI = InPDI;
-		View = InView;
-	}
-
-	void Invalidate()
-	{
-		if (PDI != nullptr)
-		{
-			PDI->SetHitProxy(nullptr);
-		}
-
-		PDI = nullptr;
-		View = nullptr;
-	}
-
-	bool IsValid() const
-	{
-		return PDI != nullptr  && View != nullptr;
-	}
+	FDrawPrimitivesContext();
+	void Set(const FSceneView* InView, FPrimitiveDrawInterface* InPDI);
+	void Invalidate();
+	bool IsValid() const;
 
 	FPrimitiveDrawInterface* PDI;
 	const FSceneView* View;
-
 	static const FDrawPrimitivesContext InvalidContext;
 };
 
@@ -124,37 +103,13 @@ struct FDrawPrimitivesContext
 struct FDrawHUDContext
 {
 
-	FDrawHUDContext() 
-		: Viewport(nullptr)
-		, View(nullptr)
-		, Canvas(nullptr)
-	{
+	FDrawHUDContext();
 
-	}
+	void Set(const FViewport* InViewport, const FSceneView* InView, FCanvas* InCanvas);
 
-	void Set(const FViewport* InViewport, const FSceneView* InView, FCanvas* InCanvas)
-	{
-		Viewport = InViewport;
-		View = InView;
-		Canvas = InCanvas;
-	}
+	void Invalidate();
 
-	void Invalidate()
-	{
-		if (Canvas != nullptr)
-		{
-			Canvas->SetHitProxy(nullptr);
-		}
-
-		Viewport = nullptr;
-		View = nullptr;
-		Canvas = nullptr;
-	}
-
-	bool IsValid() const
-	{
-		return Viewport != nullptr && View != nullptr && Canvas != nullptr;
-	}
+	bool IsValid() const;
 
 	const FViewport* Viewport;
 	const FSceneView* View;

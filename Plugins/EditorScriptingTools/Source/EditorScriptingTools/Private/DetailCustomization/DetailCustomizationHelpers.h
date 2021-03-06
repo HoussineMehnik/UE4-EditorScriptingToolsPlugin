@@ -9,6 +9,7 @@
 
 class UEditorUserWidget;
 class UDetailCustomizationInstance;
+class FNativeDetailCustomizationInstance;
 
 class FDetailWidgetRow;
 

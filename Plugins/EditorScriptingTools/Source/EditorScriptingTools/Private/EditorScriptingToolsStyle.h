@@ -4,6 +4,8 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
+
 class ISlateStyle;
 class FSlateStyleSet;
 
