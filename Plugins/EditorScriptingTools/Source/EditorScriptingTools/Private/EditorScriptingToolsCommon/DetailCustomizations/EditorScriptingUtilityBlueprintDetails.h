@@ -5,6 +5,8 @@
 #pragma once
 
 #include "IDetailCustomization.h"
+#include "Input/Reply.h"
+#include "Layout/Visibility.h"
 
 class UEditorScriptingUtilityBlueprint;
 

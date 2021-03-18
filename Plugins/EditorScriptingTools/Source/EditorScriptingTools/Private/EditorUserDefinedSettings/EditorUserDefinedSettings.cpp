@@ -5,6 +5,9 @@
 #include "EditorUserDefinedSettings.h"
 #include "EditorUserDefinedSettingsUtilityBlueprint.h"
 #include "IEditorScriptingToolsModule.h"
+#include "Engine/World.h"
+#include "Editor/EditorEngine.h"
+#include "Editor.h"
 
 
 

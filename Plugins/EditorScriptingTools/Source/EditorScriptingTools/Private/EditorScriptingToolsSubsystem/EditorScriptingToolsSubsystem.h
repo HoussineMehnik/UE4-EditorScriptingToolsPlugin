@@ -13,13 +13,6 @@
 
 
 
-class UEditorModeToolUtilityBlueprint;
-class UComponentVisualizerUtilityBlueprint;
-class UDetailCustomizationUtilityBlueprint;
-class UEditorUserDefinedSettingsUtilityBlueprint;
-
-
-
 UCLASS(config = EditorPerProjectUserSettings)
 class UEditorScriptingToolsSubsystem : public UEditorSubsystem
 {
@@ -39,7 +32,7 @@ public:
 
 public:
 	UPROPERTY(config)
-		TSoftObjectPtr<UEditorModeToolUtilityBlueprint> LastLoadedEdModeToolBlueprint;
+		TSoftObjectPtr<class UEditorModeToolUtilityBlueprint> LastLoadedEdModeToolBlueprint;
 
 	UPROPERTY(config, EditAnywhere, BlueprintReadOnly, Category = General)
 		bool bEnableThumbnailOverlayOnRegisteredUtilities;
@@ -48,13 +41,13 @@ public:
 		bool bEnableEditingWhileSimulating;
 
 	UPROPERTY(config, EditAnywhere, Category = ComponentVisualizers)
-		TArray<TSoftObjectPtr<UComponentVisualizerUtilityBlueprint>> ComponentVisualizerUtilityBlueprints;
+		TArray<TSoftObjectPtr<class UComponentVisualizerUtilityBlueprint>> ComponentVisualizerUtilityBlueprints;
 
 	UPROPERTY(config, EditAnywhere, Category = DetailCustomizations)
-		TArray<TSoftObjectPtr<UDetailCustomizationUtilityBlueprint>> DetailCustomizationUtilityBlueprints;
+		TArray<TSoftObjectPtr<class UDetailCustomizationUtilityBlueprint>> DetailCustomizationUtilityBlueprints;
 
 	UPROPERTY(config, EditAnywhere, Category = UserDefinedSettings)
-		TArray<TSoftObjectPtr<UEditorUserDefinedSettingsUtilityBlueprint>> EditorUserDefinedSettingsUtilityBlueprints;
+		TArray<TSoftObjectPtr<class UEditorUserDefinedSettingsUtilityBlueprint>> EditorUserDefinedSettingsUtilityBlueprints;
 
 	UPROPERTY(config, EditAnywhere, Category = UserDefinedPlacementCategories)
 		TSet<FUserDefinedPlacementCategoryInfo> PlacementCategoriesInfo;

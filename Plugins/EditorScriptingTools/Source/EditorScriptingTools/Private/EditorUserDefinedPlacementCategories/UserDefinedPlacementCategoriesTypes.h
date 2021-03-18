@@ -5,7 +5,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
 #include "UserDefinedPlacementCategoriesTypes.generated.h"
+
 
 USTRUCT(BlueprintType)
 struct FUserDefinedPlacementCategoryInfo

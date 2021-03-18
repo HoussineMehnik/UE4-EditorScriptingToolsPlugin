@@ -9,7 +9,6 @@
 #include "DetailLayoutBuilder.h"
 #include "DetailWidgetRow.h"
 #include "IDetailPropertyRow.h"
-#include "Engine/Engine.h"
 #include "UnrealEngine.h"
 #include "NativeDetailCustomizationInstance.h"
 #include "EditorScriptingToolsUtils.h"

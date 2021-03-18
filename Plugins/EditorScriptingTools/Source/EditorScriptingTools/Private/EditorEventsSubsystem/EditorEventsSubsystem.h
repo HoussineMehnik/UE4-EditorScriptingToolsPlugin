@@ -16,6 +16,7 @@
 class UEditorUserDefinedActions;
 class AActor;
 
+enum class EMapChangeType : uint8;
 
 
 UENUM()

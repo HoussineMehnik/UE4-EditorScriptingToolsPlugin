@@ -6,8 +6,14 @@
 #include "EditorFontGlyphs.h"
 #include "ClassViewerFilter.h"
 #include "Widgets/Layout/SScrollBox.h"
+#include "Widgets/Text/STextBlock.h"
+#include "Widgets/SBoxPanel.h"
+#include "Widgets/Input/SComboBox.h"
+#include "Widgets/Input/SButton.h"
+#include "Widgets/Layout/SBox.h"
 #include "Kismet2/SClassPickerDialog.h"
 #include "HAL/PlatformApplicationMisc.h"
+#include "IPropertyTypeCustomization.h"
 
 #define LOCTEXT_NAMESPACE "SPropertiesBrowser"
 

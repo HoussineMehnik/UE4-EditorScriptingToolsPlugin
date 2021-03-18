@@ -6,11 +6,8 @@
 
 #include "EditorScriptingToolsStyle.h"
 
-
-
 #include "IAssetTypeActions.h"
 #include "IBlutilityModule.h"
-#
 
 #include "ISettingsModule.h"
 #include "EditorScriptingToolsSubsystem.h"
@@ -36,11 +33,9 @@
 #include "BluEdMode.h"
 #include "BluEdModeTypes.h"
 
-
 #include "EditorUserDefinedSettingsUtilityBlueprint.h"
 #include "ComponentVisualizerUtilityBlueprint.h"
 #include "ComponentVisualizerInstance.h"
-#include <NativeComponentVisualizerInstance.h>
 #include "Editor/UnrealEdEngine.h"
 #include "SEditorScriptingToolsTab.h"
 
@@ -48,8 +43,13 @@
 #include "KismetCompiler.h"
 #include "KismetCompilerModule.h"
 #include "WidgetBlueprintCompiler.h"
+
 #include "EditorUserWidgetBlueprint.h"
 #include "NativeDetailCustomizationInstancesManager.h"
+#include "NativeComponentVisualizerInstance.h"
+#include "EditorModeToolUtilityBlueprint.h"
+#include "DetailCustomizationUtilityBlueprint.h"
+#include "EditorUserDefinedActions.h"
 
 #define LOCTEXT_NAMESPACE "FEditorScriptingToolsModule"
 

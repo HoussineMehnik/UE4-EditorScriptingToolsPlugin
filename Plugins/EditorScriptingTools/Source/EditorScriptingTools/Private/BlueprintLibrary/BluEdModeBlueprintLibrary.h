@@ -8,11 +8,11 @@
 #include "UObject/ObjectMacros.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "Templates/SubclassOf.h"
+#include "UObject/SoftObjectPtr.h"
+#include "EditorModeToolUtilityBlueprint.h"
+#include "EditorModeToolInstance.h"
 #include "BluEdModeBlueprintLibrary.generated.h"
 
-
-class UEditorModeToolInstance;
-class UEditorModeToolUtilityBlueprint;
 
 UCLASS()
 class UBluEdModeBlueprintLibrary : public UBlueprintFunctionLibrary

@@ -47,7 +47,7 @@ public:
 	*
 	* @return The interface to the module, or nullptr if the module was not found.
 	*/
-	static inline IEditorScriptingToolsModule* GetPtr();
+	static IEditorScriptingToolsModule* GetPtr();
 
 	/**
 	* Returns scripting tools settings viewer tab name.

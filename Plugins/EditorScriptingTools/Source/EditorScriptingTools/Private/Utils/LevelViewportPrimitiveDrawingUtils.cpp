@@ -6,7 +6,6 @@
 #include "EditorTypesWrapperTypes.h"
 #include "BluEdMode.h"
 #include "Editor.h"
-#include "Engine/Engine.h"
 #include "Materials/MaterialInterface.h"
 #include "Materials/Material.h"
 #include "Components/SplineComponent.h"

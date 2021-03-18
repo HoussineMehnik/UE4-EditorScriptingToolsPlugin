@@ -24,6 +24,8 @@
 #include "IEditorScriptingUtilityAssetInterface.h"
 #include "EditorScriptingUtilityBlueprint.h"
 
+#include "Widgets/Images/SImage.h"
+
 
 #define LOCTEXT_NAMESPACE "AssetTypeActions"
 

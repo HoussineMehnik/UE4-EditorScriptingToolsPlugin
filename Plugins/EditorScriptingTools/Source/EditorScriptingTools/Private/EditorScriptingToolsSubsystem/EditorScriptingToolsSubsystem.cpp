@@ -11,6 +11,8 @@
 #include "EditorUserDefinedActions.h"
 #include "EditorUserDefinedSettingsUtilityBlueprint.h"
 #include "EditorUserWidgetBlueprint.h"
+#include "Editor/EditorEngine.h"
+#include "Editor.h"
 
 
 #define CHECK_UTILITY_LIST_VALIDITY(BlueprintsList)										\

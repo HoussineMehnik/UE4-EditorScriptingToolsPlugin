@@ -11,6 +11,7 @@
 #include "AssetTypeCategories.h"
 #include "Templates/SubclassOf.h"
 
+
 class UClass;
 class UObject;
 class UWorld;
@@ -21,6 +22,7 @@ class FPropertyEditorModule;
 class ISettingsModule;
 class FWorkspaceItem;
 class FSpawnTabArgs;
+class SDockTab;
 
 class UEditorModeToolUtilityBlueprint;
 class UEditorUserDefinedSettings;
@@ -30,6 +32,9 @@ class UDetailCustomizationUtilityBlueprint;
 class UEditorUserDefinedActions;
 
 class UActorComponent;
+
+typedef FName FEditorModeID;
+enum class EMapChangeType : uint8;
 
 
 class FEditorScriptingToolsModule : public IEditorScriptingToolsModule

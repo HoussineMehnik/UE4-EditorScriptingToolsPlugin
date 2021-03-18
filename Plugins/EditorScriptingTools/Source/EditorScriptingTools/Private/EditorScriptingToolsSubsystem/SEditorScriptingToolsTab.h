@@ -8,7 +8,7 @@
 #include "Widgets/Docking/SDockTab.h"
 
 class SWidget;
-
+class SBox;
 class SEditorScriptingToolsSubsystemDetailsPanel;
 
 namespace EEditorScriptingToolsTabRefreshMode

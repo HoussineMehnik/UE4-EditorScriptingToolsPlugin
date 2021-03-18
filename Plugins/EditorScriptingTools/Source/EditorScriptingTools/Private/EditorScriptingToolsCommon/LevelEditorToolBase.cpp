@@ -5,7 +5,6 @@
 
 #include "LevelEditorToolBase.h"
 #include "Editor.h"
-#include "Engine/Engine.h"
 #include "Editor/EditorEngine.h"
 #include "CanvasTypes.h"
 #include "LevelViewportPrimitiveDrawingUtils.h"

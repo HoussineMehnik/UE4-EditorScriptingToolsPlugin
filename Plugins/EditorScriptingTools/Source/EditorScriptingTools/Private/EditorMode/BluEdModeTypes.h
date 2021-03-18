@@ -5,8 +5,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Engine/Engine.h"
-//#include "BluEdModeTypes.generated.h"
 
 class FPrimitiveDrawInterface;
 class FEditorViewportClient;

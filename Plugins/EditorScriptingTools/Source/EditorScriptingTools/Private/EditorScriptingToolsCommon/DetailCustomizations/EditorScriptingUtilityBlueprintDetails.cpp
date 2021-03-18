@@ -7,7 +7,6 @@
 #include "DetailLayoutBuilder.h"
 #include "DetailWidgetRow.h"
 #include "IDetailPropertyRow.h"
-#include "Engine/Engine.h"
 #include "UnrealEngine.h"
 #include "Widgets/Input/SButton.h"
 #include "EditorScriptingToolsModule.h"

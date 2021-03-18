@@ -7,6 +7,7 @@
 
 #include "Widgets/SBoxPanel.h"
 #include "Widgets/Input/SButton.h"
+#include "Widgets/Layout/SBox.h"
 #include "Widgets/Docking/SDockTab.h"
 #include "Widgets/Input/SComboBox.h"
 #include "Widgets/Layout/SSpacer.h"
@@ -14,22 +15,26 @@
 #include "Widgets/Layout/SScrollBox.h"
 #include "Widgets/Layout/SWidgetSwitcher.h"
 #include "EditorScriptingToolsSubsystem.h"
-#include <EditorUserDefinedSettingsUtilityBlueprint.h>
+#include "EditorUserDefinedSettingsUtilityBlueprint.h"
+#include "EditorModeToolUtilityBlueprint.h"
+#include "EditorUserDefinedActions.h"
 #include "SEditorScriptingUtilityAssetSlot.h"
 #include "Widgets/Layout/SHeader.h"
 #include <PropertyEditorModule.h>
-#include <ISinglePropertyView.h>
-#include <EditorFontGlyphs.h>
-#include <BluEdMode.h>
-#include <EditorUserDefinedCommands.h>
-#include <Framework/MultiBox/MultiBoxBuilder.h>
+#include "ISinglePropertyView.h"
+#include "EditorFontGlyphs.h"
+#include "BluEdMode.h"
+#include "EditorUserDefinedCommands.h"
+#include "Framework/MultiBox/MultiBoxBuilder.h"
 #include "EditorScriptingToolsStyle.h"
-#include <SSingleObjectDetailsPanel.h>
+#include "SSingleObjectDetailsPanel.h"
 #include "EditorScriptingToolsSubsystemDetails.h"
-#include <IDetailsView.h>
+#include "IDetailsView.h"
 #include "ComponentVisualizerUtilityBlueprint.h"
 #include "IEditorScriptingToolsModule.h"
 #include "SPropertiesBrowser.h"
+#include "PropertyPath.h"
+
 
 #define LOCTEXT_NAMESPACE "SEditorScriptingToolsTab"
 

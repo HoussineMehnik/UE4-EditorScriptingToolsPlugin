@@ -7,6 +7,8 @@
 #include "Widgets/SCompoundWidget.h"
 #include "Widgets/DeclarativeSyntaxSupport.h"
 #include "Framework/SlateDelegates.h"
+#include "Input/Reply.h"
+#include "Layout/Visibility.h"
 
 struct FAssetData;
 

@@ -4,6 +4,7 @@
 
 #pragma once
 #include "AssetTypeActions_Base.h"
+#include "Layout/Visibility.h"
 
 class IEditorScriptingUtilityAssetInterface;
 

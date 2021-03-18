@@ -11,11 +11,6 @@
 #include "LevelEditorBlueprintLibrary.generated.h"
 
 
-class AActor;
-class UPrimitiveComponent;
-class USceneComponent;
-
-
 /**
  * 
  */
@@ -33,22 +28,22 @@ public:
 		static void SelectComponent(class UActorComponent* Component, bool bInSelected, bool bNotify, bool bSelectEvenIfHidden = false);
 
 	UFUNCTION(BlueprintCallable, Category = "Editor Scripting | Level Editor", meta = (DisplayName = "Select Actor", Keywords = "select actor"))
-		static void SelectActor(AActor* Actor, bool bInSelected, bool bNotify, bool bSelectEvenIfHidden = false, bool bForceRefresh = false);
+		static void SelectActor(class AActor* Actor, bool bInSelected, bool bNotify, bool bSelectEvenIfHidden = false, bool bForceRefresh = false);
 
 	UFUNCTION(BlueprintCallable, Category = "Editor Scripting | Level Editor", meta = (DisplayName = "Select None", Keywords = "select unselect deselect actor selection"))
 		static void SelectNone(bool bNoteSelectionChange, bool bDeselectBSPSurfs, bool WarnAboutManyActors = true);
 
 	UFUNCTION(BlueprintCallable, Category = "Editor Scripting | Level Editor", meta = (DisplayName = "Refresh Components Render State", Keywords = "refresh component render"))
-		static void MarkActorComponentsRenderStateDirty(AActor* Actor);
+		static void MarkActorComponentsRenderStateDirty(class AActor* Actor);
 
 	UFUNCTION(BlueprintCallable, Category = "Editor Scripting | Level Editor", meta = (DisplayName = "Rerun Actor Construction Scripts", Keywords = "run actor construction script"))
-		static void RerunActorConstructionScripts(AActor* Actor);
+		static void RerunActorConstructionScripts(class AActor* Actor);
 
 	UFUNCTION(BlueprintCallable, Category = "Editor Scripting | Level Editor", meta = (DisplayName = "Notify Actor Moved", Keywords = "notify actor editor move change transform scale rotation"))
-		static void NotifyActorMoved(AActor* Actor);
+		static void NotifyActorMoved(class AActor* Actor);
 
 	UFUNCTION(BlueprintCallable, Category = "Editor Scripting | Level Editor", meta = (DisplayName = "NotifyComponentTransformChanged", Keywords = "notify component editor move transform scale rotation"))
-		static void NotifyComponentTransformChanged(USceneComponent* Component);
+		static void NotifyComponentTransformChanged(class USceneComponent* Component);
 
 	UFUNCTION(BlueprintPure, Category = "Editor Scripting | Level Editor", meta = (DisplayName = "Get Editor State", Keywords = "editor state status play simulat idle  playing simulating PIE"))
 		static EEditorState GetEditorState();

@@ -13,7 +13,7 @@
 #include "IDetailCustomNodeBuilder.h"
 #include "IDetailsView.h"
 #include "EditorUndoClient.h"
-
+#include "Layout/Visibility.h"
 #include "Editor/UnrealEd/Public/Kismet2/EnumEditorUtils.h"
 
 class FDetailWidgetRow;

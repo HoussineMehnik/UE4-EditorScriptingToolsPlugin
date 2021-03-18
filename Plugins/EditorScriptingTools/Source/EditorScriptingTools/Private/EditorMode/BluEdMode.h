@@ -10,6 +10,7 @@
 #include "UnrealWidget.h"
 #include "BluEdModeTypes.h"
 #include "EditorScriptingToolsTypes.h"
+#include "Layout/Visibility.h"
 
 class FBluEdModeToolkit;
 
