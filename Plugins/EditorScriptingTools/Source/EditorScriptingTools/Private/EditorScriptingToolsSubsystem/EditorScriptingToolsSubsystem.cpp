@@ -47,7 +47,7 @@ UEditorScriptingToolsSubsystem::UEditorScriptingToolsSubsystem()
 
 void UEditorScriptingToolsSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
-	CheckValidity();
+
 }
 
 void UEditorScriptingToolsSubsystem::Deinitialize()

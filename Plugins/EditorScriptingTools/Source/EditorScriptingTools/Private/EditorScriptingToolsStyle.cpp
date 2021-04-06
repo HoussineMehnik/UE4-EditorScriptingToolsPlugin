@@ -42,7 +42,10 @@ FName FEditorScriptingToolsStyle::GetStyleSetName()
 
 void FEditorScriptingToolsStyle::ReloadTextures()
 {
-	FSlateApplication::Get().GetRenderer()->ReloadTextureResources();
+	if (FSlateApplication::IsInitialized())
+	{
+		FSlateApplication::Get().GetRenderer()->ReloadTextureResources();
+	}
 }
 
 BEGIN_SLATE_FUNCTION_BUILD_OPTIMIZATION
