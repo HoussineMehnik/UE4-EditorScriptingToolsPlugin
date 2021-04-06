@@ -77,6 +77,12 @@ void FEditorScriptingToolsModule::StartupModule()
 
 void FEditorScriptingToolsModule::OnPostEngineInit()
 {
+	UEditorScriptingToolsSubsystem* ScriptingToolsSubsystem = UEditorScriptingToolsSubsystem::GetSubsystem();
+	if (ScriptingToolsSubsystem)
+	{
+		ScriptingToolsSubsystem->CheckValidity();
+	}
+	
 	ExtendLevelEditorMenu();
 	RegisterAssetTypesActions();
 	RegisterCustomClassLayouts();
