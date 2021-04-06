@@ -15,7 +15,7 @@
 
 class UEditorUserDefinedActions;
 class AActor;
-
+class UWorld;
 enum class EMapChangeType : uint8;
 
 
@@ -65,6 +65,9 @@ private:
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnApplicationPreInputKeyDownEventSignature, const FKeyEvent&, KeyEvent, bool, bIsEditingViewportFocused);
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnApplicationMousePreInputButtonDownEventSignature, const FPointerEvent&, MouseEvent, bool ,bIsEditingViewportFocused);
 
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnPreSaveWorldSignature, UWorld*, World);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnPostSaveWorldSignature, UWorld*, World, bool, bSuccess);
+
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FOnExecuteActionEventSignature, UEditorUserDefinedActions*, ActionsAsset, uint8, ActionAsByte, bool, bIsRepeated);
 
 public:
@@ -107,6 +110,9 @@ private:
 
 	void HandleApplicationPreInputKeyDownListener(const FKeyEvent& InKeyEvent);
 	void HandleApplicationMousePreInputButtonDownListener(const FPointerEvent& MouseEvent);
+
+	void HandleWorldPreSaved(uint32 SaveFlags, UWorld* World);
+	void HandleWorldPostSaved(uint32 SaveFlags, UWorld* World, bool bSuccess);
 
 	void HandleActionExecuted(UEditorUserDefinedActions* ActionsAsset, int32 ActionIndex, bool bIsRepeated);
 
@@ -165,6 +171,12 @@ public:
 
 	UPROPERTY(BlueprintAssignable, Category = "Editor Scripting | Event Listener")
 		FOnApplicationMousePreInputButtonDownEventSignature OnMouseButtonDown;
+
+	UPROPERTY(BlueprintAssignable, Category = "Editor Scripting | Event Listener")
+		FOnPreSaveWorldSignature OnPreSaveWorld;
+
+	UPROPERTY(BlueprintAssignable, Category = "Editor Scripting | Event Listener")
+		FOnPostSaveWorldSignature OnPostSaveWorld;
 
 	UPROPERTY(BlueprintAssignable, Category = "Editor Scripting | Event Listener")
 		FOnExecuteActionEventSignature OnExecuteUserDefinedAction;

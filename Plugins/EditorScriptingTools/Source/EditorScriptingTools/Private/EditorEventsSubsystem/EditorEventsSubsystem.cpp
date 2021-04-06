@@ -47,7 +47,8 @@ void UEditorEventsSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 		FEditorDelegates::OnPreSwitchBeginPIEAndSIE.AddUObject(this, &UEditorEventsSubsystem::HandlePreSwitchBeginPIEAndSIE);
 		FEditorDelegates::OnSwitchBeginPIEAndSIE.AddUObject(this, &UEditorEventsSubsystem::HandleSwitchBeginPIEAndSIE);
 		FEditorDelegates::OnAssetsPreDelete.AddUObject(this, &UEditorEventsSubsystem::HandleAssetsPreDelete);
-
+		FEditorDelegates::PreSaveWorld.AddUObject(this, &UEditorEventsSubsystem::HandleWorldPreSaved);
+		FEditorDelegates::PostSaveWorld.AddUObject(this, &UEditorEventsSubsystem::HandleWorldPostSaved);
 	}
 
 	{
@@ -94,6 +95,8 @@ void UEditorEventsSubsystem::Deinitialize()
 		FEditorDelegates::OnPreSwitchBeginPIEAndSIE.RemoveAll(this);
 		FEditorDelegates::OnSwitchBeginPIEAndSIE.RemoveAll(this);
 		FEditorDelegates::OnAssetsPreDelete.RemoveAll(this);
+		FEditorDelegates::PreSaveWorld.RemoveAll(this);
+		FEditorDelegates::PostSaveWorld.RemoveAll(this);
 	}
 
 	{
@@ -251,6 +254,16 @@ void UEditorEventsSubsystem::HandleApplicationPreInputKeyDownListener(const FKey
 void UEditorEventsSubsystem::HandleApplicationMousePreInputButtonDownListener(const FPointerEvent& MouseEvent)
 {
 	OnMouseButtonDown.Broadcast(MouseEvent, LevelEditingViewportUtils::IsEditingViewportFocused());
+}
+
+void UEditorEventsSubsystem::HandleWorldPreSaved(uint32 SaveFlags, UWorld* World)
+{
+	OnPreSaveWorld.Broadcast(World);
+}
+
+void UEditorEventsSubsystem::HandleWorldPostSaved(uint32 SaveFlags, UWorld* World, bool bSuccess)
+{
+	OnPostSaveWorld.Broadcast(World, bSuccess);
 }
 
 void UEditorEventsSubsystem::HandleActionExecuted(UEditorUserDefinedActions* ActionsAsset, int32 ActionIndex , bool bIsRepeated)
