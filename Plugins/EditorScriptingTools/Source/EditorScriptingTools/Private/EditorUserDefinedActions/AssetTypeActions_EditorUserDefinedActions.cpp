@@ -14,6 +14,7 @@
 #include "EditorUserDefinedActions.h"
 #include "EditorUserDefinedCommands.h"
 #include "EditorScriptingToolsStyle.h"
+#include "EditorScriptingToolsTypes.h"
 
 #define LOCTEXT_NAMESPACE "AssetTypeActions_EditorUserDefinedActions"
 

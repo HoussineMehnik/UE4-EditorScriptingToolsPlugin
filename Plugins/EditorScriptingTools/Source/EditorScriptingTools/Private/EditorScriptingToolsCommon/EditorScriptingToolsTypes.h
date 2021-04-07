@@ -38,18 +38,6 @@ DECLARE_STATS_GROUP(TEXT("EditorScriptingTools"), STATGROUP_EditorScriptingTools
 //
 #define CAST_TO_UINT8(Val) static_cast<uint8>(Val)
 
-
-enum class EEditorScriptingUtilityType : uint8
-{
-	EditorMode = 0,
-	DetailCustomization,
-	ComponentVisulizer,
-	UserDefinedSettings,
-	UserDefinedActions,
-
-	None = 255,
-};
-
 enum class ELevelEditingContextType : uint8
 {
 	EditorMode = 0,

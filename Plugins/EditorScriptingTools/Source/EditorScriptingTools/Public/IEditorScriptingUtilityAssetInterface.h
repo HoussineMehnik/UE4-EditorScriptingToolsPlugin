@@ -3,15 +3,24 @@
 //====================== http://ue4resources.com/ ========================//
 
 #pragma once
-#include "EditorScriptingToolsTypes.h"
 #include "UObject/Interface.h"
 #include "IEditorScriptingUtilityAssetInterface.generated.h"
 
-
 DECLARE_MULTICAST_DELEGATE_OneParam(FEditorScriptingUtilityRegistered, bool /* bRegister */);
 
-UINTERFACE()
-class  UEditorScriptingUtilityAssetInterface : public UInterface
+enum class EDITORSCRIPTINGTOOLS_API EEditorScriptingUtilityType : uint8
+{
+	EditorMode = 0,
+	DetailCustomization,
+	ComponentVisulizer,
+	UserDefinedSettings,
+	UserDefinedActions,
+
+	None = 255,
+};
+
+UINTERFACE(MinimalAPI)
+class UEditorScriptingUtilityAssetInterface : public UInterface
 {
 	GENERATED_BODY()
 };

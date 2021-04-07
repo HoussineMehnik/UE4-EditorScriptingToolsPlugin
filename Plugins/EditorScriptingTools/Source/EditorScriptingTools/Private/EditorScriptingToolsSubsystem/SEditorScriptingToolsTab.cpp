@@ -332,21 +332,27 @@ TSharedRef<SWidget> SEditorScriptingToolsTab::CreateSettingsSectionWidget_BluEdM
 {
 	TSharedRef<SVerticalBox> SectionWidget = SNew(SVerticalBox);
 
-	SectionWidget->AddSlot().AutoHeight()[CreateSectionHeader(LOCTEXT("ActiveEdModeTool", " Active Editor Mode Tool "))];
-	if (FBluEdMode* BluEdMode = FBluEdMode::GetPtr())
+	//
 	{
-		if (BluEdMode->HasValidToolInstance())
+		SectionWidget->AddSlot().AutoHeight()[CreateSectionHeader(LOCTEXT("EditorModes", " Registered Custom BluEdModes"))];
+
+		auto& SingleToolModes = UEditorScriptingToolsSubsystem::GetSubsystem()->CustomEdModeUtilityBlueprints;
+		if (SingleToolModes.Num() == 0)
 		{
-			SectionWidget->AddSlot().AutoHeight().HAlign(HAlign_Left)[SNew(SEditorScriptingUtilityAssetSlot, BluEdMode->GetModeToolBlueprint(), 0)];
+			SectionWidget->AddSlot()[CreateWarningMessageWidegt(LOCTEXT("NoSingleToolModes", "No custom blueprint editor modes have been registered."))];
 		}
 		else
 		{
-			SectionWidget->AddSlot()[CreateWarningMessageWidegt(LOCTEXT("BluEdModeToolNotLoaded", "BluEd Mode is active , but no tool is loaded."))];
+			int32 SlotIdx = 0;
+			for (auto& BlueprintObjPtr : SingleToolModes)
+			{
+				if (UEditorModeToolUtilityBlueprint* ModeToolBlueprint = BlueprintObjPtr.LoadSynchronous())
+				{
+					SectionWidget->AddSlot().AutoHeight().HAlign(HAlign_Left)[SNew(SEditorScriptingUtilityAssetSlot, ModeToolBlueprint, SlotIdx)];
+					SlotIdx++;
+				}
+			}
 		}
-	}
-	else
-	{
-		SectionWidget->AddSlot()[CreateWarningMessageWidegt(LOCTEXT("BluEdModeInactive", "BluEd Mode is not active."))];
 	}
 
 	return SectionWidget;

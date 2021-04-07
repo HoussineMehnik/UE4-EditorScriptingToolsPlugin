@@ -107,6 +107,14 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 					.AutoHeight()
 					[
 						SNew(SBorder)
+						.Visibility(TAttribute<EVisibility>::Create(TAttribute<EVisibility>::FGetter::CreateLambda([]()->EVisibility 
+						{ 
+							if (FBluEdMode* BluEdMode = FBluEdMode::GetPtr())
+							{
+								return !BluEdMode->IsRunningSingleTool() ? EVisibility::Visible : EVisibility::Collapsed;
+							}
+							return EVisibility::Collapsed;
+						})))
 						.BorderImage(FEditorStyle::GetBrush("DetailsView.AdvancedDropdownBorder"))
 						.Padding(FMargin(0.0f, 3.0f, 16.0f, 0.0f))
 						[
@@ -116,7 +124,6 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 							.ContentPadding(2)
 							.VAlign(VAlign_Top)
 							.OnClicked(this, &SBluEdModeWidget::OnExpandButtonClicked)
-							//.ToolTipText(this, &SAdvancedDropdownRow::GetAdvancedPulldownToolTipText)
 							[
 								SNew(SImage)
 								.Image(this, &SBluEdModeWidget::GetExpandButtonImage)
@@ -134,7 +141,14 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 					.AutoHeight()
 					[
 						SNew(SHorizontalBox)
-						.Visibility(this, &SBluEdModeWidget::GetButtonsVisibility)
+						.Visibility(TAttribute<EVisibility>::Create(TAttribute<EVisibility>::FGetter::CreateLambda([]()->EVisibility 
+						{ 
+							if (FBluEdMode* BluEdMode = FBluEdMode::GetPtr())
+							{
+								return !BluEdMode->IsRunningSingleTool() ? EVisibility::Visible : EVisibility::Collapsed;
+							}
+							return bIsExpanded ? EVisibility::Visible : EVisibility::Collapsed;
+						})))
 						+ SHorizontalBox::Slot()
 						[
 							SNew(SBorder)
@@ -672,11 +686,6 @@ FReply SBluEdModeWidget::OnExpandButtonClicked()
 	return FReply::Handled();
 }
 
-EVisibility SBluEdModeWidget::GetButtonsVisibility() const
-{
-	return bIsExpanded ? EVisibility::Visible : EVisibility::Collapsed;
-}
-
 TSharedRef<SWidget> SBluEdModeWidget::GetToolkitSlateWidget()
 {
 	if (FBluEdMode* BluEdMode = FBluEdMode::GetPtr())
@@ -1105,15 +1114,5 @@ FText SBluEdModeWidget::GetEditorModeToolInstanceLoadingButtonToolTipText() cons
 	return LOCTEXT("LoadEditorModeToolInstance_ToolTip", "Load Tool");
 }
 
-FReply SBluEdModeWidget::OnSetBluEdModeActive(bool bActivate)
-{
-	FBluEdMode::SetActive(bActivate);
-	return FReply::Handled();
-}
-
-EVisibility SBluEdModeWidget::GetBluEdModeActivateButtonVisibility(bool bActivate) const
-{
-	return (bActivate != FBluEdMode::IsActive()) ? EVisibility::Visible : EVisibility::Collapsed;
-}
 
 #undef LOCTEXT_NAMESPACE 

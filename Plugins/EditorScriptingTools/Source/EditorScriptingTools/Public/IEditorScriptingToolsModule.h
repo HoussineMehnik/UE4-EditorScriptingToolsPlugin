@@ -16,7 +16,7 @@ class IEditorScriptingUtilityAssetInterface;
  * Editor scripting tools module interface
  */
 
-class IEditorScriptingToolsModule : public IModuleInterface
+class EDITORSCRIPTINGTOOLS_API IEditorScriptingToolsModule : public IModuleInterface
 {
 
 public:

@@ -84,7 +84,6 @@ private:
 	//Expand Button
 	const FSlateBrush* GetExpandButtonImage() const;
 	FReply OnExpandButtonClicked();
-	EVisibility GetButtonsVisibility() const;
 
 	// Toolkit Widget
 	TSharedRef<SWidget> GetToolkitSlateWidget();
@@ -124,6 +123,4 @@ private:
 
 	FSlateColor GetEditorModeToolInstanceLoadingStatusTextColor() const;
 	FText GetEditorModeToolInstanceLoadingButtonToolTipText() const;
-	FReply OnSetBluEdModeActive(bool bActivate);
-	EVisibility GetBluEdModeActivateButtonVisibility(bool bActivate) const;
 };

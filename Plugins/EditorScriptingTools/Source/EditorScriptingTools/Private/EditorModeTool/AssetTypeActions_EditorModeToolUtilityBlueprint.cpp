@@ -4,6 +4,7 @@
 
 #include "AssetTypeActions_EditorModeToolUtilityBlueprint.h"
 #include "BlueprintEditorModule.h"
+#include "EditorScriptingToolsTypes.h"
 
 #define LOCTEXT_NAMESPACE "AssetTypeActions_EditorModeToolUtilityBlueprint"
 

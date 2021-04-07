@@ -56,7 +56,7 @@ TSharedPtr<class SWidget> FEditorScriptingAssetTypeActions_Base::GetThumbnailOve
 
 	return SNew(SImage)
 		.Visibility(this, &FEditorScriptingAssetTypeActions_Base::GetThumbnailOverlayVisibility, ObjectWeakPtr)
-		.ColorAndOpacity(FLinearColor(1.0f, 1.0f, 1.0f, .25f));
+		.ColorAndOpacity(FLinearColor(1.0f, 1.0f, 1.0f, .1f));
 }
 
 

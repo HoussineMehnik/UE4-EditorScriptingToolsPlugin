@@ -47,12 +47,14 @@
 #include "EditorModeToolUtilityBlueprint.h"
 #include "HitProxiesUtils.h"
 #include "LevelEditingViewportUtils.h"
+#include "EditorScriptingToolsModule.h"
 
 
 #define LOCTEXT_NAMESPACE "FBluEdMode"
 
 TWeakPtr<FBluEdMode> FBluEdMode::BluEdModeWeakPtr = nullptr;
 const FEditorModeID FBluEdMode::BluEdModeID = TEXT("EM_BluEdMode");
+const int32 FBluEdMode::BluEdModePriorityOrder = 10000;
 
 FBluEdMode::FBluEdMode()
 	: FEdMode()
@@ -97,6 +99,16 @@ void FBluEdMode::Enter()
 	}
 
 	BroadcastBluEdModeChanged(EBluEdModeChangeMode::EnterMode);
+
+	if (IsRunningSingleTool())
+	{
+		if (FEditorScriptingToolsModule* EditorScriptingToolsModulePtr = static_cast<FEditorScriptingToolsModule*>(IEditorScriptingToolsModule::GetPtr()))
+		{
+			UEditorModeToolUtilityBlueprint* ModeToolUtilityBlueprint = EditorScriptingToolsModulePtr->GetRegisteredEditorModeBlueprintUtility(GetID());
+			check(ModeToolUtilityBlueprint != nullptr);
+			SetCurrentToolBlueprint(ModeToolUtilityBlueprint, true);
+		}
+	}
 }
 
 void FBluEdMode::Exit()
@@ -860,7 +872,7 @@ UTexture2D* FBluEdMode::GetVertexTexture()
 
 FBluEdMode* FBluEdMode::GetPtr()
 {
-	return BluEdModeWeakPtr.Pin().Get();
+	return BluEdModeWeakPtr.IsValid() ? BluEdModeWeakPtr.Pin().Get() : nullptr;
 }
 
 TWeakPtr<FBluEdMode> FBluEdMode::GetWeakPtr()
@@ -878,6 +890,11 @@ const FDrawHUDContext& FBluEdMode::GetDrawHUDContext()
 {
 	return BluEdModeWeakPtr.IsValid() ? BluEdModeWeakPtr.Pin()->DrawHUDContext : FDrawHUDContext::InvalidContext;
 
+}
+
+bool FBluEdMode::IsRunningSingleTool() const
+{
+	return GetID() != BluEdModeID;
 }
 
 UEditorModeToolInstance* FBluEdMode::GetActiveToolInstance() const
@@ -964,9 +981,12 @@ void FBluEdMode::SetCurrentToolBlueprint(UEditorModeToolUtilityBlueprint* InBlue
 		CurrentToolBlueprintWeakPtr = nullptr;
 	}
 
-	UEditorScriptingToolsSubsystem* ScriptingToolsSubsystem = UEditorScriptingToolsSubsystem::GetSubsystem();
-	ScriptingToolsSubsystem->LastLoadedEdModeToolBlueprint = CurrentToolBlueprintWeakPtr.Get();
-	ScriptingToolsSubsystem->NotifySettingsModified();
+	if (!IsRunningSingleTool())
+	{
+		UEditorScriptingToolsSubsystem* ScriptingToolsSubsystem = UEditorScriptingToolsSubsystem::GetSubsystem();
+		ScriptingToolsSubsystem->LastLoadedEdModeToolBlueprint = CurrentToolBlueprintWeakPtr.Get();
+		ScriptingToolsSubsystem->NotifySettingsModified();
+	}
 
 	if (bAutoLoadTool && bCanLoadNewTool)
 	{
@@ -1017,8 +1037,6 @@ void FBluEdMode::ReloadTool()
 					}
 				}
 
-				ToolBlueprint->OnRegisterDone();
-
 				if (GEditor)
 				{
 					GEditor->OnBlueprintReinstanced().AddSP(this, &FBluEdMode::HandleAnyBlueprintReinstanced);
@@ -1061,11 +1079,6 @@ void FBluEdMode::UnloadTool(bool bRefreshSlateWidget /*= true*/)
 	{
 		DestroyRootedObjectInstance(ActiveViewportOverlayWidgetWeakPtr.Get());
 		ActiveViewportOverlayWidgetWeakPtr.Reset();
-	}
-
-	if (UEditorModeToolUtilityBlueprint* ToolBlueprint = GetModeToolBlueprint())
-	{
-		ToolBlueprint->OnUnregisterDone();
 	}
 
 	ClearCachedData();
@@ -1213,46 +1226,20 @@ void FBluEdMode::DestroyRootedObjectInstance(UObject* Instance)
 	}
 }
 
-void FBluEdMode::Register()
-{
-	FEditorModeRegistry::Get().RegisterMode<FBluEdMode>(
-		FBluEdMode::BluEdModeID,
-		LOCTEXT("BluEdModeName", "Blueprint Editor Mode"),
-		FSlateIcon(FEditorScriptingToolsStyle::Get()->GetStyleSetName(), TEXT("BluEdMode")),
-		true);
-}
-
-void FBluEdMode::Unregister()
-{
-	FEditorModeRegistry::Get().UnregisterMode(FBluEdMode::BluEdModeID);
-}
-
-void FBluEdMode::SetActive(bool bActivate)
-{
-	if (bActivate)
-	{
-		GLevelEditorModeTools().ActivateMode(FBluEdMode::BluEdModeID, false);
-	}
-	else
-	{
-		GLevelEditorModeTools().DeactivateMode(FBluEdMode::BluEdModeID);
-	}
-}
-
-bool FBluEdMode::IsActive()
-{
-	return GLevelEditorModeTools().IsModeActive(FBluEdMode::BluEdModeID);
-}
-
 FBluEdMode* FBluEdMode::GetActivated()
 {
-	SetActive(true);
+	GLevelEditorModeTools().ActivateMode(FBluEdMode::BluEdModeID, false);
 	if (FBluEdMode* BluEdMode = static_cast<FBluEdMode*>(GLevelEditorModeTools().GetActiveMode(FBluEdMode::BluEdModeID)))
 	{
 		return BluEdMode;
 	}
 
 	return nullptr;
+}
+
+void FBluEdMode::DeactivateMode()
+{
+	GLevelEditorModeTools().DeactivateMode(GetID());
 }
 
 #undef LOCTEXT_NAMESPACE

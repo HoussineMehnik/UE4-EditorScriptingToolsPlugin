@@ -10,7 +10,7 @@
 
 class UEditorUserDefinedSettingsUtilityBlueprint;
 
-UCLASS(Abstract, Blueprintable, config = Editor, defaultconfig)
+UCLASS(Abstract, Blueprintable, config = EditorPerProjectUserSettings)
 class UEditorUserDefinedSettings : public UObject
 {
 	GENERATED_BODY()

@@ -13,7 +13,7 @@
 #include "EditorUserWidgetBlueprint.h"
 #include "Editor/EditorEngine.h"
 #include "Editor.h"
-
+#include "EditorScriptingToolsTypes.h"
 
 #define CHECK_UTILITY_LIST_VALIDITY(BlueprintsList)										\
 {																						\

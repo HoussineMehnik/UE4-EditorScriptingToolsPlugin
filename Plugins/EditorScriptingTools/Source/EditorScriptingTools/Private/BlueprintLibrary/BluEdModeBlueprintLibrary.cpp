@@ -26,10 +26,13 @@ bool UBluEdModeBlueprintLibrary::StopActiveEditorModeToolInstance()
 {
 	if (FBluEdMode* BluEdMode = FBluEdMode::GetPtr())
 	{
-		if (BluEdMode->HasValidToolInstance())
+		if (!BluEdMode->IsRunningSingleTool())
 		{
-			BluEdMode->UnloadTool();
-			return true;
+			if (BluEdMode->HasValidToolInstance())
+			{
+				BluEdMode->UnloadTool();
+				return true;
+			}
 		}
 	}
 

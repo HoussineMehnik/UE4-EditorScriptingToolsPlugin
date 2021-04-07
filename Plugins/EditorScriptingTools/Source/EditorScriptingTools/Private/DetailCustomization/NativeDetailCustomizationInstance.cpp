@@ -28,6 +28,7 @@
 #include "NativeDetailCustomizationInstancesManager.h"
 #include "DetailCategoryBuilderHandle.h"
 #include "DetailCustomizationUtilityBlueprint.h"
+#include "EditorScriptingToolsTypes.h"
 
 
 #define LOCTEXT_NAMESPACE "NativeDetailCustomizationInstance"

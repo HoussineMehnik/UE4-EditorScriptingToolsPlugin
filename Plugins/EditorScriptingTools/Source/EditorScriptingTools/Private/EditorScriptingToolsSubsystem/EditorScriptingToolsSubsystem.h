@@ -12,7 +12,6 @@
 #include "EditorScriptingToolsSubsystem.generated.h"
 
 
-
 UCLASS(config = EditorPerProjectUserSettings)
 class UEditorScriptingToolsSubsystem : public UEditorSubsystem
 {
@@ -40,13 +39,16 @@ public:
 	UPROPERTY(config, EditAnywhere, BlueprintReadOnly, Category = EditorMode)
 		bool bEnableEditingWhileSimulating;
 
-	UPROPERTY(config, EditAnywhere, Category = ComponentVisualizers)
+	UPROPERTY(config)
+		TArray<TSoftObjectPtr<class  UEditorModeToolUtilityBlueprint>> CustomEdModeUtilityBlueprints;
+
+	UPROPERTY(config)
 		TArray<TSoftObjectPtr<class UComponentVisualizerUtilityBlueprint>> ComponentVisualizerUtilityBlueprints;
 
-	UPROPERTY(config, EditAnywhere, Category = DetailCustomizations)
+	UPROPERTY(config)
 		TArray<TSoftObjectPtr<class UDetailCustomizationUtilityBlueprint>> DetailCustomizationUtilityBlueprints;
 
-	UPROPERTY(config, EditAnywhere, Category = UserDefinedSettings)
+	UPROPERTY(config)
 		TArray<TSoftObjectPtr<class UEditorUserDefinedSettingsUtilityBlueprint>> EditorUserDefinedSettingsUtilityBlueprints;
 
 	UPROPERTY(config, EditAnywhere, Category = UserDefinedPlacementCategories)

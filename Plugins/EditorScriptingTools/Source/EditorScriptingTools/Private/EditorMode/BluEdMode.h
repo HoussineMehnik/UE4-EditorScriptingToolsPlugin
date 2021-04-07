@@ -50,6 +50,7 @@ private:
 
 public:
 	const static FEditorModeID BluEdModeID;
+	const static int32 BluEdModePriorityOrder;
 
 
 public:
@@ -323,6 +324,8 @@ public:
 	static const FDrawPrimitivesContext& GetDrawPrimitivesContext();
 	static const FDrawHUDContext& GetDrawHUDContext();
 
+	bool IsRunningSingleTool() const;
+
 	UEditorModeToolInstance* GetActiveToolInstance() const;
 	UEditorUserWidget* GetActiveToolkitWidgetInstance() const;
 	UEditorUserWidget* GetActiveViewportOverlayWidgetInstance() const;
@@ -364,11 +367,8 @@ private:
 	void DestroyRootedObjectInstance(UObject* Instance);
 
 public:
-	static void Register();
-	static void Unregister();
-	static void SetActive(bool bActivate);
-	static bool IsActive();
 	static FBluEdMode* GetActivated();
+	void DeactivateMode();
 
 
 private:

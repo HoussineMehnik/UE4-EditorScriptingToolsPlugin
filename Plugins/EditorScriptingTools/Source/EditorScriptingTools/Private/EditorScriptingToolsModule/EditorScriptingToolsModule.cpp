@@ -77,12 +77,11 @@ void FEditorScriptingToolsModule::StartupModule()
 
 void FEditorScriptingToolsModule::OnPostEngineInit()
 {
-	UEditorScriptingToolsSubsystem* ScriptingToolsSubsystem = UEditorScriptingToolsSubsystem::GetSubsystem();
-	if (ScriptingToolsSubsystem)
+	if (UEditorScriptingToolsSubsystem* ScriptingToolsSubsystem = UEditorScriptingToolsSubsystem::GetSubsystem())
 	{
 		ScriptingToolsSubsystem->CheckValidity();
 	}
-	
+
 	ExtendLevelEditorMenu();
 	RegisterAssetTypesActions();
 	RegisterCustomClassLayouts();
@@ -203,7 +202,7 @@ FText FEditorScriptingToolsModule::GetRegisterScriptingUtilityText(const IEditor
 {
 	switch (ScriptingUtilityAsset->GetUtilityType())
 	{
-	case EEditorScriptingUtilityType::EditorMode: return LOCTEXT("RunToolText", "Run Tool");
+	case EEditorScriptingUtilityType::EditorMode: return LOCTEXT("RegisterMode", "Register Mode");
 	case EEditorScriptingUtilityType::DetailCustomization: return LOCTEXT("RegisterCustomClassLayoutText", "Register Custom Layout");
 	case EEditorScriptingUtilityType::ComponentVisulizer: return LOCTEXT("RegisterVisualizerText", "Register Visualizer");
 	case EEditorScriptingUtilityType::UserDefinedSettings: return LOCTEXT("RegisterSettingsText", "Register");
@@ -218,7 +217,7 @@ FText FEditorScriptingToolsModule::GetUnregisterScriptingUtilityText(const IEdit
 {
 	switch (ScriptingUtilityAsset->GetUtilityType())
 	{
-	case EEditorScriptingUtilityType::EditorMode: return LOCTEXT("StopToolText", "Stop Tool");
+	case EEditorScriptingUtilityType::EditorMode: return LOCTEXT("UnregisterMode", "Unregister Mode");
 	case EEditorScriptingUtilityType::DetailCustomization: return LOCTEXT("UnregisterCustomClassLayoutText", "Unregister Custom Layout");
 	case EEditorScriptingUtilityType::ComponentVisulizer: return LOCTEXT("UnregisterVisualizerText", "Unregister Visualizer");
 	case EEditorScriptingUtilityType::UserDefinedSettings: return LOCTEXT("UnregisterSettingsText", "Unregister");
@@ -233,7 +232,7 @@ FText FEditorScriptingToolsModule::GetRegisterScriptingUtilityToolTipText(const 
 {
 	switch (ScriptingUtilityAsset->GetUtilityType())
 	{
-	case EEditorScriptingUtilityType::EditorMode: return LOCTEXT("LoadToolToolTipText", "Loads/Runs this editor mode tool.");
+	case EEditorScriptingUtilityType::EditorMode: return LOCTEXT("RegisterModeToolTipText", "Registers an editor mode.");
 	case EEditorScriptingUtilityType::DetailCustomization:  return LOCTEXT("RegisterCustomClassLayoutToolTipText", "Registers a custom detail layout for specified class.");
 	case EEditorScriptingUtilityType::ComponentVisulizer: return LOCTEXT("RegisterVisualizerToolTipText", "Register a function to draw extra information when the component is selected");
 	case EEditorScriptingUtilityType::UserDefinedSettings: return LOCTEXT("RegisterSettingsToolTipText", "Register settings section");
@@ -248,8 +247,8 @@ FText FEditorScriptingToolsModule::GetRefreshScriptingUtilityToolTipText(const I
 {
 	switch (ScriptingUtilityAsset->GetUtilityType())
 	{
-	case EEditorScriptingUtilityType::EditorMode: return LOCTEXT("ReloadToolToolTipText", "Reloads current editor mode tool");
-	case EEditorScriptingUtilityType::DetailCustomization:  return LOCTEXT("UnregisterCustomClassLayoutToolTipText", "Refreshes detail layout for registered class.");
+	case EEditorScriptingUtilityType::EditorMode: return LOCTEXT("RefreshEditorModeToolTipText", "Refresh (unregister & register ) this editor mode.");
+	case EEditorScriptingUtilityType::DetailCustomization:  return LOCTEXT("RefreshCustomClassLayoutToolTipText", "Refreshes detail layout for registered class.");
 	case EEditorScriptingUtilityType::ComponentVisulizer: return LOCTEXT("RefreshVisualizerToolTipText", "Refresh (unregister & register )component visualizer function");
 	case EEditorScriptingUtilityType::UserDefinedSettings: return LOCTEXT("RefreshSettingsToolTipText", " refresh settings section");
 	case EEditorScriptingUtilityType::UserDefinedActions: return LOCTEXT("MapActionsToolTipText", "Refresh current commands mappings");
@@ -263,7 +262,7 @@ FText FEditorScriptingToolsModule::GetUnregisterScriptingUtilityToolTipText(cons
 {
 	switch (ScriptingUtilityAsset->GetUtilityType())
 	{
-	case EEditorScriptingUtilityType::EditorMode: return LOCTEXT("UnloadToolToolTipText", "Unloads/Stops this editor mode tool.");
+	case EEditorScriptingUtilityType::EditorMode: return LOCTEXT("UnregisterModeToolTipText", "Unregisters an editor mode.");
 	case EEditorScriptingUtilityType::DetailCustomization:  return LOCTEXT("UnregisterCustomClassLayoutToolTipText", "Unregisters custom detail layout for registered class.");
 	case EEditorScriptingUtilityType::ComponentVisulizer: return LOCTEXT("UnregisterVisualizerToolTipText", "Unregister component visualizer function");
 	case EEditorScriptingUtilityType::UserDefinedSettings: return LOCTEXT("UnreregisterToolTipText", "Unregister Editor User Defined Settings");
@@ -329,6 +328,7 @@ void FEditorScriptingToolsModule::UnregisterBlueprintCompilers()
 	KismetCompilerModule.GetCompilers().Remove(UMGEditorModule.GetRegisteredCompiler());
 
 }
+
 
 void FEditorScriptingToolsModule::BindEditorDelegates()
 {
@@ -409,7 +409,7 @@ void FEditorScriptingToolsModule::HandleMapChanged(UWorld* InWorld, EMapChangeTy
 
 	if (FBluEdMode* BluEdMode = FBluEdMode::GetPtr())
 	{
-		BluEdMode->UnloadTool(true);
+		BluEdMode->DeactivateMode();
 	}
 }
 
@@ -436,7 +436,7 @@ void FEditorScriptingToolsModule::HandlePreBeginPIE(bool bIsSimulating)
 	{
 		if (FBluEdMode* BluEdMode = FBluEdMode::GetPtr())
 		{
-			BluEdMode->UnloadTool(true);
+			BluEdMode->DeactivateMode();
 		}
 	}
 }
