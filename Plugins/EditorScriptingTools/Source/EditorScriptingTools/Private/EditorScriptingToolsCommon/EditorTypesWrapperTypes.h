@@ -221,10 +221,18 @@ struct FLevelEditingViewportCameraTransform
 {
 	GENERATED_USTRUCT_BODY()
 
-
-		/** Current viewport Position. */
-		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ViewportClick)
-		FVector	ViewLocation;
+	FLevelEditingViewportCameraTransform()
+		: ViewLocation(ForceInit)
+		, ViewRotation(ForceInit)
+		, DesiredLocation(ForceInit)
+		, LookAt(ForceInit)
+		, StartLocation(ForceInit)
+		, OrthoZoom(0.0f)
+	{}
+	
+	/** Current viewport Position. */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ViewportClick)
+	FVector	ViewLocation;
 
 	/** Current Viewport orientation; valid only for perspective projections. */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ViewportClick)
