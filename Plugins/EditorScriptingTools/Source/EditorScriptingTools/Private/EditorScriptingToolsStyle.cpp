@@ -136,7 +136,6 @@ void FEditorScriptingToolsStyle::Initialize()
 
 	StyleSet->Set("ClassIcon.AssetDropTargetWidget", new IMAGE_BRUSH("AssetDropTargetWidget_32x", Icon16x16));
 	StyleSet->Set("ClassIcon.AssetPickerWidget", new IMAGE_BRUSH("AssetPickerWidget_16x", Icon16x16));
-	StyleSet->Set("ClassIcon.AssetThumbnailWidget", new IMAGE_BRUSH("AssetThumbnailWidget_16x", Icon16x16));
 
 	//----- Tab buttons ------------------------------------------------------------------------------------------------------------------------------------
 	StyleSet->Set(TEXT("OtherSettings.Icon"), new IMAGE_BRUSH("icon_SettingsTab_ToolsSettingsTab_40x", Icon40x40));
