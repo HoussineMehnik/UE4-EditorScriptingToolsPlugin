@@ -211,7 +211,7 @@ public:
 	 *
 	 * @return					A bitfield comprised of AXIS_* values
 	 */
-	/*<>*/virtual EAxisList::Type GetWidgetAxisToDraw(FWidget::EWidgetMode InWidgetMode) const override;
+	/*<>*/virtual EAxisList::Type GetWidgetAxisToDraw(UE::Widget::EWidgetMode InWidgetMode) const override;
 
 	/** If the EdMode is handling InputDelta (i.e., returning true from it), this allows a mode to indicated whether or not the Widget should also move. */
 	/*<>*/virtual bool AllowWidgetMove() override;
@@ -273,7 +273,7 @@ public:
 	/**
 	 * Lets each mode selectively exclude certain widget types.
 	 */
-	/*<>*/virtual bool UsesTransformWidget(FWidget::EWidgetMode CheckMode) const override;
+	/*<>*/virtual bool UsesTransformWidget(UE::Widget::EWidgetMode CheckMode) const override;
 	bool OwnerUsesTransformWidget(ETransformGizmoMode::Type CheckMode) const;
 
 	virtual bool IsCompatibleWith(FEditorModeID OtherModeID) const;

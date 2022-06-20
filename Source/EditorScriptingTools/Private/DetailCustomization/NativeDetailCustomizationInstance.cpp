@@ -195,7 +195,7 @@ void FNativeDetailCustomizationInstance::DestroyDetailsInstanceIfNeeded()
 
 		DetailsInstancePtr->Rename(nullptr, GetTransientPackage());
 		DetailsInstancePtr->RemoveFromRoot();
-		DetailsInstancePtr->MarkPendingKill();
+		DetailsInstancePtr->MarkAsGarbage();
 		DetailsInstancePtr = nullptr;
 	}
 }

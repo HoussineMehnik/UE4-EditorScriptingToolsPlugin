@@ -56,7 +56,7 @@ void FNativeComponentVisualizerInstance::DestroyInstanceIfNeeded()
 		
 		InstanceWeakPtr->Rename(nullptr, GetTransientPackage());
 		InstanceWeakPtr->RemoveFromRoot();
-		InstanceWeakPtr->MarkPendingKill();
+		InstanceWeakPtr->MarkAsGarbage();
 		InstanceWeakPtr = nullptr;
 	}
 }

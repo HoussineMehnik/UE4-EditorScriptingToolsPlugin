@@ -547,16 +547,14 @@ namespace LevelEditingViewportUtils
 		{
 			if (HActor* HoveredActorHitProxy = HitProxyCast<HActor>(HoveredHitProxy))
 			{
-				if (AActor* HoveredActor = HoveredActorHitProxy->Actor)
+				AActor* HoveredActor = HoveredActorHitProxy->Actor;
+				if (IsValid(HoveredActor))
 				{
-					if (!HoveredActor->IsPendingKill())
-					{
-						OutActorHitProxyInfo.Actor = HoveredActor;
-						OutActorHitProxyInfo.PrimitiveComponent = HoveredActorHitProxy->PrimComponent;
-						OutActorHitProxyInfo.SectionIndex = HoveredActorHitProxy->SectionIndex;
-						OutActorHitProxyInfo.MaterialIndex = HoveredActorHitProxy->MaterialIndex;
-						bIsValid = true;
-					}
+					OutActorHitProxyInfo.Actor = HoveredActor;
+					OutActorHitProxyInfo.PrimitiveComponent = HoveredActorHitProxy->PrimComponent;
+					OutActorHitProxyInfo.SectionIndex = HoveredActorHitProxy->SectionIndex;
+					OutActorHitProxyInfo.MaterialIndex = HoveredActorHitProxy->MaterialIndex;
+					bIsValid = true;
 				}
 			}
 		}
@@ -564,21 +562,21 @@ namespace LevelEditingViewportUtils
 
 	bool IsPrimitiveComponentUnderCursor(UPrimitiveComponent* InPrimComponent)
 	{
-		if (InPrimComponent != nullptr && !InPrimComponent->IsPendingKill())
+		if (IsValid(InPrimComponent))
 		{
 			if (HHitProxy* HoveredHitProxy = GetHitProxyUnderCursor())
 			{
 				if (HActor* HoveredActorHitProxy = HitProxyCast<HActor>(HoveredHitProxy))
 				{
-					if (const UPrimitiveComponent* HoveredPrimComponent = HoveredActorHitProxy->PrimComponent)
+					const UPrimitiveComponent* HoveredPrimComponent = HoveredActorHitProxy->PrimComponent;
+					if (IsValid(HoveredPrimComponent))
 					{
-						if (!HoveredPrimComponent->IsPendingKill())
+
+						if (InPrimComponent == HoveredPrimComponent)
 						{
-							if (InPrimComponent == HoveredPrimComponent)
-							{
-								return true;
-							}
+							return true;
 						}
+
 					}
 				}
 			}

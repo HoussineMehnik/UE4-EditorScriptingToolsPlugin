@@ -27,4 +27,5 @@ public:
 private:
 
 	TSharedPtr<SBluEdModeWidget> ToolkitWidget;
+	FName ToolKitInitName;
 };

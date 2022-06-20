@@ -93,7 +93,7 @@ void SPropertiesBrowser::Construct(const FArguments& InArgs)
 							.ColorAndOpacity(FLinearColor(0.65f, 0.4f, 0.15f, 1.0f))
 							.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
 							.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.10"))
-							.Text(FEditorFontGlyphs::List)
+							//.Text(FEditorFontGlyphs::List)
 						]
 					]
 					+ SHorizontalBox::Slot()
@@ -234,7 +234,7 @@ void SPropertiesBrowser::FillPropertiesNamesList()
 					.ColorAndOpacity(FLinearColor(0.65f, 0.4f, 0.15f, 1.0f))
 					.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
 					.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.10"))
-					.Text(FEditorFontGlyphs::Clipboard)
+					//.Text(FEditorFontGlyphs::Clipboard)
 				]
 			]
 		);

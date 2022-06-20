@@ -3,16 +3,16 @@
 //================== http://unrealengineresources.com/ =====================//
 
 
-using UnrealBuildTool;
-
-public class EditorScriptingTools : ModuleRules
+namespace UnrealBuildTool.Rules
 {
-    public EditorScriptingTools(ReadOnlyTargetRules Target) : base(Target)
+    public class EditorScriptingTools : ModuleRules
     {
-        /*PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;*/   PCHUsage = ModuleRules.PCHUsageMode.NoPCHs; bUseUnity = false;
+        public EditorScriptingTools(ReadOnlyTargetRules Target) : base(Target)
+        {
+            PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;   /*PCHUsage = ModuleRules.PCHUsageMode.NoPCHs; bUseUnity = false;*/
 
-        PrivateIncludePaths.AddRange(new string[] 
-            {
+            PrivateIncludePaths.AddRange(new string[]
+                {
                 "EditorScriptingTools/Private",
                 "EditorScriptingTools/Private/BlueprintLibrary",
                 "EditorScriptingTools/Private/ComponentVisualizer",
@@ -32,16 +32,16 @@ public class EditorScriptingTools : ModuleRules
                 "EditorScriptingTools/Private/EditorUserWidget",
                 "EditorScriptingTools/Private/Utils",
                 "EditorScriptingTools/Private/Widgets",
-            });
-
-
-        PublicDependencyModuleNames.AddRange(new string[]
-                {
-                    "Core",
                 });
 
-        PrivateDependencyModuleNames.AddRange(new string[]
-            {
+
+            PublicDependencyModuleNames.AddRange(new string[]
+                    {
+                    "Core",
+                    });
+
+            PrivateDependencyModuleNames.AddRange(new string[]
+                {
                 "CoreUObject",
                 "Engine",
                 "Slate",
@@ -76,11 +76,13 @@ public class EditorScriptingTools : ModuleRules
                 "PlacementMode",
                 "SettingsEditor",
                 "ApplicationCore",
-            });
+                "EditorFramework",
+                });
 
-        DynamicallyLoadedModuleNames.Add("AssetTools");
-        PrivateIncludePathModuleNames.Add("AssetTools");
+            DynamicallyLoadedModuleNames.Add("AssetTools");
+            PrivateIncludePathModuleNames.Add("AssetTools");
 
 
+        }
     }
 }

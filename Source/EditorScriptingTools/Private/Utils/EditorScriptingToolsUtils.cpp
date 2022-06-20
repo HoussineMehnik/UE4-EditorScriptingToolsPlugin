@@ -14,7 +14,7 @@ namespace EditorScriptingToolsUtils
 
 	bool IsValidInstance(UObject* InInstance)
 	{
-		return !(InInstance == nullptr || InInstance->IsPendingKillOrUnreachable());
+		return IsValid(InInstance) && !InInstance->IsUnreachable();
 	}
 
 	bool CanInstantiateClass(const UClass* InClass)

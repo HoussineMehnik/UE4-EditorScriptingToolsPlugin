@@ -44,9 +44,9 @@ namespace LevelViewportPrimitiveDrawingUtils
 			const FVector Tangent = ((PointB - PointA) ^ (PointC - PointA)).GetSafeNormal();
 			const FColor VertexColor = Color.ToFColor(false);
 
-			MeshBuilder.AddVertex(FDynamicMeshVertex(PointA, Tangent, Normal, FVector2D(0, 0), VertexColor));
-			MeshBuilder.AddVertex(FDynamicMeshVertex(PointB, Tangent, Normal, FVector2D(0, 1), VertexColor));
-			MeshBuilder.AddVertex(FDynamicMeshVertex(PointC, Tangent, Normal, FVector2D(1, 1), VertexColor));
+			MeshBuilder.AddVertex(FDynamicMeshVertex(FVector3f(PointA), FVector3f(Tangent), FVector3f(Normal), FVector2f(0, 0), VertexColor));
+			MeshBuilder.AddVertex(FDynamicMeshVertex(FVector3f(PointB), FVector3f(Tangent), FVector3f(Normal), FVector2f(0, 1), VertexColor));
+			MeshBuilder.AddVertex(FDynamicMeshVertex(FVector3f(PointC), FVector3f(Tangent), FVector3f(Normal), FVector2f(1, 1), VertexColor));
 
 			MeshBuilder.AddTriangle(0, 1, 2);
 

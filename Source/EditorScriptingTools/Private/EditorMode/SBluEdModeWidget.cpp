@@ -17,7 +17,6 @@
 
 #include "Modules/ModuleManager.h"
 #include "PropertyEditorModule.h" 
-#include "Toolkits/AssetEditorManager.h"
 #include "UnrealEdGlobals.h"
 #include "PropertyPath.h"
 #include "DetailLayoutBuilder.h" 
@@ -105,7 +104,7 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 					SNew(SVerticalBox)
 					+SVerticalBox::Slot()
 					.AutoHeight()
-					[
+					/*[
 						SNew(SBorder)
 						.Visibility(TAttribute<EVisibility>::Create(TAttribute<EVisibility>::FGetter::CreateLambda([]()->EVisibility 
 						{ 
@@ -129,7 +128,7 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 								.Image(this, &SBluEdModeWidget::GetExpandButtonImage)
 							]
 						]
-					]
+					]*/
 					+ SVerticalBox::Slot()
 					.AutoHeight()
 					.Padding(0, 0, 0, 5)
@@ -241,11 +240,9 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 										.OnClicked(this,&SBluEdModeWidget::OpenClassPickerDialog)
 										.ToolTipText(LOCTEXT("OpenClassPickerDialog_ToolTip", "Open BluEdMode widget class picker dialog."))
 										[
-											SNew(STextBlock)
+											SNew(SImage)
+											.Image(FAppStyle::Get().GetBrush("PropertyWindow.Button_PickAsset"))
 											.ColorAndOpacity(FLinearColor(0.8f,0.8f,0.8f,1.0f))
-											.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-											.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.11"))
-											.Text(FEditorFontGlyphs::List)
 										]
 									]
 									+ SHorizontalBox::Slot()
@@ -259,11 +256,9 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 										.OnClicked(this,&SBluEdModeWidget::OnShowToolClassInContentBrowser)
 										.ToolTipText(LOCTEXT("ShowClassInContentBrowser_Name", "Show Class In Content Browser"))
 										[
-											SNew(STextBlock)
+											SNew(SImage)
+											.Image(FAppStyle::Get().GetBrush("Icons.BrowseContent"))
 											.ColorAndOpacity(FLinearColor(0.65f,0.4f,0.15f,1.0f))
-											.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-											.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.11"))
-											.Text(FEditorFontGlyphs::Search)
 										]
 									]
 									+ SHorizontalBox::Slot()
@@ -755,7 +750,7 @@ FReply SBluEdModeWidget::OpenClassPickerDialog()
 		Options.bShowNoneOption = true;
 
 		TSharedPtr<FBluEdModeToolClassFilter> Filter = MakeShareable(new FBluEdModeToolClassFilter);
-		Options.ClassFilter = Filter;
+		Options.ClassFilters.Add(Filter.ToSharedRef());
 
 		const FText TitleText = LOCTEXT("PickBluEdModeUserWidgetClass", "Pick Ed Mode Widget Blueprint Class");
 		UClass* ChosenClass = nullptr;

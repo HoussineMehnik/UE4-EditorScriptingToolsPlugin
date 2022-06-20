@@ -1,46 +1,38 @@
-//==========================================================================//
-// Copyright Elhoussine Mehnik (ue4resources@gmail.com). All Rights Reserved.
-//================== http://unrealengineresources.com/ =====================//
-
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "EditorUserWidgetBlueprintFactory.h"
-#include "UObject/Interface.h"
 #include "Misc/MessageDialog.h"
-#include "Blueprint/UserWidget.h"
-#include "Blueprint/WidgetBlueprintGeneratedClass.h"
-#include "WidgetBlueprint.h"
-#include "Kismet2/KismetEditorUtilities.h"
 #include "Modules/ModuleManager.h"
-
-#include "Blueprint/WidgetTree.h"
-#include "UMGEditorProjectSettings.h"
+#include "Widgets/SWindow.h"
+#include "Settings/EditorExperimentalSettings.h"
+#include "Engine/BlueprintGeneratedClass.h"
 #include "ClassViewerModule.h"
-#include "Kismet2/SClassPickerDialog.h"
 #include "ClassViewerFilter.h"
+#include "Kismet2/KismetEditorUtilities.h"
+#include "Kismet2/SClassPickerDialog.h"
 #include "Components/CanvasPanel.h"
+#include "BaseWidgetBlueprint.h"
+#include "Blueprint/WidgetTree.h"
 #include "Components/HorizontalBox.h"
 #include "Components/VerticalBox.h"
 #include "Components/GridPanel.h"
-
+#include "UMGEditorProjectSettings.h"
 #include "EditorUserWidget.h"
 #include "EditorUserWidgetBlueprint.h"
 
+
 #define LOCTEXT_NAMESPACE "UEditorUserWidgetBlueprintFactory"
 
-/*------------------------------------------------------------------------------
-	UEditorUserWidgetBlueprintFactory implementation.
-------------------------------------------------------------------------------*/
-
-class FWidgetClassFilter : public IClassViewerFilter
+class FEditorUserWidgetBlueprintFactoryFilter : public IClassViewerFilter
 {
 public:
 	/** All children of these classes will be included unless filtered out by another setting. */
-	TSet <const UClass*> AllowedChildrenOfClasses;
+	TSet< const UClass* > AllowedChildrenOfClasses;
 
 	/** Disallowed class flags. */
 	EClassFlags DisallowedClassFlags;
 
-	virtual bool IsClassAllowed(const FClassViewerInitializationOptions& InInitOptions, const UClass* InClass, TSharedRef< FClassViewerFilterFuncs > InFilterFuncs) override
+	bool IsClassAllowed(const FClassViewerInitializationOptions& InInitOptions, const UClass* InClass, TSharedRef< FClassViewerFilterFuncs > InFilterFuncs) override
 	{
 		return !InClass->HasAnyClassFlags(DisallowedClassFlags)
 			&& InFilterFuncs->IfInChildOfClassesSet(AllowedChildrenOfClasses, InClass) != EFilterReturn::Failed;
@@ -51,8 +43,10 @@ public:
 		return !InUnloadedClassData->HasAnyClassFlags(DisallowedClassFlags)
 			&& InFilterFuncs->IfInChildOfClassesSet(AllowedChildrenOfClasses, InUnloadedClassData) != EFilterReturn::Failed;
 	}
-
 };
+
+/////////////////////////////////////////////////////
+// UEditorUserWidgetBlueprintFactory
 
 UEditorUserWidgetBlueprintFactory::UEditorUserWidgetBlueprintFactory(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -80,52 +74,43 @@ bool UEditorUserWidgetBlueprintFactory::ConfigureProperties()
 		Options.ExtraPickerCommonClasses.Add(UGridPanel::StaticClass());
 		Options.ExtraPickerCommonClasses.Add(UCanvasPanel::StaticClass());
 
-		TSharedPtr<FWidgetClassFilter> Filter = MakeShareable(new FWidgetClassFilter);
-		Options.ClassFilter = Filter;
+		TSharedPtr<FEditorUserWidgetBlueprintFactoryFilter> Filter = MakeShareable(new FEditorUserWidgetBlueprintFactoryFilter);
+		Options.ClassFilters.Add(Filter.ToSharedRef());
 
 		Filter->DisallowedClassFlags = CLASS_Abstract | CLASS_Deprecated | CLASS_NewerVersionExists;
 		Filter->AllowedChildrenOfClasses.Add(UPanelWidget::StaticClass());
 
-		const FText TitleText = LOCTEXT("CreateWidgetBlueprint", "Pick Root Widget for New Widget Blueprint");
+		const FText TitleText = LOCTEXT("CreateWidgetBlueprint", "Pick Root Widget for New Editor User Widget");
 		return SClassPickerDialog::PickClass(TitleText, Options, RootWidgetClass, UPanelWidget::StaticClass());
 
 	}
 	return true;
 }
 
-bool UEditorUserWidgetBlueprintFactory::ShouldShowInNewMenu() const
+UObject* UEditorUserWidgetBlueprintFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
 {
-	return true;
-}
-
-UObject* UEditorUserWidgetBlueprintFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn, FName CallingContext)
-{
-	// Make sure we are trying to factory a Anim Blueprint, then create and init one
+	// Make sure we are trying to factory a blueprint, then create and init one
 	check(Class->IsChildOf(UEditorUserWidgetBlueprint::StaticClass()));
 
-	// If they selected an interface, force the parent class to be UInterface
-	if (BlueprintType == BPTYPE_Interface)
-	{
-		ParentClass = UInterface::StaticClass();
-	}
+	FString ParentPath = InParent->GetPathName();
 
-	if ((ParentClass == NULL) || !FKismetEditorUtilities::CanCreateBlueprintOfClass(ParentClass) || !ParentClass->IsChildOf(UUserWidget::StaticClass()))
+	if ((ParentClass == nullptr) || !FKismetEditorUtilities::CanCreateBlueprintOfClass(ParentClass))
 	{
 		FFormatNamedArguments Args;
-		Args.Add(TEXT("ClassName"), ParentClass ? FText::FromString(ParentClass->GetName()) : LOCTEXT("Null", "(null)"));
-		FMessageDialog::Open(EAppMsgType::Ok, FText::Format(LOCTEXT("CannotCreateWidgetBlueprint", "Cannot create a Widget Blueprint based on the class '{ClassName}'."), Args));
+		Args.Add(TEXT("ClassName"), (ParentClass != nullptr) ? FText::FromString(ParentClass->GetName()) : NSLOCTEXT("UnrealEd", "Null", "(null)"));
+		FMessageDialog::Open(EAppMsgType::Ok, FText::Format(NSLOCTEXT("UnrealEd", "CannotCreateBlueprintFromClass", "Cannot create a blueprint based on the class '{0}'."), Args));
 		return nullptr;
 	}
 	else
 	{
+		// If the root widget selection dialog is not enabled, use a canvas panel as the root by default
 		if (!GetDefault<UUMGEditorProjectSettings>()->bUseWidgetTemplateSelector)
 		{
-			RootWidgetClass = GetDefault<UUMGEditorProjectSettings>()->DefaultRootWidget;
+			RootWidgetClass = UCanvasPanel::StaticClass();
 		}
+		UEditorUserWidgetBlueprint* NewBP = CastChecked<UEditorUserWidgetBlueprint>(FKismetEditorUtilities::CreateBlueprint(ParentClass, InParent, Name, BlueprintType, UEditorUserWidgetBlueprint::StaticClass(), UWidgetBlueprintGeneratedClass::StaticClass(), NAME_None));
 
-		UEditorUserWidgetBlueprint* NewBP = CastChecked<UEditorUserWidgetBlueprint>(FKismetEditorUtilities::CreateBlueprint(ParentClass, InParent, Name, BlueprintType, UEditorUserWidgetBlueprint::StaticClass(), UWidgetBlueprintGeneratedClass::StaticClass(), CallingContext));
-
-		// Create the desired root widget specified by the project
+		// Create the selected root widget
 		if (NewBP->WidgetTree->RootWidget == nullptr)
 		{
 			if (TSubclassOf<UPanelWidget> RootWidgetPanel = RootWidgetClass)
@@ -139,9 +124,10 @@ UObject* UEditorUserWidgetBlueprintFactory::FactoryCreateNew(UClass* Class, UObj
 	}
 }
 
-UObject* UEditorUserWidgetBlueprintFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
+bool UEditorUserWidgetBlueprintFactory::ShouldShowInNewMenu() const
 {
-	return FactoryCreateNew(Class, InParent, Name, Flags, Context, Warn, NAME_None);
+	return true;
 }
+
 
 #undef LOCTEXT_NAMESPACE

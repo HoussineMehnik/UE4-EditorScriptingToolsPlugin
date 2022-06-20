@@ -111,7 +111,10 @@ void FEditorScriptingToolsModule::RegisterComponentVisualizer(UComponentVisualiz
 {
 	const FComponentClassInfo ComponentClassInfo{ VisualizerBlueprint->ComponentClass, VisualizerBlueprint->ComponentClass->GetFName() };
 	TSharedPtr<FNativeComponentVisualizerInstance> NativeCompVisInstance = MakeShareable(new FNativeComponentVisualizerInstance(VisualizerBlueprint));
-	GUnrealEd->RegisterComponentVisualizer(ComponentClassInfo.ClassName, NativeCompVisInstance);
+	if (GUnrealEd != nullptr)
+	{
+		GUnrealEd->RegisterComponentVisualizer(ComponentClassInfo.ClassName, NativeCompVisInstance);
+	}
 	NativeCompVisInstance->OnRegister();
 	RegisteredComponentVisualizers.Add(VisualizerBlueprint, ComponentClassInfo);
 }

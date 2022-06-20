@@ -21,14 +21,14 @@ FBluEdModeToolkit::FBluEdModeToolkit()
 
 void FBluEdModeToolkit::Init(const TSharedPtr<IToolkitHost>& InitToolkitHost)
 {
-	FBluEdMode* CurrentEditorMode = (FBluEdMode*)(GetEditorMode());
+	ToolKitInitName = GetEditorMode()->GetID();
 	SAssignNew(ToolkitWidget, SBluEdModeWidget);
 	FModeToolkit::Init(InitToolkitHost);
 }
 
 FName FBluEdModeToolkit::GetToolkitFName() const
 {
-	return FName("BluEdMode");
+	return ToolKitInitName;
 }
 
 FText FBluEdModeToolkit::GetBaseToolkitName() const

@@ -12,7 +12,6 @@
 #include "EditorModes.h"
 #include "EditorTypesWrapperTypes.h"
 #include "EditorScriptingToolsTypes.h"
-#include "ILevelViewport.h"
 #include "SLevelViewport.h"
 #include "LevelEditorViewport.h"
 #include "EditorViewportClient.h"
@@ -92,12 +91,6 @@ void FBluEdMode::Enter()
 {
 	Super::Enter();
 
-	if (!Toolkit.IsValid() && UsesToolkits())
-	{
-		Toolkit = MakeShareable(new FBluEdModeToolkit);
-		Toolkit->Init(Owner->GetToolkitHost());
-	}
-
 	BroadcastBluEdModeChanged(EBluEdModeChangeMode::EnterMode);
 
 	if (IsRunningSingleTool())
@@ -108,6 +101,12 @@ void FBluEdMode::Enter()
 			check(ModeToolUtilityBlueprint != nullptr);
 			SetCurrentToolBlueprint(ModeToolUtilityBlueprint, true);
 		}
+	}
+
+	if (!Toolkit.IsValid() && UsesToolkits())
+	{
+		Toolkit = MakeShareable(new FBluEdModeToolkit);
+		Toolkit->Init(Owner->GetToolkitHost());
 	}
 }
 
@@ -610,7 +609,7 @@ bool FBluEdMode::ShowModeWidgets() const
 	return true;
 }
 
-EAxisList::Type FBluEdMode::GetWidgetAxisToDraw(FWidget::EWidgetMode InWidgetMode) const
+EAxisList::Type FBluEdMode::GetWidgetAxisToDraw(UE::Widget::EWidgetMode InWidgetMode) const
 {
 	if (CanUseCurrentToolInstance())
 	{
@@ -770,7 +769,7 @@ bool FBluEdMode::UsesTransformWidget() const
 	return true;
 }
 
-bool FBluEdMode::UsesTransformWidget(FWidget::EWidgetMode CheckMode) const
+bool FBluEdMode::UsesTransformWidget(UE::Widget::EWidgetMode CheckMode) const
 {
 	if (CanUseCurrentToolInstance())
 	{
@@ -792,7 +791,7 @@ bool FBluEdMode::OwnerUsesTransformWidget(ETransformGizmoMode::Type CheckMode) c
 			// If editing a vector (not a transform)
 			if (!EditedPropertyName.IsEmpty() && !bEditedPropertyIsTransform)
 			{
-				return (static_cast<FWidget::EWidgetMode>(CheckMode) == FWidget::WM_Translate);
+				return (static_cast<UE::Widget::EWidgetMode>(CheckMode) == UE::Widget::WM_Translate);
 			}
 		}
 	}
@@ -1187,9 +1186,9 @@ void FBluEdMode::RemoveOverlayWidgetFromViewport()
 		if (ViewportWindow.IsValid())
 		{
 			ViewportWindow->RemoveOverlayWidget(OverlayWidgetContainer->AsShared());
-			OverlayWidgetContainer = nullptr;
 		}
 	}
+	OverlayWidgetContainer = nullptr;
 }
 
 void FBluEdMode::MoveViewportOverlayWidgetToActiveViewport()
@@ -1222,7 +1221,7 @@ void FBluEdMode::DestroyRootedObjectInstance(UObject* Instance)
 	{
 		Instance->Rename(nullptr, GetTransientPackage());
 		Instance->RemoveFromRoot();
-		Instance->MarkPendingKill();
+		Instance->MarkAsGarbage();
 	}
 }
 
