@@ -106,8 +106,8 @@ void FEditorScriptingAssetTypeActions_Base::GetActions(const TArray<UObject*>& I
 				[
 					SNew(STextBlock)
 					.ColorAndOpacity(FLinearColor(0.65f, 0.4f, 0.15f, 1.0f))
-					.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-					.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.11"))
+					.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+					.Font(FAppStyle::Get().GetFontStyle("FontAwesome.11"))
 					.Text(FEditorFontGlyphs::Exclamation_Triangle)
 				]
 				+SHorizontalBox::Slot()

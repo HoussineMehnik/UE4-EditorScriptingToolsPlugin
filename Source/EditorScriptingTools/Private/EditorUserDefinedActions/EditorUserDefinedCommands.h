@@ -8,6 +8,7 @@
 #include "EditorStyleSet.h"
 #include "Framework/Commands/Commands.h"
 #include "EditorTypesWrapperTypes.h"
+#include "Styling/AppStyle.h"
 
 class UEditorUserDefinedActions;
 
@@ -19,7 +20,7 @@ public:
 			"EditorUserDefinedCommands", // Context name for fast lookup
 			NSLOCTEXT("Contexts", "EditorUserDefinedCommands", "Editor User Defined Actions"), // Localized context name for displaying
 			NAME_None, // Parent
-			FEditorStyle::GetStyleSetName()) // Icon Style Set
+			FAppStyle::GetAppStyleSetName()) // Icon Style Set
 	{}
 
 	virtual void RegisterCommands() override;

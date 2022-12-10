@@ -25,7 +25,7 @@
 #include "StaticMeshResources.h"
 #include "CanvasTypes.h"
 #include "Editor.h"
-#include "AssetRegistryModule.h"
+#include "AssetRegistry/AssetRegistryModule.h"
 #include "Misc/HotReloadInterface.h"
 #include "Engine/Blueprint.h"
 #include "EditorScriptingToolsSubsystem.h"

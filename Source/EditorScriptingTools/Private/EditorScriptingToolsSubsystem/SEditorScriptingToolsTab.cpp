@@ -82,7 +82,7 @@ public:
 					[
 						SNew(STextBlock)
 						.Text(ToolsTabWeakPtr.Pin().Get(), &SEditorScriptingToolsTab::GetActiveSectionSettingsText)
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 					]
 				]
 			]
@@ -118,7 +118,7 @@ void SEditorScriptingToolsTab::Construct(const FArguments& InArgs)
 		.TabRole(ETabRole::NomadTab)
 		[
 			SNew(SBorder)
-			.BorderImage(FEditorStyle::GetBrush("ToolPanel.GroupBorder"))
+			.BorderImage(FAppStyle::GetBrush("ToolPanel.GroupBorder"))
 			.VAlign(VAlign_Fill)
 			.HAlign(HAlign_Fill)
 			[
@@ -292,7 +292,7 @@ TSharedRef<SWidget> SEditorScriptingToolsTab::CreateToolBarWidget()
 			NAME_None,
 			LOCTEXT("None"," "),
 			GetSectionNameText(SectionType),
-			FSlateIcon(FEditorScriptingToolsStyle::GetStyleSetName(),
+			FSlateIcon(FEditorScriptingToolsStyle::GetAppStyleSetName(),
 				GetSectionIconName(SectionType)), EUserInterfaceActionType::RadioButton);
 
 	}
@@ -457,8 +457,8 @@ TSharedRef<SWidget> SEditorScriptingToolsTab::CreateSettingsSectionWidget_UserDe
 					[
 						SNew(SButton)
 						.VAlign(VAlign_Center)
-						.ButtonStyle(FEditorStyle::Get(), "FlatButton.Primary")
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+						.ButtonStyle(FAppStyle::Get(), "FlatButton.Primary")
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 						.ContentPadding(FMargin(64.f,4.f))
 						.OnClicked_Lambda([]() -> FReply
 						{
@@ -480,8 +480,8 @@ TSharedRef<SWidget> SEditorScriptingToolsTab::CreateSettingsSectionWidget_UserDe
 					[
 						SNew(SButton)
 						.VAlign(VAlign_Center)
-						.ButtonStyle(FEditorStyle::Get(), "FlatButton.Danger")
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+						.ButtonStyle(FAppStyle::Get(), "FlatButton.Danger")
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 						.ContentPadding(FMargin(64.f,4.f))
 						.Text(LOCTEXT("ClosePlacementTabText", "Close Tab"))
 						.OnClicked_Lambda([]() -> FReply
@@ -525,7 +525,7 @@ TSharedRef<SWidget> SEditorScriptingToolsTab::CreateSectionHeader(FText InText)
 				[
 					SNew(STextBlock)
 					.Text(InText)
-					.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+					.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 				]
 			];
 }
@@ -541,8 +541,8 @@ TSharedRef<SWidget> SEditorScriptingToolsTab::CreateWarningMessageWidegt(FText I
 				[
 					SNew(STextBlock)
 					.ColorAndOpacity(FLinearColor(0.65f, 0.4f, 0.15f, 1.0f))
-					.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-					.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.11"))
+					.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+					.Font(FAppStyle::Get().GetFontStyle("FontAwesome.11"))
 					.Text(FEditorFontGlyphs::Exclamation_Triangle)
 				]
 				+SHorizontalBox::Slot()

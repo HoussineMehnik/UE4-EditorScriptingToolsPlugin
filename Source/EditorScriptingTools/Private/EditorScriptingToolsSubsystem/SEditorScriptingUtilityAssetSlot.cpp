@@ -66,7 +66,7 @@ void SEditorScriptingUtilityAssetSlot::Construct(const FArguments& InArgs , UObj
 					.HAlign(HAlign_Fill)
 					[
 						SNew(SBorder)
-						.BorderImage(FEditorStyle::GetBrush("ExpandableButton.Background"))
+						.BorderImage(FAppStyle::GetBrush("ExpandableButton.Background"))
 						.VAlign(VAlign_Center)
 						.ForegroundColor(FCoreStyle::Get().GetSlateColor("InvertedForeground"))
 						.BorderBackgroundColor(GetBrowseToAssetButtonColor())
@@ -76,7 +76,7 @@ void SEditorScriptingUtilityAssetSlot::Construct(const FArguments& InArgs , UObj
 							[
 								SNew(STextBlock)
 								.Text(SEditorScriptingUtilityAssetSlot::GetDisplayName())
-								.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+								.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 							]
 						]
 					]
@@ -85,15 +85,15 @@ void SEditorScriptingUtilityAssetSlot::Construct(const FArguments& InArgs , UObj
 					.AutoWidth()
 					[
 						SNew(SButton)
-						.ButtonStyle(FEditorStyle::Get(), "HoverHintOnly")
+						.ButtonStyle(FAppStyle::Get(), "HoverHintOnly")
 						.OnClicked(this, &SEditorScriptingUtilityAssetSlot::OnShowToolAssetInContentBrowser_Clicked)
 						.VAlign(VAlign_Center)
 						.ToolTipText(LOCTEXT("BrowseToAssetInContentBrowser", "Browse to Asset in Content Browser"))
 						[
 							SNew(STextBlock)
 							.ColorAndOpacity(FLinearColor(0.65f, 0.4f, 0.15f, 1.0f))
-							.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-							.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.10"))
+							.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+							.Font(FAppStyle::Get().GetFontStyle("FontAwesome.10"))
 							//.Text(FEditorFontGlyphs::Search)
 						]
 					]
@@ -102,15 +102,15 @@ void SEditorScriptingUtilityAssetSlot::Construct(const FArguments& InArgs , UObj
 					.AutoWidth()
 					[
 						SNew(SButton)
-						.ButtonStyle(FEditorStyle::Get(), "HoverHintOnly")
+						.ButtonStyle(FAppStyle::Get(), "HoverHintOnly")
 						.OnClicked(this, &SEditorScriptingUtilityAssetSlot::OnEdit_Clicked)
 						.VAlign(VAlign_Center)
 						.ToolTipText(LOCTEXT("EditAssetToolTip", "Open an editor for the specified asset."))
 						[
 							SNew(STextBlock)
 							.ColorAndOpacity(FLinearColor::White)
-							.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-							.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.10"))
+							.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+							.Font(FAppStyle::Get().GetFontStyle("FontAwesome.10"))
 							.Text(FEditorFontGlyphs::Pencil)
 						]
 					]
@@ -119,15 +119,15 @@ void SEditorScriptingUtilityAssetSlot::Construct(const FArguments& InArgs , UObj
 					.AutoWidth()
 					[
 						SNew(SButton)
-						.ButtonStyle(FEditorStyle::Get(), "HoverHintOnly")
+						.ButtonStyle(FAppStyle::Get(), "HoverHintOnly")
 						.OnClicked(this, &SEditorScriptingUtilityAssetSlot::OnRefresh_Clicked)
 						.VAlign(VAlign_Center)
 						.ToolTipText(SEditorScriptingUtilityAssetSlot::GetRefreshToolTipText())
 						[
 							SNew(STextBlock)
 							.ColorAndOpacity(FLinearColor(0.2f ,0.5f, 1.0f, 1.0f))
-							.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-							.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.10"))
+							.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+							.Font(FAppStyle::Get().GetFontStyle("FontAwesome.10"))
 							.Text(FEditorFontGlyphs::Refresh)
 						]
 					]
@@ -136,15 +136,15 @@ void SEditorScriptingUtilityAssetSlot::Construct(const FArguments& InArgs , UObj
 					.AutoWidth()
 					[
 						SNew(SButton)
-						.ButtonStyle(FEditorStyle::Get(), "HoverHintOnly")
+						.ButtonStyle(FAppStyle::Get(), "HoverHintOnly")
 						.OnClicked(this, &SEditorScriptingUtilityAssetSlot::OnClear_Clicked)
 						.VAlign(VAlign_Center)
 						.ToolTipText(SEditorScriptingUtilityAssetSlot::GetClearToolTipText())
 						[
 							SNew(STextBlock)
 							.ColorAndOpacity(FLinearColor(1.f, 0.1f, 0.f, 1.f))
-							.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-							.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.10"))
+							.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+							.Font(FAppStyle::Get().GetFontStyle("FontAwesome.10"))
 							.Text(FEditorFontGlyphs::Times)
 						]
 					]

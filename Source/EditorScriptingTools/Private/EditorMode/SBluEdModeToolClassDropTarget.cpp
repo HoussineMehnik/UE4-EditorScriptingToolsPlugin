@@ -25,7 +25,7 @@ void SBluEdModeToolClassDropTarget::Construct(const FArguments& InArgs)
 	HoveredColor = FLinearColor(0.f, 0.5f, 1.f, 0.3f);
 	BackgroundColor = FLinearColor(1, 1, 1, 0.50f);
 	BackgroundHoverColor = FLinearColor(1, 1, 1, 0.25f);
-	BackgroundImage = FEditorStyle::GetBrush("WhiteBrush");
+	BackgroundImage = FAppStyle::GetBrush("WhiteBrush");
 
 	bAllowDrop = false;
 	bDragOperationStarted = false;

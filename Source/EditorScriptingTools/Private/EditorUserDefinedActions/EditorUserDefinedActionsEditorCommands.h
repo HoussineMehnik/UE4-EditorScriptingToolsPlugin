@@ -19,7 +19,7 @@ public:
 			"EditorUserDefinedActionsEditor", // Context name for fast lookup
 			NSLOCTEXT("Contexts", "EditorUserDefinedActionsEditor", "Editor User Defined Actions Editor"), // Localized context name for displaying
 			NAME_None, // Parent
-			FEditorScriptingToolsStyle::GetStyleSetName() // Icon Style Set
+			FEditorScriptingToolsStyle::GetAppStyleSetName() // Icon Style Set
 			)
 	{
 

@@ -34,7 +34,7 @@ TSharedPtr<ISlateStyle> FEditorScriptingToolsStyle::Get()
 }
 
 
-FName FEditorScriptingToolsStyle::GetStyleSetName()
+FName FEditorScriptingToolsStyle::GetAppStyleSetName()
 {
 	return StyleSet->GetStyleSetName();
 }

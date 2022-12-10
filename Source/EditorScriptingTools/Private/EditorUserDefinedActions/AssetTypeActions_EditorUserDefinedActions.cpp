@@ -6,7 +6,7 @@
 #include "AssetTypeActions_EditorUserDefinedActions.h"
 
 #include "BlueprintEditorModule.h"
-#include "AssetData.h"
+#include "AssetRegistry/AssetData.h"
 #include "Framework/MultiBox/MultiBoxBuilder.h"
 
 #include "EditorTypesWrapperTypes.h"

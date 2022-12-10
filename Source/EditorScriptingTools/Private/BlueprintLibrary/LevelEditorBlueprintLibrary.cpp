@@ -82,7 +82,7 @@ FName ULevelEditorBlueprintLibrary::GetEditorModeID(EBuiltinEditorModes EdMode)
 	case EBuiltinEditorModes::None:					return FBuiltinEditorModes::EM_None;
 	case EBuiltinEditorModes::Default:				return FBuiltinEditorModes::EM_Default;
 	case EBuiltinEditorModes::Placement:			return FBuiltinEditorModes::EM_Placement;
-	case EBuiltinEditorModes::InterpEdit:			return FBuiltinEditorModes::EM_InterpEdit;
+	case EBuiltinEditorModes::InterpEdit:			return TEXT("InterpEdit");
 	case EBuiltinEditorModes::MeshPaint:			return FBuiltinEditorModes::EM_MeshPaint;
 	case EBuiltinEditorModes::Landscape:			return FBuiltinEditorModes::EM_Landscape;
 	case EBuiltinEditorModes::Foliage:				return FBuiltinEditorModes::EM_Foliage;

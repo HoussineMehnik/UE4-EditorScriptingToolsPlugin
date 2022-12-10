@@ -39,6 +39,7 @@
 #include "EditorScriptingToolsStyle.h"
 #include "EditorUserDefinedCommands.h"
 #include "IEditorScriptingToolsModule.h"
+#include "Styling/AppStyle.h"
 
 #define LOCTEXT_NAMESPACE "EditorActionsEditor"
 
@@ -126,9 +127,6 @@ public:
 	}
 #endif // USE_STABLE_LOCALIZATION_KEYS
 
-	virtual void RequestRefresh() override
-	{
-	}
 
 	bool CausedChange() const
 	{
@@ -218,9 +216,7 @@ public:
 	}
 #endif // USE_STABLE_LOCALIZATION_KEYS
 
-	virtual void RequestRefresh() override
-	{
-	}
+
 
 	bool CausedChange() const
 	{
@@ -252,7 +248,7 @@ void FEditorUserDefinedActionsEditor::RegisterTabSpawners(const TSharedRef<class
 	InTabManager->RegisterTabSpawner(ActionsTabId, FOnSpawnTab::CreateSP(this, &FEditorUserDefinedActionsEditor::SpawnActionsTab))
 		.SetDisplayName(LOCTEXT("ActionsEditor", "Actions"))
 		.SetGroup(WorkspaceMenuCategory.ToSharedRef())
-		.SetIcon(FSlateIcon(FEditorStyle::GetStyleSetName(), "GraphEditor.Enum_16x"));
+		.SetIcon(FSlateIcon(FAppStyle::GetAppStyleSetName(), "GraphEditor.Enum_16x"));
 }
 
 void FEditorUserDefinedActionsEditor::UnregisterTabSpawners(const TSharedRef<class FTabManager>& InTabManager)
@@ -439,7 +435,7 @@ TSharedRef<SDockTab> FEditorUserDefinedActionsEditor::SpawnActionsTab(const FSpa
 	PropertyView->SetEnabled(IsEnabledAttribute);
 
 	return SNew(SDockTab)
-		.Icon(FEditorStyle::GetBrush("GenericEditor.Tabs.Properties"))
+		.Icon(FAppStyle::GetBrush("GenericEditor.Tabs.Properties"))
 		.Label(LOCTEXT("ActionsEditor", "Actions"))
 		[
 			SNew(SVerticalBox)
@@ -530,7 +526,7 @@ void FEditorUserDefinedActionsDetails::CustomizeDetails(IDetailLayoutBuilder& De
 					.AutoWidth()
 					[
 						SNew(SButton)
-						.ButtonStyle(FEditorStyle::Get(), "FlatButton.Success")
+						.ButtonStyle(FAppStyle::Get(), "FlatButton.Success")
 						.ContentPadding(2)
 						.OnClicked(this, &FEditorUserDefinedActionsDetails::OnAddNewAction)
 						[
@@ -543,8 +539,8 @@ void FEditorUserDefinedActionsDetails::CustomizeDetails(IDetailLayoutBuilder& De
 							.AutoWidth()
 							[
 								SNew(STextBlock)
-								.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-								.Font( FEditorStyle::Get().GetFontStyle( "FontAwesome.8" ) )
+								.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+								.Font( FAppStyle::Get().GetFontStyle( "FontAwesome.8" ) )
 								.Text( FEditorFontGlyphs::Plus )
 							]
 
@@ -556,7 +552,7 @@ void FEditorUserDefinedActionsDetails::CustomizeDetails(IDetailLayoutBuilder& De
 								SNew(STextBlock)
 								.Text(LOCTEXT("AddNewActionLabel", "New Action"))
 								.ToolTipText(LOCTEXT("AddNewAction_ToolTip", "Add New Action"))
-								.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+								.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 							]
 						]
 					]
@@ -565,7 +561,7 @@ void FEditorUserDefinedActionsDetails::CustomizeDetails(IDetailLayoutBuilder& De
 					.AutoWidth()
 					[
 						SNew(SButton)
-						.ButtonStyle(FEditorStyle::Get(), "FlatButton.Danger")
+						.ButtonStyle(FAppStyle::Get(), "FlatButton.Danger")
 						.ContentPadding(2)
 						.OnClicked(this, &FEditorUserDefinedActionsDetails::OnClearAll)
 						[
@@ -577,8 +573,8 @@ void FEditorUserDefinedActionsDetails::CustomizeDetails(IDetailLayoutBuilder& De
 							.AutoWidth()
 							[
 								SNew(STextBlock)
-								.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-								.Font( FEditorStyle::Get().GetFontStyle( "FontAwesome.8" ) )
+								.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+								.Font( FAppStyle::Get().GetFontStyle( "FontAwesome.8" ) )
 								.Text( FEditorFontGlyphs::Plus )
 							]
 
@@ -590,7 +586,7 @@ void FEditorUserDefinedActionsDetails::CustomizeDetails(IDetailLayoutBuilder& De
 								SNew(STextBlock)
 								.Text(LOCTEXT("ClearAllLabel", "Clear All"))
 								.ToolTipText(LOCTEXT("ClearAllActions_ToolTip", "Clear All Actions"))
-								.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+								.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 							]
 						]
 					]
@@ -689,8 +685,8 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 					.AutoWidth()
 					[
 						SNew(STextBlock)
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-						.Font( FEditorStyle::Get().GetFontStyle( "FontAwesome.12" ) )
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+						.Font( FAppStyle::Get().GetFontStyle( "FontAwesome.12" ) )
 						.Text( FEditorFontGlyphs::Star )
 					]
 
@@ -701,7 +697,7 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 					[
 						SNew(STextBlock)
 						.Text(LOCTEXT("ActionIDLabel", "Action"))
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 					]
 				]
 			]
@@ -722,8 +718,8 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 					.AutoWidth()
 					[
 						SNew(STextBlock)
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-						.Font( FEditorStyle::Get().GetFontStyle( "FontAwesome.12" ) )
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+						.Font( FAppStyle::Get().GetFontStyle( "FontAwesome.12" ) )
 						//.Text( FEditorFontGlyphs::Repeat )
 					]
 
@@ -734,7 +730,7 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 					[
 						SNew(STextBlock)
 						.Text(LOCTEXT("RepeatMode", "Repeat Mode"))
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 					]
 				]
 			]
@@ -756,8 +752,8 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 					.AutoWidth()
 					[
 						SNew(STextBlock)
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-						.Font( FEditorStyle::Get().GetFontStyle( "FontAwesome.12" ) )
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+						.Font( FAppStyle::Get().GetFontStyle( "FontAwesome.12" ) )
 						//.Text( FEditorFontGlyphs::Keyboard_O)
 					]
 
@@ -768,7 +764,7 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 					[
 						SNew(STextBlock)
 						.Text(LOCTEXT("Primary", "Primary"))
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 					]				
 			 	]
 			]
@@ -789,8 +785,8 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 					.AutoWidth()
 					[
 						SNew(STextBlock)
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-						.Font( FEditorStyle::Get().GetFontStyle( "FontAwesome.12" ) )
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+						.Font( FAppStyle::Get().GetFontStyle( "FontAwesome.12" ) )
 						//.Text( FEditorFontGlyphs::Keyboard_O)
 					]
 
@@ -801,7 +797,7 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 					[
 						SNew(STextBlock)
 						.Text(LOCTEXT("Secondary", "Secondary"))
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 					]
 				]
 			]
@@ -817,7 +813,7 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 				.IsEnabled(false)
 				[
 					SNew(SImage)
-					.Image(FEditorStyle::GetBrush("MediaAsset.AssetActions.Stop.Small"))
+					.Image(FAppStyle::GetBrush("MediaAsset.AssetActions.Stop.Small"))
 					.ColorAndOpacity(FLinearColor::Transparent)
 				]
 			]
@@ -832,7 +828,7 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 				.IsEnabled(false)
 				[
 					SNew(SImage)
-					.Image(FEditorStyle::GetBrush("MediaAsset.AssetActions.Stop.Small"))
+					.Image(FAppStyle::GetBrush("MediaAsset.AssetActions.Stop.Small"))
 					.ColorAndOpacity(FLinearColor::Transparent)
 				]
 			]
@@ -848,7 +844,7 @@ void FEditorUserDefinedActionsLayout::GenerateChildContent(IDetailChildrenBuilde
 				.IsEnabled(false)
 				[
 					SNew(SImage)
-					.Image(FEditorStyle::GetBrush("MediaAsset.AssetActions.Stop.Small"))
+					.Image(FAppStyle::GetBrush("MediaAsset.AssetActions.Stop.Small"))
 					.ColorAndOpacity(FLinearColor::Transparent)
 				]
 			]
@@ -951,7 +947,7 @@ void FEditorUserDefinedActionsIndexLayout::GenerateHeaderRowContent(FDetailWidge
 			[
 				SNew(SButton)
 				.ContentPadding(0)
-				.ButtonStyle(FEditorStyle::Get(), "FlatButton.Primary")
+				.ButtonStyle(FAppStyle::Get(), "FlatButton.Primary")
 				.OnClicked(this, &FEditorUserDefinedActionsIndexLayout::OnMoveActionUp)
 				.IsEnabled(bIsMoveUpEnabled)
 			[
@@ -967,7 +963,7 @@ void FEditorUserDefinedActionsIndexLayout::GenerateHeaderRowContent(FDetailWidge
 				SNew(SButton)
 				.ContentPadding(0)
 				.OnClicked(this, &FEditorUserDefinedActionsIndexLayout::OnMoveActionDown)
-				.ButtonStyle(FEditorStyle::Get(), "FlatButton.Primary")
+				.ButtonStyle(FAppStyle::Get(), "FlatButton.Primary")
 				.IsEnabled(bIsMoveDownEnabled)
 				[
 					SNew(SImage)
@@ -983,7 +979,7 @@ void FEditorUserDefinedActionsIndexLayout::GenerateHeaderRowContent(FDetailWidge
 				SNew(SButton)
 				.ContentPadding(0)
 				.OnClicked(this, &FEditorUserDefinedActionsIndexLayout::OnActionRemove)
-				.ButtonStyle(FEditorStyle::Get(), "FlatButton.Danger")
+				.ButtonStyle(FAppStyle::Get(), "FlatButton.Danger")
 				.IsEnabled(bIsEditable)
 				[
 					SNew(SImage)

@@ -5,7 +5,7 @@
 #include "AssetDropTargetWidget/SAssetDropTargetWidget.h"
 #include "Widgets/Images/SImage.h"
 #include "EditorStyleSet.h"
-#include "AssetData.h"
+#include "AssetRegistry/AssetData.h"
 #include "AssetSelection.h"
 
 #define LOCTEXT_NAMESPACE "SAssetDropTargetWidget"

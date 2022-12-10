@@ -114,11 +114,11 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 							}
 							return EVisibility::Collapsed;
 						})))
-						.BorderImage(FEditorStyle::GetBrush("DetailsView.AdvancedDropdownBorder"))
+						.BorderImage(FAppStyle::GetBrush("DetailsView.AdvancedDropdownBorder"))
 						.Padding(FMargin(0.0f, 3.0f, 16.0f, 0.0f))
 						[
 							SAssignNew(ExpanderButton, SButton)
-							.ButtonStyle(FEditorStyle::Get(), "NoBorder")
+							.ButtonStyle(FAppStyle::Get(), "NoBorder")
 							.HAlign(HAlign_Center)
 							.ContentPadding(2)
 							.VAlign(VAlign_Top)
@@ -151,7 +151,7 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 						+ SHorizontalBox::Slot()
 						[
 							SNew(SBorder)
-							.BorderImage(FEditorStyle::GetBrush("ToolPanel.DarkGroupBorder"))
+							.BorderImage(FAppStyle::GetBrush("ToolPanel.DarkGroupBorder"))
 							
 							[
 								SNew(SVerticalBox)
@@ -164,7 +164,7 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 									[
 										SNew(STextBlock)
 										.Text(LOCTEXT("ModeWidgetClass_Title", "Tool Class "))
-										.Font(FEditorStyle::GetFontStyle(TEXT("PropertyWindow.NormalFont")))
+										.Font(FAppStyle::GetFontStyle(TEXT("PropertyWindow.NormalFont")))
 									]
 								]
 								+SVerticalBox::Slot()
@@ -186,7 +186,7 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 											SNew(SBorder)
 											.Visibility(EVisibility::HitTestInvisible)
 											.VAlign(VAlign_Center)
-											.BorderImage(FEditorStyle::GetBrush("ToolPanel.GroupBorder"))
+											.BorderImage(FAppStyle::GetBrush("ToolPanel.GroupBorder"))
 											.RenderOpacity(0.7f)
 											.Padding(FMargin(4, 0))
 											.Clipping(EWidgetClipping::ClipToBounds)
@@ -206,8 +206,8 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 											.Padding(FMargin(4, 0))
 											[
 												SNew(STextBlock)
-												.TextStyle(FEditorStyle::Get(), "PropertyEditor.AssetClass")
-												.Font(FEditorStyle::Get().GetFontStyle("PropertyWindow.NormalFont"))
+												.TextStyle(FAppStyle::Get(), "PropertyEditor.AssetClass")
+												.Font(FAppStyle::Get().GetFontStyle("PropertyWindow.NormalFont"))
 												.Text(this, &SBluEdModeWidget::GetSelectedClassName)
 											]
 										]
@@ -219,14 +219,14 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 									[
 										SNew(SButton)
 										.IsEnabled(this, &SBluEdModeWidget::HasValidToolClass)
-										.ButtonStyle(FEditorStyle::Get(), "HoverHintOnly")
+										.ButtonStyle(FAppStyle::Get(), "HoverHintOnly")
 										.OnClicked(this,&SBluEdModeWidget::OnToggleEditorModeToolInstance)
 										.ToolTipText(this, &SBluEdModeWidget::GetEditorModeToolInstanceLoadingButtonToolTipText)
 										[
 											SNew(STextBlock)
 											.ColorAndOpacity(this , &SBluEdModeWidget::GetEditorModeToolInstanceLoadingStatusTextColor)
-											.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-											.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.10"))
+											.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+											.Font(FAppStyle::Get().GetFontStyle("FontAwesome.10"))
 											.Text(this, &SBluEdModeWidget::GetEditorModeToolInstanceLoadingStatusText)
 										]
 									]
@@ -236,7 +236,7 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 									.AutoWidth()
 									[
 										SNew(SButton)
-										.ButtonStyle(FEditorStyle::Get(), "HoverHintOnly")
+										.ButtonStyle(FAppStyle::Get(), "HoverHintOnly")
 										.OnClicked(this,&SBluEdModeWidget::OpenClassPickerDialog)
 										.ToolTipText(LOCTEXT("OpenClassPickerDialog_ToolTip", "Open BluEdMode widget class picker dialog."))
 										[
@@ -252,7 +252,7 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 									[
 										SNew(SButton)
 										.IsEnabled(this, &SBluEdModeWidget::HasValidToolClass)
-										.ButtonStyle(FEditorStyle::Get(), "HoverHintOnly")
+										.ButtonStyle(FAppStyle::Get(), "HoverHintOnly")
 										.OnClicked(this,&SBluEdModeWidget::OnShowToolClassInContentBrowser)
 										.ToolTipText(LOCTEXT("ShowClassInContentBrowser_Name", "Show Class In Content Browser"))
 										[
@@ -268,14 +268,14 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 									[
 										SNew(SButton)
 										.IsEnabled(this, &SBluEdModeWidget::CanReloadEditorModeToolInstance)
-										.ButtonStyle(FEditorStyle::Get(), "HoverHintOnly")
+										.ButtonStyle(FAppStyle::Get(), "HoverHintOnly")
 										.OnClicked(this,&SBluEdModeWidget::OnReloadEditorModeToolInstance)
 										.ToolTipText(LOCTEXT("ReloadToolIntance_ToolTip", "Reloads current tool."))
 										[
 											SNew(STextBlock)
 											.ColorAndOpacity(FLinearColor(0.2f,0.5f,1.0f,1.0f))
-											.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-											.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.11"))
+											.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+											.Font(FAppStyle::Get().GetFontStyle("FontAwesome.11"))
 											.Text(FEditorFontGlyphs::Refresh)
 										]
 									]
@@ -286,14 +286,14 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 									[
 										SNew(SButton)
 										.IsEnabled(this, &SBluEdModeWidget::HasValidToolClass)
-										.ButtonStyle(FEditorStyle::Get(), "HoverHintOnly")
+										.ButtonStyle(FAppStyle::Get(), "HoverHintOnly")
 										.OnClicked(this,&SBluEdModeWidget::OnClearTollClass)
 										.ToolTipText(LOCTEXT("ClearEditorModeToolInstance_ToolTip", "Unloads current tool and clears widget class."))
 										[
 											SNew(STextBlock)
 											.ColorAndOpacity(FLinearColor::Red)
-											.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-											.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.11"))
+											.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+											.Font(FAppStyle::Get().GetFontStyle("FontAwesome.11"))
 											.Text(FEditorFontGlyphs::Times)
 										]
 									]
@@ -304,7 +304,7 @@ void SBluEdModeWidget::Construct(const FArguments& InArgs)
 								.AutoHeight()
 								[
 									SAssignNew(SectionSwitchContainer, SBorder)
-									.BorderImage(FEditorStyle::GetBrush("ToolPanel.DarkGroupBorder"))
+									.BorderImage(FAppStyle::GetBrush("ToolPanel.DarkGroupBorder"))
 									.Padding(2.0f)
 								]
 							]	
@@ -511,7 +511,7 @@ TSharedRef<SWidget> SBluEdModeWidget::CreateSectionSwitcherWidget()
 		[
 			SNew(STextBlock)
 			.Text(LOCTEXT("WidgetsFilter_Title", "Tool Widgets Filter"))
-			.Font(FEditorStyle::GetFontStyle(TEXT("PropertyWindow.NormalFont")))
+			.Font(FAppStyle::GetFontStyle(TEXT("PropertyWindow.NormalFont")))
 		]
 	];
 
@@ -637,7 +637,7 @@ const FSlateBrush* SBluEdModeWidget::GetSectionButtonBrush(EBluEdModeWidgetSecti
 		case EBluEdModeWidgetSectionsVisibility::DetailsView:return FEditorScriptingToolsStyle::Get()->GetBrush("BluEdMode.ShowDetailsView");
 		}
 	}
-	return FEditorStyle::GetBrush("ToolPanel.GroupBorder");
+	return FAppStyle::GetBrush("ToolPanel.GroupBorder");
 }
 
 FSlateColor SBluEdModeWidget::GetSectionButtonColorAndOpacity(EBluEdModeWidgetSectionsVisibility InSection) const
@@ -667,11 +667,11 @@ const FSlateBrush* SBluEdModeWidget::GetExpandButtonImage() const
 {
 	if (ExpanderButton->IsHovered())
 	{
-		return bIsExpanded ? FEditorStyle::GetBrush("DetailsView.PulldownArrow.Up.Hovered") : FEditorStyle::GetBrush("DetailsView.PulldownArrow.Down.Hovered");
+		return bIsExpanded ? FAppStyle::GetBrush("DetailsView.PulldownArrow.Up.Hovered") : FAppStyle::GetBrush("DetailsView.PulldownArrow.Down.Hovered");
 	}
 	else
 	{
-		return bIsExpanded ? FEditorStyle::GetBrush("DetailsView.PulldownArrow.Up") : FEditorStyle::GetBrush("DetailsView.PulldownArrow.Down");
+		return bIsExpanded ? FAppStyle::GetBrush("DetailsView.PulldownArrow.Up") : FAppStyle::GetBrush("DetailsView.PulldownArrow.Down");
 	}
 }
 

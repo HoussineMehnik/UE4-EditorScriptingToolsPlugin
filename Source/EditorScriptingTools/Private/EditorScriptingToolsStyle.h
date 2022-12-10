@@ -15,7 +15,7 @@ public:
 	static void Initialize();
 	static void Shutdown();
 	static TSharedPtr<ISlateStyle> Get();
-	static FName GetStyleSetName();
+	static FName GetAppStyleSetName();
 	static void ReloadTextures();
 
 private:

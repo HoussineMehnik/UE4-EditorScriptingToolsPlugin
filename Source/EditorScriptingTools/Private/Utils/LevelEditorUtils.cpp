@@ -6,6 +6,7 @@
 
 #include "Editor.h"
 #include "EditorScriptingToolsTypes.h"
+#include "Editor/Transactor.h"
 
 
 #define LOCTEXT_NAMESPACE "LevelEditorUtils"

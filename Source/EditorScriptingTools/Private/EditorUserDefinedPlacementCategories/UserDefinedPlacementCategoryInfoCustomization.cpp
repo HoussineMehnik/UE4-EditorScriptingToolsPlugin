@@ -6,7 +6,7 @@
 #include "UserDefinedPlacementCategoryInfoCustomization.h"
 #include "Widgets/DeclarativeSyntaxSupport.h"
 #include "Engine/GameViewportClient.h"
-#include "AssetData.h"
+#include "AssetRegistry/AssetData.h"
 #include "PropertyHandle.h"
 #include "PropertyCustomizationHelpers.h"
 #include "IDetailChildrenBuilder.h"

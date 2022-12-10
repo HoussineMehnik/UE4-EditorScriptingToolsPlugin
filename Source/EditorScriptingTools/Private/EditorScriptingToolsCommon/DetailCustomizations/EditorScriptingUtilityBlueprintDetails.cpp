@@ -81,7 +81,7 @@ void FEditorScriptingUtilityBlueprintDetails::CustomizeDetails(IDetailLayoutBuil
 			.Padding(16.f, 8.f)
 			[
 				SNew(SButton)
-				.ButtonStyle(FEditorStyle::Get(), "FlatButton.Success")
+				.ButtonStyle(FAppStyle::Get(), "FlatButton.Success")
 				.HAlign(HAlign_Center)
 				.OnClicked(this, &FEditorScriptingUtilityBlueprintDetails::OnRegisterButton_Clicked, true)
 				.IsEnabled(this, &FEditorScriptingUtilityBlueprintDetails::IsRegisterButton_Enabled, true)
@@ -90,7 +90,7 @@ void FEditorScriptingUtilityBlueprintDetails::CustomizeDetails(IDetailLayoutBuil
 				.ContentPadding(2)
 				[
 					SNew(STextBlock)
-					.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+					.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 					.Text(ScriptingToolsModule->GetRegisterScriptingUtilityText(EditedScriptingUtilityBlueprint))
 				]
 			]
@@ -98,7 +98,7 @@ void FEditorScriptingUtilityBlueprintDetails::CustomizeDetails(IDetailLayoutBuil
 			.Padding(16.f, 8.f)
 			[
 				SNew(SButton)
-				.ButtonStyle(FEditorStyle::Get(), "FlatButton.Danger")
+				.ButtonStyle(FAppStyle::Get(), "FlatButton.Danger")
 				.HAlign(HAlign_Center)
 				.OnClicked(this, &FEditorScriptingUtilityBlueprintDetails::OnRegisterButton_Clicked, false)
 				.IsEnabled(this, &FEditorScriptingUtilityBlueprintDetails::IsRegisterButton_Enabled, false)
@@ -107,7 +107,7 @@ void FEditorScriptingUtilityBlueprintDetails::CustomizeDetails(IDetailLayoutBuil
 				.ContentPadding(2)
 				[
 					SNew(STextBlock)
-					.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
+					.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
 					.Text(ScriptingToolsModule->GetUnregisterScriptingUtilityText(EditedScriptingUtilityBlueprint))
 				]
 			]
@@ -135,8 +135,8 @@ void FEditorScriptingUtilityBlueprintDetails::CustomizeDetails(IDetailLayoutBuil
 					[
 						SNew(STextBlock)
 						.ColorAndOpacity(FLinearColor(0.65f, 0.4f, 0.15f, 1.0f))
-						.TextStyle(FEditorStyle::Get(), "ContentBrowser.TopBar.Font")
-						.Font(FEditorStyle::Get().GetFontStyle("FontAwesome.11"))
+						.TextStyle(FAppStyle::Get(), "ContentBrowser.TopBar.Font")
+						.Font(FAppStyle::Get().GetFontStyle("FontAwesome.11"))
 						.Text(FEditorFontGlyphs::Exclamation_Triangle)
 					]
 					+SHorizontalBox::Slot()

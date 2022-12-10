@@ -5,7 +5,7 @@
 #pragma once
 
 #include "EditorWidgetBase.h"
-#include "AssetData.h"
+#include "AssetRegistry/AssetData.h"
 #include "AssetPickerWidget.generated.h"
 
 

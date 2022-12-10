@@ -14,7 +14,7 @@
 #include "StaticMeshAttributes.h"
 #include "PhysicsEngine/BodySetup.h"
 #include "Dialogs/DlgPickAssetPath.h"
-#include "AssetRegistryModule.h"
+#include "AssetRegistry/AssetRegistryModule.h"
 
 #define LOCTEXT_NAMESPACE "EditorMeshUtils"
 

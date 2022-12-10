@@ -15,7 +15,7 @@ TSharedRef<SWidget> FPropertyWidgetHelpers::UnknownPropertyWidget =   SNew(SBord
 																			.Padding(0.0f)
 																			.HAlign(HAlign_Fill)
 																			.VAlign(VAlign_Fill)
-																			.BorderImage(FEditorStyle::GetBrush("NoBorder"))
+																			.BorderImage(FAppStyle::GetBrush("NoBorder"))
 																			[
 																				SNew(STextBlock)
 																				.Text(LOCTEXT("UnknownPropertyText", "Unknown Property"))

@@ -26,9 +26,9 @@
 
 void SEditorAction_ChordEditBox::Construct(const FArguments& InArgs, UEditorUserDefinedActions* ActionsEnum, int32 CommandIndex, EMultipleKeyBindingIndex ChordIndex)
 {
-	BorderImageNormal = FEditorStyle::GetBrush( "EditableTextBox.Background.Normal" );
-	BorderImageHovered = FEditorStyle::GetBrush( "EditableTextBox.Background.Hovered" );
-	BorderImageFocused = FEditorStyle::GetBrush( "EditableTextBox.Background.Focused" );
+	BorderImageNormal = FAppStyle::GetBrush( "EditableTextBox.Background.Normal" );
+	BorderImageHovered = FAppStyle::GetBrush( "EditableTextBox.Background.Hovered" );
+	BorderImageFocused = FAppStyle::GetBrush( "EditableTextBox.Background.Focused" );
 
 	static const FName InvertedForegroundName("InvertedForeground");
 
@@ -46,7 +46,7 @@ void SEditorAction_ChordEditBox::Construct(const FArguments& InArgs, UEditorUser
 				.VAlign(VAlign_Center)
 				.Padding( FMargin( 4.0f, 2.0f ) )
 				.BorderImage( this, &SEditorAction_ChordEditBox::GetBorderImage )
-				.ForegroundColor( FEditorStyle::GetSlateColor(InvertedForegroundName) )
+				.ForegroundColor( FAppStyle::GetSlateColor(InvertedForegroundName) )
 				[
 					SNew( SHorizontalBox )
 					+ SHorizontalBox::Slot()
@@ -67,7 +67,7 @@ void SEditorAction_ChordEditBox::Construct(const FArguments& InArgs, UEditorUser
 						// Remove binding button
 						SNew(SButton)
 						.Visibility( this, &SEditorAction_ChordEditBox::GetChordRemoveButtonVisibility )
-						.ButtonStyle( FEditorStyle::Get(), "NoBorder" )
+						.ButtonStyle( FAppStyle::Get(), "NoBorder" )
 						.ContentPadding(0)
 						.OnClicked( this, &SEditorAction_ChordEditBox::OnChordRemoveButtonClicked )
 						.ForegroundColor( FSlateColor::UseForeground() )
@@ -75,7 +75,7 @@ void SEditorAction_ChordEditBox::Construct(const FArguments& InArgs, UEditorUser
 						.ToolTipText(LOCTEXT("ChordEditButtonRemove_ToolTip", "Remove this binding") )
 						[
 							SNew( SImage )
-							.Image( FEditorStyle::GetBrush( "Symbols.X" ) )
+							.Image( FAppStyle::GetBrush( "Symbols.X" ) )
 							.ColorAndOpacity( FLinearColor(.7f,0,0,.75f) )
 						]
 					]
@@ -204,7 +204,7 @@ FReply SEditorAction_ChordEditBox::OnAcceptNewChordButtonClicked()
 TSharedRef<SWidget> SEditorAction_ChordEditBox::OnGetContentForConflictPopup()
 {
 	return SNew(SBorder)
-		.BorderImage( FEditorStyle::GetBrush("NotificationList.ItemBackground")  )
+		.BorderImage( FAppStyle::GetBrush("NotificationList.ItemBackground")  )
 		[
 			SNew( SVerticalBox )
 
@@ -237,7 +237,7 @@ TSharedRef<SWidget> SEditorAction_ChordEditBox::OnGetContentForConflictPopup()
 								.AutoWidth()
 								[
 									SNew( SImage )
-										.Image( FEditorStyle::GetBrush( "Symbols.Check" ) )
+										.Image( FAppStyle::GetBrush( "Symbols.Check" ) )
 										.ColorAndOpacity( FLinearColor(0,.7f,0,.75f) )
 								]
 
