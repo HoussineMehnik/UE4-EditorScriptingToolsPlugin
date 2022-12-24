@@ -53,10 +53,11 @@ void FEditorUserDefinedCommands::RegisterCommands()
 		const bool& bRepeatAction = ActionsAsset->RepeatStatesList[Index];
 		const FString CommandIdStr = TEXT("Command") + FString::FromInt(Index);
 		const FString& CommandNameStr = ActionsAsset->GetDisplayNameTextByIndex(Index).ToString();
+		
 
 		UI_USER_DEFINED_COMMAND(
 			Command,
-			*CommandIdStr,
+			CommandIdStr,
 			*CommandNameStr,
 			"Executes Action By Index.",
 			EUserInterfaceActionType::None,
