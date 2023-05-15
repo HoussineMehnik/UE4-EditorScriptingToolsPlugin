@@ -50,6 +50,6 @@ struct FUserDefinedPlacementCategoryInfo
 
 	friend FORCEINLINE uint32 GetTypeHash(const FUserDefinedPlacementCategoryInfo& Other)
 	{
-		return ::GetTypeHash(Other.Name);
+		return GetTypeHash(Other.Name);
 	}
 };

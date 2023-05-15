@@ -5,7 +5,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Windows/WindowsCriticalSection.h"
 
 class FNativeDetailCustomizationInstance;
 

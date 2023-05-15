@@ -30,7 +30,7 @@ DECLARE_STATS_GROUP(TEXT("EditorScriptingTools"), STATGROUP_EditorScriptingTools
 
 //
 #define UI_USER_DEFINED_COMMAND( CommandPtr,CommandId, FriendlyName, InDescription, CommandType, InDefaultChord, ... ) \
-	MakeUICommand_InternalUseOnly( this, CommandPtr, TEXT(LOCTEXT_NAMESPACE), CommandId, *CommandId + TEXT("_ToolTip"), "." + *CommandId, FriendlyName, TEXT(InDescription), CommandType, InDefaultChord, ## __VA_ARGS__ );
+	MakeUICommand_InternalUseOnly( this, CommandPtr, TEXT(LOCTEXT_NAMESPACE), *CommandId, *(CommandId + FString("_ToolTip")), TCHAR_TO_ANSI(*(FString(".") + CommandId)), FriendlyName, TEXT(InDescription), CommandType, InDefaultChord, ## __VA_ARGS__ );
 
 //
 #define EDITOR_SCRIPT_EXECUTION_GUARD FEditorScriptExecutionGuard ScriptGuard;
