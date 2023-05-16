@@ -10,6 +10,8 @@
 #include "Materials/Material.h"
 #include "Components/SplineComponent.h"
 #include "EditorScriptingToolsTypes.h"
+#include "SceneView.h"
+#include "DynamicMeshBuilder.h"
 
 
 #define LOCTEXT_NAMESPACE "LevelViewportPrimitiveDrawingUtils"

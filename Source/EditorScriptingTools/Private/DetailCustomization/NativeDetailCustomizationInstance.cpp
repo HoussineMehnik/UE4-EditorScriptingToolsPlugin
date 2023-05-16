@@ -50,12 +50,10 @@ FNativeDetailCustomizationInstance::FNativeDetailCustomizationInstance(UDetailCu
 
 }
 
-PRAGMA_DISABLE_OPTIMIZATION
 FNativeDetailCustomizationInstance::~FNativeDetailCustomizationInstance()
 {
 	ClearCacheIfNeeded();
 }
-PRAGMA_ENABLE_OPTIMIZATION
 
 void FNativeDetailCustomizationInstance::CustomizeDetails(const TSharedPtr<IDetailLayoutBuilder>& DetailBuilder)
 {
