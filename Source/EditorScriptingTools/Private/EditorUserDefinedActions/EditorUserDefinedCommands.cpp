@@ -8,7 +8,7 @@
 #include "EditorTypesWrapperTypes.h"
 #include "EditorUserDefinedActions.h"
 #include "EditorEventsSubsystem.h"
-#include "MainFrame/Public/Interfaces/IMainFrameModule.h"
+#include "Interfaces/IMainFrameModule.h"
 #include "LevelEditor.h"
 #include "Editor/LevelEditor/Private/SLevelEditor.h"
 #include "Modules/ModuleManager.h"

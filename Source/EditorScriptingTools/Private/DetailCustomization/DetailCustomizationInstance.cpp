@@ -128,11 +128,11 @@ bool UDetailCustomizationInstance::EditCategory(FDetailCategoryBuilderHandle& Ou
 	return false;
 }
 
-TSharedRef<SWidget> UDetailCustomizationInstance::CreatePropertyNameWidget(FName PropertyName, TSubclassOf<UObject> PropertyOwnerClass, FText NameOverride /*= FText::GetEmpty()*/, FText ToolTipOverride /*= FText::GetEmpty()*/, bool bDisplayResetToDefault /*= false*/, bool bDisplayText /*= true*/, bool bDisplayThumbnail /*= true*/)
+TSharedRef<SWidget> UDetailCustomizationInstance::CreatePropertyNameWidget(FName PropertyName, TSubclassOf<UObject> PropertyOwnerClass, FText NameOverride /*= FText::GetEmpty()*/, FText ToolTipOverride /*= FText::GetEmpty()*/)
 {
 	if (NativeDetailCustomizationWeakPtr.IsValid())
 	{
-		return NativeDetailCustomizationWeakPtr.Pin()->CreatePropertyNameWidget(PropertyName, PropertyOwnerClass, NameOverride, ToolTipOverride, bDisplayResetToDefault, bDisplayText, bDisplayThumbnail);
+		return NativeDetailCustomizationWeakPtr.Pin()->CreatePropertyNameWidget(PropertyName, PropertyOwnerClass, NameOverride, ToolTipOverride);
 	}
 	return SNullWidget::NullWidget;
 }

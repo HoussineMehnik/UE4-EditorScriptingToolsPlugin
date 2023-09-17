@@ -12,6 +12,8 @@
 #include "Engine/Canvas.h"
 #include "EditorScriptingToolsTypes.h"
 #include "Components/BillboardComponent.h"
+#include "UnrealClient.h"
+#include "SceneView.h"
 
 namespace LevelViewportCanvasDrawingUtils
 {

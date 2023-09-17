@@ -119,7 +119,7 @@ public:
 		bool EditCategory(FDetailCategoryBuilderHandle& OutCategoryBuilderHandle ,FName CategoryName, FText InDisplayName = FText::GetEmpty(), EDetailCategoryPriority CategoryType = EDetailCategoryPriority::Default);
 
 public:
-	TSharedRef<SWidget> CreatePropertyNameWidget(FName PropertyName, TSubclassOf<UObject> PropertyOwnerClass, FText NameOverride = FText::GetEmpty(), FText ToolTipOverride = FText::GetEmpty(), bool bDisplayResetToDefault = false, bool bDisplayText = true, bool bDisplayThumbnail = true);
+	TSharedRef<SWidget> CreatePropertyNameWidget(FName PropertyName, TSubclassOf<UObject> PropertyOwnerClass, FText NameOverride = FText::GetEmpty(), FText ToolTipOverride = FText::GetEmpty());
 	TSharedRef<SWidget> CreatePropertyValueWidget(FName PropertyName, TSubclassOf<UObject> PropertyOwnerClass, bool bDisplayDefaultPropertyButtons = true);
 	void SetCustomizationsWrapper(const TSharedPtr<FNativeDetailCustomizationInstance>& CustomizationsWrapper);
 	void ClearCustomizationsWrapper();

@@ -77,6 +77,7 @@ namespace UnrealBuildTool.Rules
                 "SettingsEditor",
                 "ApplicationCore",
                 "EditorFramework",
+                "WorkspaceMenuStructure",
                 });
 
             DynamicallyLoadedModuleNames.Add("AssetTools");

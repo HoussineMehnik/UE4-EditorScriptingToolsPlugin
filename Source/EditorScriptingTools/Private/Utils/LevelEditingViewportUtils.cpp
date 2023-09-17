@@ -12,7 +12,8 @@
 #include "CanvasTypes.h"
 #include "Framework/Application/SlateApplication.h"
 #include "SEditorViewport.h"
-
+#include "SceneView.h"
+#include "Components/PrimitiveComponent.h"
 
 
 

@@ -73,7 +73,7 @@ public:
 	bool IsEditingCategory() const;
 	void EditCategory(FDetailCategoryBuilderHandle& OutCategoryBuilderHandle, const FName& CategoryName, const FText& NewLocalizedDisplayName, EDetailCategoryPriority CategoryType);
 
-	TSharedRef<SWidget> CreatePropertyNameWidget(const FName& PropertyName, TSubclassOf<UObject> PropertyOwnerClass, const FText& NameOverride, const FText& ToolTipOverride, bool bDisplayResetToDefault, bool bDisplayText, bool bDisplayThumbnail);
+	TSharedRef<SWidget> CreatePropertyNameWidget(const FName& PropertyName, TSubclassOf<UObject> PropertyOwnerClass, const FText& NameOverride, const FText& ToolTipOverride);
 	TSharedRef<SWidget> CreatePropertyValueWidget(const FName& PropertyName, TSubclassOf<UObject> PropertyOwnerClass, bool bDisplayDefaultPropertyButtons);
 
 private:

@@ -11,6 +11,7 @@
 #include "BluEdModeTypes.h"
 #include "EditorScriptingToolsTypes.h"
 #include "Layout/Visibility.h"
+#include "EditorTypesWrapperTypes.h"
 
 class FBluEdModeToolkit;
 
@@ -36,7 +37,6 @@ class FLevelEditorViewportClient;
 struct FPopupTransitionEffect;
 struct FCanvasAdvancedTextItem;
 
-namespace ETransformGizmoMode { enum Type; }
 enum class EBluEdModeChangeMode : uint8;
 enum class EEditorState : uint8;
 

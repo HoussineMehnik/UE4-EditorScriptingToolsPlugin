@@ -10,7 +10,6 @@
 #include "EditorModeTools.h"
 #include "EditorModeManager.h"
 #include "EditorModes.h"
-#include "EditorTypesWrapperTypes.h"
 #include "EditorScriptingToolsTypes.h"
 #include "SLevelViewport.h"
 #include "LevelEditorViewport.h"

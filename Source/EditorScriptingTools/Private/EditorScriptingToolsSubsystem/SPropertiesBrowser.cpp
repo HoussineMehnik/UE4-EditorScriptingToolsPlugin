@@ -123,7 +123,7 @@ FReply SPropertiesBrowser::OpenClassPickerDialog()
 	Options.bShowNoneOption = true;
 
 	TSharedPtr<FObjectClassFilter> Filter = MakeShareable(new FObjectClassFilter);
-	Options.ClassFilter = Filter;
+	Options.ClassFilters.Add(Filter.ToSharedRef());
 
 	const FText TitleText = LOCTEXT("PickBluEdModeUserWidgetClass", "Pick Ed Mode Widget Blueprint Class");
 	UClass* ChosenClass = nullptr;

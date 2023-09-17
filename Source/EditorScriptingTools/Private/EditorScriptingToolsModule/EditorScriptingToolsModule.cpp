@@ -20,8 +20,8 @@
 
 #include "LevelEditor.h"
 #include "Widgets/Docking/SDockTab.h"
-#include "WorkspaceMenuStructure/Public/WorkspaceMenuStructureModule.h"
-#include "WorkspaceMenuStructure/Public/WorkspaceMenuStructure.h"
+#include "WorkspaceMenuStructureModule.h"
+#include "WorkspaceMenuStructure.h"
 #include "UnrealEdGlobals.h"
 
 #include "EditorModeManager.h"

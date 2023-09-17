@@ -378,7 +378,7 @@ void FNativeDetailCustomizationInstance::EditCategory(FDetailCategoryBuilderHand
 	}
 }
 
-TSharedRef<SWidget> FNativeDetailCustomizationInstance::CreatePropertyNameWidget(const FName& PropertyName, TSubclassOf<UObject> PropertyOwnerClass, const FText& NameOverride, const FText& ToolTipOverride, bool bDisplayResetToDefault , bool bDisplayText, bool bDisplayThumbnail)
+TSharedRef<SWidget> FNativeDetailCustomizationInstance::CreatePropertyNameWidget(const FName& PropertyName, TSubclassOf<UObject> PropertyOwnerClass, const FText& NameOverride, const FText& ToolTipOverride)
 {
 	if (IsValidPropertyOwnerClass(*PropertyOwnerClass))
 	{
@@ -387,7 +387,7 @@ TSharedRef<SWidget> FNativeDetailCustomizationInstance::CreatePropertyNameWidget
 			TSharedRef<IPropertyHandle> PropertyHandle = DetailBuilder->GetProperty(PropertyName, *PropertyOwnerClass);
 			if (PropertyHandle->IsValidHandle())
 			{
-				return PropertyHandle->CreatePropertyNameWidget(NameOverride, ToolTipOverride, bDisplayResetToDefault, bDisplayText, bDisplayThumbnail);
+				return PropertyHandle->CreatePropertyNameWidget(NameOverride, ToolTipOverride);
 			}
 		}
 	}

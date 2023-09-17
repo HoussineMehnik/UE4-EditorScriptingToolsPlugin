@@ -945,7 +945,7 @@ bool SBluEdModeWidget::OnAllowDropNewToolClass(TSharedPtr<FDragDropOperation> Dr
 				// Find the class/blueprint path
 				if (UnloadedClassOp->HasAssets())
 				{
-					AssetPath = UnloadedClassOp->GetAssets()[0].ObjectPath.ToString();
+					AssetPath = UnloadedClassOp->GetAssets()[0].GetSoftObjectPath().ToString();
 				}
 				else if (UnloadedClassOp->HasAssetPaths())
 				{
@@ -981,7 +981,7 @@ bool SBluEdModeWidget::OnAllowDropNewToolClass(TSharedPtr<FDragDropOperation> Dr
 
 				if (!ClassPath.IsEmpty())
 				{
-					UClass* NewClass = FindObject<UClass>(ANY_PACKAGE, *ClassPath);
+					UClass* NewClass = FindObject<UClass>(nullptr, *ClassPath);
 					if (!NewClass)
 					{
 						NewClass = LoadObject<UClass>(nullptr, *ClassPath);
@@ -1016,7 +1016,7 @@ FReply SBluEdModeWidget::OnDropNewToolClass(TSharedPtr<FDragDropOperation> DragD
 				// Find the class/blueprint path
 				if (UnloadedClassOp->HasAssets())
 				{
-					AssetPath = UnloadedClassOp->GetAssets()[0].ObjectPath.ToString();
+					AssetPath = UnloadedClassOp->GetAssets()[0].GetSoftObjectPath().ToString();
 				}
 				else if (UnloadedClassOp->HasAssetPaths())
 				{
