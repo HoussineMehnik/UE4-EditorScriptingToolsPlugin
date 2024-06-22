@@ -93,7 +93,5 @@ FName ULevelEditorBlueprintLibrary::GetEditorModeID(EBuiltinEditorModes EdMode)
 	case EBuiltinEditorModes::SceneDepthPicker:		return FBuiltinEditorModes::EM_SceneDepthPicker;
 	default:										return TEXT("Unknown Editor Mode");
 	}
-
-	return TEXT("Unknown Editor Mode");
 }
 
