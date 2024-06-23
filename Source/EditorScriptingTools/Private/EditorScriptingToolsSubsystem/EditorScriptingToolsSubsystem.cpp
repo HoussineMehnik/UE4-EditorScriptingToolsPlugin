@@ -74,7 +74,7 @@ void UEditorScriptingToolsSubsystem::NotifySettingsModified(bool bSaveConfig /*=
 {
 	if (bSaveConfig)
 	{
-		SaveConfig();
+		SaveConfig(CPF_Config, *GetDefaultConfigFilename());
 	}
 
 	FEditorScriptingToolsDelegates::RefreshEditorScriptingToolsTabDelegate.Broadcast();
