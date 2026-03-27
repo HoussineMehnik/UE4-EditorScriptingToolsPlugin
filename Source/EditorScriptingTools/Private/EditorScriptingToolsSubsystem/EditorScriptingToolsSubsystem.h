@@ -11,7 +11,7 @@
 #include "UserDefinedPlacementCategoriesTypes.h"
 #include "EditorScriptingToolsSubsystem.generated.h"
 
-UCLASS(config = EditorScriptingTools, defaultconfig)
+UCLASS(config = EditorScriptingTools, DefaultConfig)
 class UEditorScriptingToolsSubsystem : public UEditorSubsystem
 {
 	GENERATED_BODY()
