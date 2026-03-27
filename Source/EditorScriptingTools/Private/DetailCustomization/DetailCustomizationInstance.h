@@ -30,7 +30,7 @@ class   UDetailCustomizationInstance : public UObject
 
 public:
 	UPROPERTY()
-		TArray<UObject*> ReferencedObjects;
+	TArray<TObjectPtr<UObject>> ReferencedObjects;
 
 	/** Called when details should be customized */
 	UFUNCTION(BlueprintImplementableEvent, Category = "Detail Customization", meta = (DisplayName = "On Customize Details"))

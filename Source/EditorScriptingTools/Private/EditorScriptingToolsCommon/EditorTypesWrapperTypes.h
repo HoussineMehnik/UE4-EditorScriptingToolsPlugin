@@ -375,13 +375,13 @@ struct FActorComponentWrapper
 
 public:
 	FActorComponentWrapper() : ActorComponent(nullptr) {}
-	FActorComponentWrapper(const UActorComponent* InActorComp) : ActorComponent(InActorComp) {}
+	FActorComponentWrapper(TObjectPtr<const UActorComponent> InActorComp) : ActorComponent(InActorComp) {}
 
-	void SetComponent(const UActorComponent* InActorComp) { ActorComponent = InActorComp; }
+	void SetComponent(TObjectPtr<const UActorComponent> InActorComp) { ActorComponent = InActorComp; }
 	void ClearComponent() { ActorComponent = nullptr; }
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ActorComponent)
-		const UActorComponent* ActorComponent;
+	TObjectPtr<const UActorComponent> ActorComponent;
 };
 
 
@@ -434,10 +434,10 @@ struct FActorHitProxyInfo
 	GENERATED_USTRUCT_BODY()
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ActorHitProxyInfo)
-		AActor* Actor;
+		TObjectPtr<AActor> Actor;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ActorHitProxyInfo)
-		const UPrimitiveComponent* PrimitiveComponent;
+	TObjectPtr<const UPrimitiveComponent> PrimitiveComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ActorHitProxyInfo)
 		int32 SectionIndex;
