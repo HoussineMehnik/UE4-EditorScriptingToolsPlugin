@@ -90,6 +90,16 @@ void ULevelEditorToolBase::DrawSpline(FDummyStruct DrawPrimitivesContext, USplin
 	LevelViewportPrimitiveDrawingUtils::DrawSpline(GetDrawPrimitivesContext(), SplineComponent, LineColor, DepthPriorityGroup);
 }
 
+void ULevelEditorToolBase::DrawCylinder(FDummyStruct DrawPrimitivesContext, const class UMaterialInterface* Material, const FVector& Center, const FRotator& Rotation, float Radius, float HalfHeight, int32 NumSides, EDepthPriorityGroup DepthPriorityGroup, float DepthBias)
+{
+	LevelViewportPrimitiveDrawingUtils::DrawCylinder(GetDrawPrimitivesContext(), Center, Rotation, Material, Radius, HalfHeight, NumSides, DepthPriorityGroup, DepthBias);
+}
+
+void ULevelEditorToolBase::DrawWireCylinder(FDummyStruct DrawPrimitivesContext, const FVector& Center, const FRotator& Rotation, float Radius, float HalfHeight, int32 NumSides /*= 16*/, FLinearColor Color /*= FLinearColor::White*/, EDepthPriorityGroup DepthPriorityGroup /*= EDepthPriorityGroup::World*/, float Thickness /*= 0.0f*/, float DepthBias /*= 0.0f*/)
+{
+	LevelViewportPrimitiveDrawingUtils::DrawWireCylinder(GetDrawPrimitivesContext(), Center, Rotation, Color, Radius, HalfHeight, NumSides, DepthPriorityGroup, Thickness, DepthBias);
+}
+
 /** ~Level Viewport Canvas  Drawing *********************************************************************************************************************************************/
 /********************************************************************************************************************************************************************************/
 

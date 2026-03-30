@@ -70,6 +70,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "LevelEditingViewport|DrawPrimitives", meta = (HideSelfPin = "true"))
 		void DrawSpline(FDummyStruct DrawPrimitivesContext, USplineComponent* SplineComponent, FLinearColor LineColor = FLinearColor::White, EDepthPriorityGroup DepthPriorityGroup = EDepthPriorityGroup::World);
 
+	UFUNCTION(BlueprintCallable, Category = "LevelEditingViewport|DrawPrimitives", meta = (HideSelfPin = "true"))
+		void DrawCylinder(FDummyStruct DrawPrimitivesContext, const class UMaterialInterface* Material, const FVector& Center, const FRotator& Rotation, float Radius, float HalfHeight, int32 NumSides = 16, EDepthPriorityGroup DepthPriorityGroup = EDepthPriorityGroup::World, float DepthBias = 0.0f);
+
+	UFUNCTION(BlueprintCallable, Category = "LevelEditingViewport|DrawPrimitives", meta = (HideSelfPin = "true"))
+		void DrawWireCylinder(FDummyStruct DrawPrimitivesContext, const FVector& Center, const FRotator& Rotation, float Radius, float HalfHeight, int32 NumSides = 16, FLinearColor Color = FLinearColor::White, EDepthPriorityGroup DepthPriorityGroup = EDepthPriorityGroup::World, float Thickness = 0.0f, float DepthBias = 0.0f);
+
 
 	//~ Level Viewport Canvas  Drawing ********************************************************************************************************************************************/
 
